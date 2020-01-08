@@ -6,21 +6,35 @@
     <!-- title 태그는 검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는 태그이다.-->
     <meta charset="utf-8">
     <!--utf-8 포맷으로 만들어졌으므로 웹페이지를 utf-8포맷으로 열어야 한다.-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155742520-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-155742520-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="tutorial01.html">HTML</a></li>
-      <li><a href="tutorial02.html">CSS</a></li>
-      <li><a href="tutorial03.html">JavaScript</a></li>
-    </ol>
-    <h2>HTML</h2>
-    <p>
-      <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)
-      </a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-    </p>
-    <img src="coding.jpg" width="60%">
-    <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
-    <p style="margin-top:45px;">Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+    <div id="grid">
+      <ol>
+        <li><a href="tutorial01.html" class="selected">HTML</a></li>
+        <li><a href="tutorial02.html">CSS</a></li>
+        <li><a href="tutorial03.html">JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>HTML</h2>
+        <p>
+          <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)
+          </a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+        </p>
+        <img src="coding.jpg" width="100%">
+        <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+        <p style="margin-top:45px;">Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+      </div>
+    </div>
   </body>
 </html>
