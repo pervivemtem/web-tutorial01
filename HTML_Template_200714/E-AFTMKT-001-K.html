@@ -8,9 +8,13 @@
 body{
 	font-family: 'Nanum Gothic', sans-serif;
 }
-a{
+font_nml{
 	font-size:18px;
 	color:white;
+	font-weight:bold;
+}
+font_sub{
+	font-size:10px;
 	font-weight:bold;
 }
 .rma_table {
@@ -85,10 +89,10 @@ a{
 					<td>
 						<table border="1" class="sub_table" cellpadding="0"cellspacing="0" style="border-collapse: collapse">
 							<tr>
-								<td bgcolor="#f47836" width="180"><a>모델명</a></td>
-								<td bgcolor="#f47836" width="200"><a>Serial No.</a></td>
-								<td bgcolor="#f47836" width="200"><a>보증기간 종료일</a></td>
-								<td bgcolor="#f47836"><a>서비스 횟수<sup>*1)</sup></a></td>
+								<td bgcolor="#f47836" width="180"><font_nml>모델명</font_nml></td>
+								<td bgcolor="#f47836" width="200"><font_nml>Serial No.</font_nml></td>
+								<td bgcolor="#f47836" width="200"><font_nml>보증기간 종료일</font_nml></td>
+								<td bgcolor="#f47836" width="200"><font_nml>서비스 횟수<sup>*1)</sup></font_nml></td>
 							</tr>
 							[$LIST1$]
 <!--
@@ -100,7 +104,7 @@ a{
 							</tr>
 -->
 							<tr>
-								<td bgcolor="#f47836" colspan="3"><a style="text-align:right;">소계&nbsp;&nbsp;</a></td>
+								<td bgcolor="#f47836" colspan="3"><a style="text-align:right;">소계</a></td>
 								<td>[$S_VAL2$]</td>
 							</tr>
 						</table>
@@ -117,7 +121,7 @@ a{
 			<table border="0" class="rma_table" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
 				<tr>
 					<td width="40">&nbsp;</td>
-					<td><img src="MS_AFTMKT_11_K.png" border="0" style="width:591px;height:21px;vertical-align:middle;"></td>
+					<td><font_sub>*1) 표시된 서비스 횟수는 당사 서비스집계 시스템에 등록된 서비스리포트에 근거하여 산출하였습니다.</font_sub></td>
 				</tr>
 			</table>
 		</td>
