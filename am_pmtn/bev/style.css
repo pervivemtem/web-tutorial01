@@ -42,11 +42,6 @@
     color: #111196;
     text-align:center;
   }
-  ol {
-    border-right:1px #f47836 solid;
-    margin:0;
-    padding:15px;
-  }
   .main_table {
     border-bottom:1px gray solid;
   }
