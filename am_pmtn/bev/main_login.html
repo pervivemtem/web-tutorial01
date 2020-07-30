@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>HPM Aftermarket Service Login</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+.main_table {
+	width:100%;
+	border-collapse:collapse;
+	text-align: left;
+	border:solid 0px #ffffff;
+}
+.main_table td {
+	font-size: 10.0pt;
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
+<script>
+function checkForm(frm){
+    if(frm.id.value == 'hpm_am' && frm.pass.value == 'init123!'){
+        location.href = 'main_home.html';
+    }
+    return false;
+}
+</script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<form onsubmit="return checkForm(this)">
+<table cellspacing="0" cellpadding="0" width="600" align="center" style="border: 1px solid #ffffff;">
+<tr height="250"></tr>
+<tr>
+  <td>
+    <img src="main_logo_re2.jpg" border="0" style="width:600px;height:216px;vertical-align:middle;">
+  </td>
+</tr>
+<table border="0" class="main_table" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse;text-align:left;border:solid 0px #ffffff; width:230px;">
+<tr width="300">
+<td>
+  <input type="text" name="id" size="13" maxlength="12" placeholder="아이디" tabindex="10" />
+</td>
+<td rowspan="2">
+  <input type="submit" name="reserve" value="로그인" style="width:60px; height:55px; cursor:pointer;" />
+</td>
+</tr>
+<tr width="300">
+<td>
+  <input type="password" name="pass" size="13" maxlength="12" placeholder="비밀번호" tabindex="20" />
+</td>
+</tr>
+</table>
+</table>
+</form>
+</body>
+</html>
