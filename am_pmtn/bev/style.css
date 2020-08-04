@@ -42,13 +42,30 @@
     color: #111196;
     text-align:center;
   }
+  ol {
+    border-right:1px #f47836 solid;
+    margin:0;
+    padding:15px;
+  }
   .main_table {
     border-bottom:1px gray solid;
   }
   .selected {
     text-decoration: underline;
   }
+  .table1 {
+    margin:0;
+  }
+  div.radius {
+      border: 2px solid #f47836;
+  		vertical-align: middle;
+      background: white;
+      margin:0px;
+      padding:0px;
+      text-align:center;
 
+      border-radius: 8px;
+  }
   #valign_middle {
     vertical-align: middle;
   }
