@@ -72,8 +72,8 @@
       margin:0px;
       padding:0px;
       color:white;
-      text-align:center;
-      border-radius: 12px;
+      text-align:left;
+      border-radius: 18px;
   }
   #valign_middle {
     vertical-align: middle;
