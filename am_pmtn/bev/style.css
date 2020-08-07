@@ -63,7 +63,16 @@
       margin:0px;
       padding:0px;
       text-align:center;
-
+      border-radius: 8px;
+  }
+  div.radius_menu_clicked {
+      border: 2px solid #0d0d6f;
+  		vertical-align: middle;
+      background: #0d0d6f;
+      margin:0px;
+      padding:0px;
+      color:white;
+      text-align:center;
       border-radius: 8px;
   }
   #valign_middle {
