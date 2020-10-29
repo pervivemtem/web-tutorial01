@@ -141,14 +141,14 @@
               <input type="checkbox">
               <span class="slider round"></span>
             </label>
-            <pe>OFF</pe><pe style="display:none;">ON</pe>
+            <tgl>Normal condition</tgl><tgl style="display:none;">Severe condition</tgl>
             <br><br>
             <div style="background-color:#cccccc;border-radius:15px;padding:10px">
               <center>
-              <pe><img src="\main\2\img\101_normal_blow.png" width="80%" height="80%" style="margin:5px;display:inline"></pe>
-              <pe><img src="\main\2\img\101_normal_vac.png" width="80%" height="80%" style="margin:5px;display:inline"></pe>
-              <pe style="display:none;"><img src="\main\2\img\101_severe_blow.png" width="80%" height="80%" style="margin:5px;display:inline"></pe>
-              <pe style="display:none;"><img src="\main\2\img\101_severe_vac.png" width="80%" height="80%" style="margin:5px;display:inline"></pe>
+              <tgl><img src="\main\2\img\101_normal_blow.png" width="80%" height="80%" style="margin:5px;display:inline"></tgl>
+              <tgl><img src="\main\2\img\101_normal_vac.png" width="80%" height="80%" style="margin:5px;display:inline"></tgl>
+              <tgl style="display:none;"><img src="\main\2\img\101_severe_blow.png" width="80%" height="80%" style="margin:5px;display:inline"></tgl>
+              <tgl style="display:none;"><img src="\main\2\img\101_severe_vac.png" width="80%" height="80%" style="margin:5px;display:inline"></tgl>
                </center>
             </div>
             <!-- 여기서부터는 수정금지 -->
@@ -166,7 +166,7 @@
     <script>
       var check = $("input[type='checkbox']");
       check.click(function(){
-        $("pe").toggle();
+        $("tgl").toggle();
       });
     </script>
   </body>
