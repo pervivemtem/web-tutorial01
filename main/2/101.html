@@ -238,9 +238,17 @@
             </h2>
             <br>
             <h3>
-              새롭게 디자인된 솔레노이드 밸브 모듈은 어떠한 조건에서도 빠르게 응답합니다.
+              새롭게 디자인된 솔레노이드 밸브 모듈은 어떠한 조건에서도 빠르게 응답합니다.<br>
+              오랜 기간을 사용한 설비일수록, 또는 설비의 사용 환경이 거칠수록 효과는 더욱 커집니다.
             </h3>
             <br><br><br>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <tgl>일반 조건: 한화에서 규정하는 평균적인 팩토리 환경에서 테스트합니다.</tgl>
+            <tgl style="display:none;">가혹 조건: 온습도, 먼지 등 팩토리 환경을 극한으로 설정한 상태에서 테스트합니다.</tgl>
+            <br>
 
             <div style="background-color:#f1f1f1;padding:10px">
               <center>
@@ -251,68 +259,66 @@
                </center>
             </div>
             <br>
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label>
-            <tgl>일반 조건: 한화에서 규정하는 평균적인 팩토리 환경에서 테스트합니다.</tgl>
-            <tgl style="display:none;">가혹 조건: 온습도, 먼지 등 팩토리 환경을 극한으로 설정한 상태에서 테스트합니다.</tgl>
+
             <br><br>
+              <div style="padding-left:5%;padding-right:5%;">
             <h3>
-              오랜시간 설비를 사용함에 따라 생산품질이 조금씩 떨어지고 있다는 느낌이 든다면, 업그레이드된 솔레노이드 밸브 모듈은 높은 체감 성능의 경험해줄 것입니다.
+              한화에서 규정한 조건에서 테스트한 결과,<br>신형 모듈은 구형모듈 대비<br>Blow압과 Vacuum압의 기본 출력이<br>20~50% 향상하였습니다. <br><br>또한 구형 모듈에서는 Blow압과 Vacuum압의 출력이 <br>시간이 경과함에 따라 <br>최대 20~30%의 성능 저하가 있었으나, <br>신형 모듈은 성능에 변화가 없었습니다.
             </h3>
+          </div>
             <br><br><br><br><br><br><br><br><br>
-              <div class="row-fluid">
+            <div class="row-fluid">
                 <div class="span5">
                   <img src="\main\2\img\slow.png">
                 </div>
                 <div class="span7">
                   <h2>단동식 모듈의 개선</h2>
-                  <h3 class="body_text">Vacuum과 Blow 압력의 제어를 하나의 밸브로 제어하는 구조입니다. Vacuum과 Blow의 압력교체에 지연시간이 발생하게 됩니다.</h3>
+                  <h3 class="body_text">기존에 탑재된 모듈의 동작방식은 '단동식'으로서 Vacuum과 Blow 압력의 제어를 하나의 밸브로 제어하는 구조입니다. Vacuum과 Blow의 압력 교체를 위한 통로가 하나밖에 없기 때문에 안정적인 압력을 얻기 위해서는 지연시간이 소요됩니다.</h3>
                 </div>
               </div>
                 <br><br><br><br><br><br><br><br><br>
                 <div class="row-fluid">
                   <div class="span7">
                     <h2>개별 모듈의 장점</h2>
-                    <h3 class="body_text">수시로 변화하는 Vacuum과 Blow의 압력 간섭이 개별 모듈 제어로 인해 발생하지 않습니다. </h3>
+                    <h3 class="body_text">Vacuum과 Blow압력의 교체가 별도로 분리된 밸브로 제어됩니다. 수시로 변화하는 Vacuum과 Blow의 압력 간섭이 개별 모듈 제어로 인해 발생하지 않습니다. 따라서 빨라진 압력교체로 인해 안정적인 생산품질과 높아진 생산성을 얻을 수 있습니다.</h3>
                   </div>
                   <div class="span5">
                     <img src="\main\2\img\fast.png">
                   </div>
               </div>
+            
               <br><br><br><br><br><br>
                 <div id="eff_graph" class="row-fluid" style="background-color:#f1f1f1;padding-top:30px;padding-bottom:30px">
                     <div id="ul_menu" class="span3">
                       <ul id="sub_li_txt" class="sub1">
                         <h3>
-                          <li class="sub_li"><a id="sub_ul_txt" class="selected" onclick="move1()" style="text-decoration:none;">반응도 향상</a></li>
-                          <li class="sub_li"><a id="sub_ul_txt" onclick="move2()" style="text-decoration:none;">유지보수</a></li>
+                          <li class="sub_li"><a id="sub_ul_txt" class="selected" onclick="move1()" style="text-decoration:none;">Blow/Vac.<br>공압 출력</a></li>
+                          <li class="sub_li"><a id="sub_ul_txt" onclick="move2()" style="text-decoration:none;">교체주기</a></li>
                           <li class="sub_li"><a id="sub_ul_txt" onclick="move3()" style="text-decoration:none;">생산성 증대</a></li>
                         </h3>
                       </ul>
                     </div>
-                    <div class="span5">
+                    <div class="span5"  style="padding-top:15px">
                         <div class="sub_div">
                           <div id="myProgress" style>
                             <div id="myBarNew"></div>
                           </div>
-                          <p class="sub_div_txt">개선 모듈</p>
+                          <p id="new_mod" class="sub_div_txt">개선 모듈:</p>
                         </div>
                         <div class="sub_div">
                           <div id="myProgress">
                             <div id="myBarOld"></div>
                           </div>
-                          <p class="sub_div_txt" style="color:gray">기존 모듈</p>
+                          <p id="old_mod" class="sub_div_txt" style="color:gray">기존 모듈:</p>
                         </div>
                     </div>
                     <div class="span4">
                       <div class="sub_div" id="eff" style="line-height:240%;padding-top:20px;">
-                        <sub2>3배</sub2><br><sub1>기존모듈 대비 효과</sub1>
+                        <sub2></sub2><br><sub1></sub1>
                       </div>
                     </div>
                 </div>
-
+            
 <br><br><br><br><br><br>
 <div class="row-fluid"></div>
             
@@ -344,76 +350,8 @@
         var elem1 = document.getElementById("myBarNew");
         var elem2 = document.getElementById("myBarOld");
         var width = 1;
-        var id1 = setInterval(frame1, 5);
+        var id1 = setInterval(frame1, 8);
         var id2 = setInterval(frame2, 15);
-        function frame1() {
-          if (width >= 100) {
-            clearInterval(id1);
-            i = 0;
-          } else {
-            width++;
-            elem1.style.width = width + "%";
-          }
-        }
-        function frame2() {
-          if (width >= 40) {
-            clearInterval(id2);
-            i = 0;
-          } else {
-            width++;
-            elem2.style.width = width + "%";
-          }
-        }
-      }
-      var x = document.getElementById("eff");
-      if (x.innerHTML === "hello") {
-        x.innerHTML = "<sub2>4배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
-      } else {
-        x.innerHTML = "<sub2>4배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
-      }
-    }
-    function move2() {
-      if (i == 0) {
-        i = 1;
-        var elem1 = document.getElementById("myBarNew");
-        var elem2 = document.getElementById("myBarOld");
-        var width = 1;
-        var id1 = setInterval(frame1, 5);
-        var id2 = setInterval(frame2, 15);
-        function frame1() {
-          if (width >= 100) {
-            clearInterval(id1);
-            i = 0;
-          } else {
-            width++;
-            elem1.style.width = width + "%";
-          }
-        }
-        function frame2() {
-          if (width >= 20) {
-            clearInterval(id2);
-            i = 0;
-          } else {
-            width++;
-            elem2.style.width = width + "%";
-          }
-        }
-      }
-      var x = document.getElementById("eff");
-      if (x.innerHTML === "hello") {
-        x.innerHTML = "<sub2>5배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
-      } else {
-        x.innerHTML = "<sub2>5배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
-      }
-    }
-    function move3() {
-      if (i == 0) {
-        i = 1;
-        var elem1 = document.getElementById("myBarNew");
-        var elem2 = document.getElementById("myBarOld");
-        var width = 1;
-        var id1 = setInterval(frame1, 5);
-        var id2 = setInterval(frame2, 25);
         function frame1() {
           if (width >= 100) {
             clearInterval(id1);
@@ -434,10 +372,114 @@
         }
       }
       var x = document.getElementById("eff");
-      if (x.innerHTML === "hello") {
-        x.innerHTML = "<sub2>6배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      if (x.innerHTML === "default") {
+        x.innerHTML = "<sub2>2배</sub2><br><sub1>최대 출력 증가</sub1>";
       } else {
-        x.innerHTML = "<sub2>6배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+        x.innerHTML = "<sub2>2배</sub2><br><sub1>최대 출력 증가</sub1>";
+      }
+      var x_new = document.getElementById("new_mod");
+      if (x_new.innerHTML === "default") {
+        x_new.innerHTML = "개선 모듈: 80mmHg(Blow), -555mmHg(Vacuum)";
+      } else {
+        x_new.innerHTML = "개선 모듈: 80mmHg(Blow), -555mmHg(Vacuum)";
+      }
+      var x_old = document.getElementById("old_mod");
+      if (x_old.innerHTML === "default") {
+        x_old.innerHTML = "기존 모듈: 41mmHg(Blow), -450mmHg(Vacuum)";
+      } else {
+        x_old.innerHTML = "기존 모듈: 41mmHg(Blow), -450mmHg(Vacuum)";
+      }
+    }
+    function move2() {
+      if (i == 0) {
+        i = 1;
+        var elem1 = document.getElementById("myBarNew");
+        var elem2 = document.getElementById("myBarOld");
+        var width = 1;
+        var id1 = setInterval(frame1, 6);
+        var id2 = setInterval(frame2, 18);
+        function frame1() {
+          if (width >= 100) {
+            clearInterval(id1);
+            i = 0;
+          } else {
+            width++;
+            elem1.style.width = width + "%";
+          }
+        }
+        function frame2() {
+          if (width >= 33) {
+            clearInterval(id2);
+            i = 0;
+          } else {
+            width++;
+            elem2.style.width = width + "%";
+          }
+        }
+      }
+      var x = document.getElementById("eff");
+      if (x.innerHTML === "default") {
+        x.innerHTML = "<sub2>3배</sub2><br><sub1>교체 수명 증가</sub1>";
+      } else {
+        x.innerHTML = "<sub2>3배</sub2><br><sub1>교체 수명 증가</sub1>";
+      }
+      var x_new = document.getElementById("new_mod");
+      if (x_new.innerHTML === "default") {
+        x_new.innerHTML = "개선 모듈의 평균교체주기 : 36.2개월";
+      } else {
+        x_new.innerHTML = "개선 모듈의 평균교체주기 : 36.2개월";
+      }
+      var x_old = document.getElementById("old_mod");
+      if (x_old.innerHTML === "default") {
+        x_old.innerHTML = "기존 모듈의 평균교체주기 : 11.9개월";
+      } else {
+        x_old.innerHTML = "기존 모듈의 평균교체주기 : 11.9개월";
+      }
+    }
+    function move3() {
+      if (i == 0) {
+        i = 1;
+        var elem1 = document.getElementById("myBarNew");
+        var elem2 = document.getElementById("myBarOld");
+        var width = 1;
+        var id1 = setInterval(frame1, 15);
+        var id2 = setInterval(frame2, 5);
+        function frame1() {
+          if (width >= 5) {
+            clearInterval(id1);
+            i = 0;
+          } else {
+            width++;
+            elem1.style.width = width + "%";
+          }
+        }
+        function frame2() {
+          if (width >= 100) {
+            clearInterval(id2);
+            i = 0;
+          } else {
+            width++;
+            elem2.style.width = width + "%";
+          }
+        }
+      }
+      var x = document.getElementById("eff");
+      if (x.innerHTML === "default") {
+        x.innerHTML = "<sub2>0ms</sub2><br><sub1>흡장착 지연시간 제거</sub1>";
+      } else {
+        x.innerHTML = "<sub2>0ms</sub2><br><sub1>흡장착 지연시간 제거</sub1>";
+      }
+      var x_new = document.getElementById("new_mod");
+      if (x_new.innerHTML === "default") {
+        x_new.innerHTML = "개선 모듈의 흡/장착 지연시간: 0ms/0ms";
+      } else {
+        x_new.innerHTML = "개선 모듈의 흡/장착 지연시간: 0ms/0ms";
+      }
+      var x_old = document.getElementById("old_mod");
+      if (x_old.innerHTML === "default") {
+        x_old.innerHTML = "기존 모듈의 흡/장착 지연시간: 30ms/20ms";
+      } else {
+        x_old.innerHTML = "기존 모듈의 흡/장착 지연시간: 30ms/20ms";
       }
     }
     </script>
