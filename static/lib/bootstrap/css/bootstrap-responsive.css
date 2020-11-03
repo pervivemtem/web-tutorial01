@@ -93,6 +93,12 @@
   .hidden-phone {
     display: none !important;
   }
+   #ul_menu ul li{
+    float:left;
+    width:33%;
+    height:100%;
+    text-align:left;
+  }
 }
 
 .visible-print {
