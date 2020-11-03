@@ -336,5 +336,110 @@
         $("tgl").toggle();
       });
     </script>
+    <script>
+    var i = 0;
+    function move1() {
+      if (i == 0) {
+        i = 1;
+        var elem1 = document.getElementById("myBarNew");
+        var elem2 = document.getElementById("myBarOld");
+        var width = 1;
+        var id1 = setInterval(frame1, 5);
+        var id2 = setInterval(frame2, 15);
+        function frame1() {
+          if (width >= 100) {
+            clearInterval(id1);
+            i = 0;
+          } else {
+            width++;
+            elem1.style.width = width + "%";
+          }
+        }
+        function frame2() {
+          if (width >= 40) {
+            clearInterval(id2);
+            i = 0;
+          } else {
+            width++;
+            elem2.style.width = width + "%";
+          }
+        }
+      }
+      var x = document.getElementById("eff");
+      if (x.innerHTML === "hello") {
+        x.innerHTML = "<sub2>4배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      } else {
+        x.innerHTML = "<sub2>4배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      }
+    }
+    function move2() {
+      if (i == 0) {
+        i = 1;
+        var elem1 = document.getElementById("myBarNew");
+        var elem2 = document.getElementById("myBarOld");
+        var width = 1;
+        var id1 = setInterval(frame1, 5);
+        var id2 = setInterval(frame2, 15);
+        function frame1() {
+          if (width >= 100) {
+            clearInterval(id1);
+            i = 0;
+          } else {
+            width++;
+            elem1.style.width = width + "%";
+          }
+        }
+        function frame2() {
+          if (width >= 20) {
+            clearInterval(id2);
+            i = 0;
+          } else {
+            width++;
+            elem2.style.width = width + "%";
+          }
+        }
+      }
+      var x = document.getElementById("eff");
+      if (x.innerHTML === "hello") {
+        x.innerHTML = "<sub2>5배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      } else {
+        x.innerHTML = "<sub2>5배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      }
+    }
+    function move3() {
+      if (i == 0) {
+        i = 1;
+        var elem1 = document.getElementById("myBarNew");
+        var elem2 = document.getElementById("myBarOld");
+        var width = 1;
+        var id1 = setInterval(frame1, 5);
+        var id2 = setInterval(frame2, 25);
+        function frame1() {
+          if (width >= 100) {
+            clearInterval(id1);
+            i = 0;
+          } else {
+            width++;
+            elem1.style.width = width + "%";
+          }
+        }
+        function frame2() {
+          if (width >= 50) {
+            clearInterval(id2);
+            i = 0;
+          } else {
+            width++;
+            elem2.style.width = width + "%";
+          }
+        }
+      }
+      var x = document.getElementById("eff");
+      if (x.innerHTML === "hello") {
+        x.innerHTML = "<sub2>6배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      } else {
+        x.innerHTML = "<sub2>6배</sub2><br><sub1>기존모듈 대비 효과</sub1>";
+      }
+    }
+    </script>
   </body>
 </html>
