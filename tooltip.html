@@ -31,6 +31,11 @@
                 <a href="#" rel="popover" data-placement="left" data-original-title="Tooltip on left" data-img="//placehold.it/400x200">Tooltip on left</a>
             </li>
         </ul>
+        <br><br><br><br><br>
+        <div class="bs-example">
+        <button type="button" class="btn btn-primary" data-toggle="popover">Popover without Title</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="User Info">Popover with Title</button>
+    </div>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
         <script>
@@ -41,5 +46,15 @@
             $('[rel="popover"]').popover('toggle')
             $('[rel="popover"]').popover('hide');
         </script>
+        <script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div class="media"><a href="#" class="pull-left"><img src="\main\2\img\301_in_the_box\301_box_01.png" class="media-object" alt="Sample Image"></a><div class="media-body"><h4 class="media-heading">Jhon Carter</h4><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
+    });
+});
+</script>
     </body>
 </html>
