@@ -442,7 +442,8 @@
                       </th>
                     <tr>
                   </thead>
-                  <tbody>  
+                  <tbody>
+                    <!-------------------1st row------------------->
                     <tr>
                       <td>
                         1
@@ -461,7 +462,30 @@
                       </td>
                       <td>
                         <div class="bs-example">
-                          <button type="button" class="btn" data-toggle="popover">View Image</button>
+                          <button type="button" class="btn" data-toggle1="popover">View Image</button>
+                        </div>
+                      </td>
+                    <tr>
+                    <!-------------------2nd row------------------->
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        스핀들 Jig
+                      </td>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn" data-toggle2="popover">View Image</button>
                         </div>
                       </td>
                     <tr>
@@ -635,11 +659,17 @@
     </script>
     <script>
       $(document).ready(function(){
-      $('[data-toggle="popover"]').popover({
+      $('[data-toggle1="popover"]').popover({
         placement : 'top',
         trigger : 'hover',
         html : true,
         content : '<div class="media"><a href="#" class="pull-left"><img src="/main/2/img/301_in_the_box/301_box_01.png" width="200px" class="media-object" alt="Sample Image"></a></div>'
+    });
+      $('[data-toggle2="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div class="media"><a href="#" class="pull-left"><img src="/main/2/img/301_in_the_box/301_box_02.png" width="200px" class="media-object" alt="Sample Image"></a></div>'
     });
 });
 </script>
