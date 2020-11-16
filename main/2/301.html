@@ -437,6 +437,9 @@
                       <th>
                         Option 2
                       </th>
+                      <th>
+                        Remakrs
+                      </th>
                     <tr>
                   </thead>
                   <tbody>  
@@ -455,6 +458,11 @@
                       </td>
                       <td>
                         -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn" data-toggle="popover">View Image</button>
+                        </div>
                       </td>
                     <tr>
                   </tbody>     
@@ -625,6 +633,16 @@
       }
     }
     </script>
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+        placement : 'right',
+        trigger : 'hover',
+        html : true,
+        content : '<div class="media"><a href="#" class="pull-left"><img src="/main/2/img/301_in_the_box/301_box_01.png" class="media-object" alt="Sample Image"></a><div class="media-body"><h4 class="media-heading">Jhon Carter</h4><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
+    });
+});
+</script>
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
