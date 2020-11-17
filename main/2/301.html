@@ -1042,12 +1042,17 @@
                   </table>
                 </div>    
                 </div>    
-              </tgl>                                                                     
+              </tgl>      
             <br><br><br><br>
             <h2>
-             관련 액세서리
+             구매 문의
             </h2>
-            <h3 class="body_text"><>
+            <h3 class="body_text"></h3>
+            <br><br><br><br>
+            <h2>
+             추천 액세서리
+            </h2>
+            <h3 class="body_text"></h3>
               
             
             <!-- 여기서부터는 수정금지 -->
@@ -1069,147 +1074,6 @@
       check.click(function(){
         $("tgl").toggle();
       });
-    </script>
-    <script>
-    var i = 0;
-    function move1() {
-      if (i == 0) {
-        i = 1;
-        var elem1 = document.getElementById("myBarNew");
-        var elem2 = document.getElementById("myBarOld");
-        var width = 1;
-        var id1 = setInterval(frame1, 8);
-        var id2 = setInterval(frame2, 15);
-        function frame1() {
-          if (width >= 100) {
-            clearInterval(id1);
-            i = 0;
-          } else {
-            width++;
-            elem1.style.width = width + "%";
-          }
-        }
-        function frame2() {
-          if (width >= 50) {
-            clearInterval(id2);
-            i = 0;
-          } else {
-            width++;
-            elem2.style.width = width + "%";
-          }
-        }
-      }
-      var x = document.getElementById("eff");
-      if (x.innerHTML === "default") {
-        x.innerHTML = "<sub2>2배</sub2><br><sub1>최대 출력 증가</sub1>";
-      } else {
-        x.innerHTML = "<sub2>2배</sub2><br><sub1>최대 출력 증가</sub1>";
-      }
-      var x_new = document.getElementById("new_mod");
-      if (x_new.innerHTML === "default") {
-        x_new.innerHTML = "개선 모듈: 80mmHg(Blow), -555mmHg(Vacuum)";
-      } else {
-        x_new.innerHTML = "개선 모듈: 80mmHg(Blow), -555mmHg(Vacuum)";
-      }
-      var x_old = document.getElementById("old_mod");
-      if (x_old.innerHTML === "default") {
-        x_old.innerHTML = "기존 모듈: 41mmHg(Blow), -450mmHg(Vacuum)";
-      } else {
-        x_old.innerHTML = "기존 모듈: 41mmHg(Blow), -450mmHg(Vacuum)";
-      }
-    }
-    function move2() {
-      if (i == 0) {
-        i = 1;
-        var elem1 = document.getElementById("myBarNew");
-        var elem2 = document.getElementById("myBarOld");
-        var width = 1;
-        var id1 = setInterval(frame1, 6);
-        var id2 = setInterval(frame2, 18);
-        function frame1() {
-          if (width >= 100) {
-            clearInterval(id1);
-            i = 0;
-          } else {
-            width++;
-            elem1.style.width = width + "%";
-          }
-        }
-        function frame2() {
-          if (width >= 33) {
-            clearInterval(id2);
-            i = 0;
-          } else {
-            width++;
-            elem2.style.width = width + "%";
-          }
-        }
-      }
-      var x = document.getElementById("eff");
-      if (x.innerHTML === "default") {
-        x.innerHTML = "<sub2>3배</sub2><br><sub1>교체 수명 증가</sub1>";
-      } else {
-        x.innerHTML = "<sub2>3배</sub2><br><sub1>교체 수명 증가</sub1>";
-      }
-      var x_new = document.getElementById("new_mod");
-      if (x_new.innerHTML === "default") {
-        x_new.innerHTML = "개선 모듈의 평균교체주기 : 36.2개월";
-      } else {
-        x_new.innerHTML = "개선 모듈의 평균교체주기 : 36.2개월";
-      }
-      var x_old = document.getElementById("old_mod");
-      if (x_old.innerHTML === "default") {
-        x_old.innerHTML = "기존 모듈의 평균교체주기 : 11.9개월";
-      } else {
-        x_old.innerHTML = "기존 모듈의 평균교체주기 : 11.9개월";
-      }
-    }
-    function move3() {
-      if (i == 0) {
-        i = 1;
-        var elem1 = document.getElementById("myBarNew");
-        var elem2 = document.getElementById("myBarOld");
-        var width = 1;
-        var id1 = setInterval(frame1, 15);
-        var id2 = setInterval(frame2, 5);
-        function frame1() {
-          if (width >= 5) {
-            clearInterval(id1);
-            i = 0;
-          } else {
-            width++;
-            elem1.style.width = width + "%";
-          }
-        }
-        function frame2() {
-          if (width >= 100) {
-            clearInterval(id2);
-            i = 0;
-          } else {
-            width++;
-            elem2.style.width = width + "%";
-          }
-        }
-      }
-      var x = document.getElementById("eff");
-      if (x.innerHTML === "default") {
-        x.innerHTML = "<sub2>0ms</sub2><br><sub1>흡장착 지연시간 제거</sub1>";
-      } else {
-        x.innerHTML = "<sub2>0ms</sub2><br><sub1>흡장착 지연시간 제거</sub1>";
-      }
-      var x_new = document.getElementById("new_mod");
-      if (x_new.innerHTML === "default") {
-        x_new.innerHTML = "개선 모듈의 흡/장착 지연시간: 0ms/0ms";
-      } else {
-        x_new.innerHTML = "개선 모듈의 흡/장착 지연시간: 0ms/0ms";
-      }
-      var x_old = document.getElementById("old_mod");
-      if (x_old.innerHTML === "default") {
-        x_old.innerHTML = "기존 모듈의 흡/장착 지연시간: 30ms/20ms";
-      } else {
-        x_old.innerHTML = "기존 모듈의 흡/장착 지연시간: 30ms/20ms";
-      }
-    }
     </script>
     <script>
       $(document).ready(function(){
