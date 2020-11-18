@@ -126,6 +126,7 @@
       }
       #a_custom{
         text-decoration:none;
+        color:white;
       }
       
       /* table */
@@ -1078,7 +1079,7 @@
                 Deluxe Package<br>
                 AM03-035894A<br>
                 </span>
-                <input type="button" id="buy_btn" value="구매하기">
+                <button type="button" id="buy_btn"><a id="a_custom" href="#myModal" data-toggle="modal">구매하기</a></button>
                 </center>
               </div>
               <div class="span6">
@@ -1099,7 +1100,29 @@
             </h2>
             <h3 class="body_text"></h3>
 
-            
+            <!-- Modal -->
+            <!-- Modal -->
+            <div class="modal hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h3 id="myModalLabel">Modal header</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    One fine body…
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">
+                    Close
+                </button>
+                <button class="btn btn-primary">
+                    Save changes
+                </button>
+            </div>
+        </div>
     
             <!-- 여기서부터는 수정금지 -->
             <div class="row-fluid">
