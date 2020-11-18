@@ -1102,7 +1102,7 @@
             </h2>
             <h3 class="body_text"></h3>
 
-            <!-- Modal -->          
+            <!------------------------------------- Modal      
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -1122,6 +1122,33 @@
                 </div>
               </div>
             </div>
+            ----------------------------->
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id="modal_show">게시판 검색</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">검색할 내용을 입력하세요.</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
+<input>
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+<button type="button" class="btn btn-primary" id="close_modal">다른 방식으로 모달 닫기</button>
+</div>
+</div>
+</div>
+</div>
     
             <!-- 여기서부터는 수정금지 -->
             <div class="row-fluid">
@@ -1290,6 +1317,16 @@
         content : '<img src="/main/2/img/301_in_the_box/301_box_24.png" width="500%">'
     });
 });
+</script>
+<script>
+  $(document).ready(function() {
+  $("#modal_show").click(function() {
+  $("#exampleModal").modal("show");
+  });
+  $("#close_modal").click(function() {
+  $("#exampleModal").modal("hide");
+  });
+  });
 </script>
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
