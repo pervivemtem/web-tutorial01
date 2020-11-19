@@ -1220,6 +1220,50 @@
             </div>
             </div>
             </div>
+		  
+    <!-- Modal(Lite) -->
+	
+<div class="modal fade" id="modalBuyLite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
+<div class="modal-dialog" role="document" style="margin:0px;">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+</button>
+</div>
+        
+<div class="modal-body">
+<div class="modal_desc">
+선택된 제품의 정보를 확인하세요.
+<ul>
+        <li>제품명 : Head Maintenance Kit (Lite Pkg.)</li>
+<li>제품코드 : AM03-035894A&nbsp;&nbsp;
+<span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy">copy</span></span>
+<input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;"></li>
+</ul>
+</div>
+        
+<div class="modal_desc">
+구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+<ul>
+<li>문의게시판&nbsp;&nbsp;
+<span class="glyphicon glyphicon-new-window" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span></li>
+<li>담당자에게 바로 연락</li>
+	<ul>
+		<li><span class="glyphicon glyphicon-earphone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy">copy</span></span>
+<input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;"></li>
+		<li><span class="glyphicon glyphicon-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy">copy</span></span>
+<input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;"></li>
+	</ul>
+</ul>
+</div>
+</div>
+        
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="close_modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
             
 
             
@@ -1443,6 +1487,38 @@ function myFunctionClip_deluxe_mail() {
   $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
 }
 </script>
+
+<script>
+function myFunctionClip_lite_code() {
+  var copyText = document.getElementById("myInput_lite_code");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  //alert("Copied the text: " + copyText.value);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+}
+</script>
+<script>
+function myFunctionClip_lite_tel() {
+  var copyText = document.getElementById("myInput_lite_tel");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  //alert("Copied the text: " + copyText.value);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+}
+</script>
+<script>
+function myFunctionClip_lite_mail() {
+  var copyText = document.getElementById("myInput_lite_mail");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  //alert("Copied the text: " + copyText.value);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+}
+</script>
+
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
