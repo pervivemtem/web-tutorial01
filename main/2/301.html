@@ -1090,7 +1090,7 @@
                 Deluxe Package<br>
                 AM03-035894A<br>
                 </span>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="buy_btn">
+                <button type="button" class="buy_btn" id="modal_show_deluxe">
                   구매하기
                 </button>
                 </center>
@@ -1137,7 +1137,7 @@
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" id="modal_show">게시판 검색2</button>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;height:auto;display:table;background-color:none;padding:0px;">
+<div class="modal fade" id="modalBuyDeluxe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
 <div class="modal-dialog" role="document" style="margin:0px;">
 <div class="modal-content">
 <div class="modal-header">
@@ -1366,11 +1366,11 @@
 </script>
 <script>
   $(document).ready(function() {
-  $("#modal_show").click(function() {
-  $("#exampleModal").modal("show");
+  $("#modal_show_deluxe").click(function() {
+  $("#modalBuyDeluxe").modal("show");
   });
   $("#close_modal").click(function() {
-  $("#exampleModal").modal("hide");
+  $("#modalBuyDeluxe").modal("hide");
   });
   });
 </script>
