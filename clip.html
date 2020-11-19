@@ -1,39 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Jquery로 클립보드 복사</title>
-
-	<script src="jquery-3.2.1.min.js"></script>
+    <title>Fruit</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('.c_artist_nm').click(function() {//클릭 이벤트
+              $("#copy_text").val($(this).html());//해당 문구 가져와 텍스트박스에 입력
+              document.getElementById("copy_text").select(); //텍스트 박스 선택
+              document.execCommand("copy");//클립보드 복사
+              alert("COPY");
+            });
+            
+        });
+    </script>
 </head>
 <body>
-
-	<a href='javascript:void(0);' class='clipboardBtn' data-clipboard-text="http://cgimall.co.kr">CGIMALL 링크 복사</a>
-	<!-- 클립보드 복사 소스 -->
-	<textarea id="clipboard_target" style="position:absolute;top:-9999em;"></textarea>
-
-	<script>
-	$('.clipboardBtn').on('click', function(e) {
-		// 텍스트값을 가져옴
-		var text = $(this).attr("data-clipboard-text");
-
-		//숨겨진 textarea value로 text 변수 넣어줌
-		$('#clipboard_target').val(text);
-		
-		//textarea value를 선택
-		$('#clipboard_target').select();
-
-		try //복사 성공
-		{
-			var successful = document.execCommand('copy');
-			alert('복사되었습니다.');
-
-		} 
-		catch (err) //복사 실패
-		{
-			alert('이 브라우저는 지원하지 않습니다.')
-		}
-	})
-	</script>
-
+<input type="text" id="copy_text" style="position:absolute;top:-9999em;"><!-- 안보이는 위치로 설정 -->
+    <table border="1">
+        <tr>
+            <td>
+                <p class="c_artist_nm" style="cursor:pointer;">사과</p><!-- 손모양 커서 추가 -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="c_artist_nm" style="cursor:pointer;">바나나</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="c_artist_nm" style="cursor:pointer;">복숭아</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
