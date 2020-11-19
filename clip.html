@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery로 클립보드 복사</title>
+
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+	<a href='javascript:void(0);' class='clipboardBtn' data-clipboard-text="http://cgimall.co.kr">CGIMALL 링크 복사</a>
+	<!-- 클립보드 복사 소스 -->
+	<textarea id="clipboard_target" style="position:absolute;top:-9999em;"></textarea>
+
+	<script>
+	$('.clipboardBtn').on('click', function(e) {
+		// 텍스트값을 가져옴
+		var text = $(this).attr("data-clipboard-text");
+
+		//숨겨진 textarea value로 text 변수 넣어줌
+		$('#clipboard_target').val(text);
+		
+		//textarea value를 선택
+		$('#clipboard_target').select();
+
+		try //복사 성공
+		{
+			var successful = document.execCommand('copy');
+			alert('복사되었습니다.');
+
+		} 
+		catch (err) //복사 실패
+		{
+			alert('이 브라우저는 지원하지 않습니다.')
+		}
+	})
+	</script>
+
+</body>
+</html>
