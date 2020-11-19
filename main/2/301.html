@@ -1116,6 +1116,7 @@
                 Deluxe Package<br>
                 AM03-035894A<br>
                 </span>
+                <a href="javascript:void(0);" class='clipboardBtn' data-clipboard-text="AM03-035894A"><span class="glyphicon glyphicon-share" style="display: inline-block;">copy</span>
                 <button type="button" class="buy_btn" id="modal_show_deluxe">
                   구매하기
                 </button>
@@ -1140,6 +1141,8 @@
              추천 액세서리
             </h2>
             <h3 class="body_text"></h3>
+              
+            <textarea id="clipboard_target" style="position:absolute;top:-9999em;"></textarea>
 
     <!-- Modal(Deluxe) -->
             <div class="modal fade" id="modalBuyDeluxe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
@@ -1358,6 +1361,29 @@
   });
   });
 </script>
+<script>
+	$('.clipboardBtn').on('click', function(e) {
+		// 텍스트값을 가져옴
+		var text = $(this).attr("data-clipboard-text");
+
+		//숨겨진 textarea value로 text 변수 넣어줌
+		$('#clipboard_target').val(text);
+		
+		//textarea value를 선택
+		$('#clipboard_target').select();
+
+		try //복사 성공
+		{
+			var successful = document.execCommand('copy');
+			alert('복사되었습니다.');
+
+		} 
+		catch (err) //복사 실패
+		{
+			alert('이 브라우저는 지원하지 않습니다.')
+		}
+	})
+	</script>
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
