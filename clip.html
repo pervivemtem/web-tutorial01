@@ -7,6 +7,7 @@
         $(document).ready(function(){
             
             $('.c_artist_nm').click(function() {//클릭 이벤트
+							var text = $(this).attr("data-clip-text");
               $("#copy_text").val($(this).html());//해당 문구 가져와 텍스트박스에 입력
               document.getElementById("copy_text").select(); //텍스트 박스 선택
               document.execCommand("copy");//클립보드 복사
@@ -21,7 +22,7 @@
     <table border="1">
         <tr>
             <td>
-                <p class="c_artist_nm" style="cursor:pointer;">사과</p><!-- 손모양 커서 추가 -->
+                <p class="c_artist_nm" style="cursor:pointer;" data-clip-text="apple">사과1</p><!-- 손모양 커서 추가 -->
             </td>
         </tr>
         <tr>
