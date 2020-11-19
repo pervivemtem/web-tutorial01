@@ -1164,8 +1164,8 @@
 <ul>
         <li>제품명 : Head Maintenance Kit (Deluxe Pkg.)</li>
 <li>제품코드 : AM03-035894A&nbsp;&nbsp;
-<span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip()"><span id="modal_copy">copy</span></span>
-<input type="text" value="AM03-035894A" id="myInput" style="position:absolute;top:-9999em;"></li>
+<span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy">copy</span></span>
+<input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;"></li>
 </ul>
 </div>
         
@@ -1176,9 +1176,10 @@
 <span class="glyphicon glyphicon-new-window" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span></li>
 <li>담당자에게 바로 연락</li>
 	<ul>
-		<li><span class="glyphicon glyphicon-earphone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>Tel: 070-7147-6140&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip()"><span id="modal_copy">copy</span></span>
-<input type="text" value="07071476140" id="myInput" style="position:absolute;top:-9999em;"></li>
-		<li></li>
+		<li><span class="glyphicon glyphicon-earphone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>Tel: 070-7147-6140&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy">copy</span></span>
+<input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;"></li>
+		<li><span class="glyphicon glyphicon-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>Tel: smtcs@hanwha.com&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy">copy</span></span>
+<input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;"></li>
 	</ul>
 </ul>
 </div>
@@ -1384,13 +1385,33 @@
   });
 </script>
 <script>
-function myFunctionClip() {
-  var copyText = document.getElementById("myInput");
+function myFunctionClip_deluxe_code() {
+  var copyText = document.getElementById("myInput_deluxe_code");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
   //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput').delay(500).fadeOut(500);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+}
+</script>
+<script>
+function myFunctionClip_deluxe_tel() {
+  var copyText = document.getElementById("myInput_deluxe_tel");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  //alert("Copied the text: " + copyText.value);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+}
+</script>
+<script>
+function myFunctionClip_deluxe_mail() {
+  var copyText = document.getElementById("myInput_deluxe_mail");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  //alert("Copied the text: " + copyText.value);
+  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
 }
 </script>
     <!--TESTBOOTSTRAP-->
