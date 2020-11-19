@@ -1155,7 +1155,7 @@
             <div class="modal_desc">
             선택된 상품 : Head Maintenance Kit (Deluxe Pkg.)<br>
             상품 정보 : AM03-035894A
-		<a href=#><span class="glyphicon glyphicon-share" style="display: inline-block;">copy</span></a>
+		<a href=""><span class="glyphicon glyphicon-share" style="display: inline-block;">copy</span></a>
             </div>
             <div class="modal_desc">
             결제서비스 준비중입니다.<br>
@@ -1361,17 +1361,14 @@
   });
   });
 </script>
-<script type="text/javascript">
-        $(document).ready(function(){
-            
-            $('.c_artist_nm').click(function() {//클릭 이벤트
-              $("#copy_text").val($(this).html());//해당 문구 가져와 텍스트박스에 입력
-              document.getElementById("copy_text").select(); //텍스트 박스 선택
-              document.execCommand("copy");//클립보드 복사
-              alert("COPY");
-            });
-            
-        });
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
 </script>
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
