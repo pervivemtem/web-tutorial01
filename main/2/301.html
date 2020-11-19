@@ -1141,7 +1141,7 @@
             </h2>
             <h3 class="body_text"></h3>
               
-            <textarea id="clipboard_target" style="position:absolute;top:-9999em;"></textarea>
+            
 
     <!-- Modal(Deluxe) -->
             <div class="modal fade" id="modalBuyDeluxe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
@@ -1155,7 +1155,7 @@
             <div class="modal_desc">
             선택된 상품 : Head Maintenance Kit (Deluxe Pkg.)<br>
             상품 정보 : AM03-035894A
-		<a href="javascript:void(0);" class='clipboardBtn' data-clipboard-text="AM03-035894A"><span class="glyphicon glyphicon-share" style="display: inline-block;">copy</span></a>
+		<a href=#><span class="glyphicon glyphicon-share" style="display: inline-block;">copy</span></a>
             </div>
             <div class="modal_desc">
             결제서비스 준비중입니다.<br>
@@ -1173,7 +1173,7 @@
             
             
             
-            
+            <input type="text" id="copy_text" style="position:absolute;top:-9999em;"><!-- 안보이는 위치로 설정 -->
     
             <!-- 여기서부터는 수정금지 -->
             <div class="row-fluid">
@@ -1361,28 +1361,17 @@
   });
   });
 </script>
-<script>
-	$('.clipboardBtn').on('click', function(e) {
-		// 텍스트값을 가져옴
-		var text = $(this).attr("data-clipboard-text");
-
-		//숨겨진 textarea value로 text 변수 넣어줌
-		$('#clipboard_target').val(text);
-		
-		//textarea value를 선택
-		$('#clipboard_target').select();
-
-		try //복사 성공
-		{
-			var successful = document.execCommand('copy');
-			alert('복사되었습니다.');
-
-		} 
-		catch (err) //복사 실패
-		{
-			alert('이 브라우저는 지원하지 않습니다.')
-		}
-	})
+<script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('.c_artist_nm').click(function() {//클릭 이벤트
+              $("#copy_text").val($(this).html());//해당 문구 가져와 텍스트박스에 입력
+              document.getElementById("copy_text").select(); //텍스트 박스 선택
+              document.execCommand("copy");//클립보드 복사
+              alert("COPY");
+            });
+            
+        });
 </script>
     <!--TESTBOOTSTRAP-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
