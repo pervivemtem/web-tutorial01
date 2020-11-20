@@ -3,17 +3,9 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- use Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        $('#sub_li_txt a').live('click', function() {
-            $('#sub_li_txt a').removeClass('selected');
-            $(this).addClass('selected');
-        })
-    </script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- image preload -------------------------------->
     <script>
       (new Image()).src = "/main/2/img/301_in_the_box/301_box_01.png";
@@ -40,15 +32,8 @@
       (new Image()).src = "/main/2/img/301_in_the_box/301_box_22.png";
       (new Image()).src = "/main/2/img/301_in_the_box/301_box_23.png";
     </script>
-    
-    <!-- TEST BOOTSTRAP ------------------------------->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="/static/lib/bootstrap/css/style-test.css">
-    <!-- TEST BOOTSTRAP ------------------------------->
-
-	<!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
     <style type="text/css">
       body{
         padding-top:60px;
@@ -130,7 +115,7 @@
         text-decoration:none;
         color:white;
       }
-      
+
       /* table */
       #table_th th{
         font-family: 'Noto Sans KR', sans-serif;
@@ -155,25 +140,13 @@
         background-color:#9c9c9c;
         color:#ebebeb;
       }
-      
+
       /* Buy menu */
         .buy_btn{
         font-family: 'Noto Sans KR', sans-serif;
         font-weight:400;
         font-size:15px;
         background-color:#2196f3;
-        padding:4px 16px;
-        color:white;
-        height:30px;
-        border-radius:15px;
-        border:0px;
-        margin-top:18px;
-      }
-			.ref_btn{
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight:400;
-        font-size:15px;
-        background-color:#62e873;
         padding:4px 16px;
         color:white;
         height:30px;
@@ -189,6 +162,18 @@
         color:#2a2a2a;
         line-height:25px;
       }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
       #buy_btn{
         font-family: 'Noto Sans KR', sans-serif;
         font-weight:400;
@@ -200,6 +185,7 @@
         border-radius:15px;
         border:0px;
         margin-top:18px;
+        text-decoration:none;
       }
       #buy_desc{
         font-family: 'Noto Sans KR', sans-serif;
@@ -209,57 +195,20 @@
         color:#2a2a2a;
         line-height:25px;
       }
-      
+
       /* Modal */
-      body.modal-open {
-        overflow: auto;
-      }
-      body.modal-open[style] {
-         padding-right: 0px !important;
-      }
-      div.modal[style] {
-         padding-right: 0px !important;
-      }
       .modal_desc{
         margin-bottom:20px;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight:400;
         font-size:13px;
       }
-	#modal_copy{
-		font-family: 'Noto Sans KR', sans-serif;
-      		font-weight:400;
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
      		font-size:13px;
-		color:#00608e;
-	}
-	/*
-	@media (max-width: 767px) {
-	  div.modal[style]{
-		width:600px !important;
-	  }
-		#modalBuyDeluxe{
-		position:fixed;
-		left:50%;
-		transform:translateX(-50%);
-		margin-left:auto;
-		margin-right:auto;
-		}
-	}
-	@media (max-width: 480px) {
-	  div.modal[style]{
-		width:400px !important;
-	  }
-		#modalBuyDeluxe{
-		position:fixed;
-		left:50%;
-		transform:translateX(-50%);
-		width:400px;
-		margin-left:auto;
-		margin-right:auto;
-		}
-	}
-        */
-      
+		    color:#00608e;
+	    }
       /* The switch - the box around the slider */
       .switch {
         position: relative;
@@ -386,208 +335,158 @@
       <div class="row-fluid">
         <div class="row">
           <div class="span3">
-            <div class="well no-padding">
-        <div>
-            <ul class="nav nav-list nav-menu-list-style">
-<!--Hardware Starts-->
-                <li>
-                  <label class="tree-toggle nav-header glyphicon-icon-rpad">
-                    <span class="glyphicon glyphicon-shopping-cart m5"></span>
-                      Hardwares
-                    <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span>
-                  </label>
-                    <ul class="nav nav-list tree bullets">
-                        <li>
-                          <a href="/main/2/101">
-                            Head Solenoid Valve
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/102">
-                            Feederbase for Docking Cart
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/103">
-                            Conveyor for Long Type PCB
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/104">
-                            Edge Fixer
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/105">
-                            SME Feeder-compatible Kit
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/106">
-                            Area Sensor
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/107">
-                            External Vacuum Pump
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/108">
-                            Material Verification System
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/main/2/109">
-                            Cameras
-                            <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-<!--Software Starts-->
-                    <li>
-                     <label class="tree-toggle nav-header glyphicon-icon-rpad">
-                       <span class="glyphicon glyphicon-shopping-cart m5"></span>
-                        Softwares
-                       <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span>
-                     </label>
-                     <ul class="nav nav-list tree bullets">
-                      <li>
-                        <a href="/main/2/201">
-                          Sharing Bad/Fid. Mark Inspection Result
-                          <span class="glyphicon glyphicon-lock" style="display: inline-block;color:#0073aa;float:right;margin-top:7px;margin-right:15px;"></span>
-                        </a>
-                      </li>
-                     </ul>
-                    </li>
- <!--Acc. Starts-->
-                    <li>
-                     <label class="tree-toggle nav-header glyphicon-icon-rpad">
-                       <span class="glyphicon glyphicon-shopping-cart m5"></span>
-                        Accessories & Etc.
-                       <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span>
-                     </label>
-                     <ul class="nav nav-list tree bullets">
-                      <li>
-                        <a href="/main/2/301">
-                          Head Maintenance Kit
-                        </a>
-                      </li>
-                     </ul>
-                    </li>
-                    
-        </div>
-    </div>
+            <div class="well" style="padding:8px 0;">
+              <ul class="nav nav-list"><span id="test1" class="nav-header" style="cursor:pointer;">Hardwares&nbsp;<i class="icon-chevron-down" style="position:relative;bottom:2px;"></i>
+              </span>
+                <ul id="qqq" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                <li class="active"><a href="#"><i class="icon-white icon-home"></i>Home</a></li>
+                <li><a href="#"><i class="icon-home"></i>Home</a></li>
+                <li><a href="#"><i class="icon-home"></i>Home</a></li>
+              </ul>
+              </ul>
+            </div>
+
+
+            <!--
+            <p>Hardware Solutions</p>
+            <ul value="Hardware Solutions" class="nav nav-tabs nav-stacked">
+              <li class="active"><a href="/main/2/101">Head Solenoid Valve</a></li>
+              <li><a href="/main/2/102">Docking Cart Type Feederbase</a></li>
+              <li><a href="/main/2/103">Long PCB Conveyor</a></li>
+              <li><a href="/main/2/104">Edge Fixer</a></li>
+              <li><a href="/main/2/105">전동피더용 설비</a></li>
+              <li><a href="/main/2/106">Area Sensor</a></li>
+              <li><a href="/main/2/107">외장형 진공펌프</a></li>
+              <li><a href="/main/2/108">IT System</a></li>
+              <li><a href="/main/2/109">시스템 보안성 강화</a></li>
+              <li><a href="/main/2/110">Camera 성능 향상</a></li>
+            </ul>
+            <p>Software Solutions</p>
+            <ul value="Software Solutions" class="nav nav-tabs nav-stacked">
+              <li><a href="/main/2/201">Bad/Fid Mark 검사결과 공유</a></li>
+              <li><a href="/main/2/202">Production Data 생성</a></li>
+              <li><a href="/main/2/203">장착점/Array 수량 확장</a></li>
+              <li><a href="/main/2/204">정전 복구 기능</a></li>
+              <li><a href="/main/2/205">T-Planner(OLP, ELITE)</a></li>
+              <li><a href="/main/2/206">T-PnP</a></li>
+            </ul>-->
           </div>
           <div class="span9">
-<!-- 본문은 여기서부터 -->
-            <br>
-            <span id="ok_badge" class="badge">HM520</span>
-            <span id="no_badge" class="badge">EXCEN</span>
-            <span id="no_badge" class="badge">DECAN</span>
-            <span id="no_badge" class="badge">SM471</span>
-            <span id="no_badge" class="badge">SM481</span>
-            <span id="no_badge" class="badge">SM482</span>
-            <span id="no_badge" class="badge">SM451</span>
-            <span id="no_badge" class="badge">SM411</span>
-            <span id="no_badge" class="badge">SM411F</span>
-            <span id="no_badge" class="badge">SM421</span>
-            <span id="no_badge" class="badge">SLM100</span>
-            <span id="no_badge" class="badge">SCM</span>
-            
-            <br><br><br><br>
-  <!-- 여기까지는 적용대상 설비 -->
-            
-            <h2>
-              최고의 엔지니어는<br>
-              잘 설계된 도구를 활용합니다.
-            </h2>
-            <br>
-            <h3>
-             값비싼 헤드, 이젠 내손으로 <br>
-             직접 관리하세요.
-            </h3>
-            <div>
+            <!-- 적용대상 설비 -->
+            <div id="target_machine">
+              <span id="ok_badge" class="badge">HM520</span>
+              <span id="no_badge" class="badge">EXCEN</span>
+              <span id="no_badge" class="badge">DECAN</span>
+              <span id="no_badge" class="badge">SM471</span>
+              <span id="no_badge" class="badge">SM481</span>
+              <span id="no_badge" class="badge">SM482</span>
+              <span id="no_badge" class="badge">SM451</span>
+              <span id="no_badge" class="badge">SM411</span>
+              <span id="no_badge" class="badge">SM411F</span>
+              <span id="no_badge" class="badge">SM421</span>
+              <span id="no_badge" class="badge">SLM100</span>
+              <span id="no_badge" class="badge">SCM</span>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <!-- 본문은 여기서부터 -->
+            <div id="intro">
+              <h2>
+                최고의 엔지니어는<br>
+                잘 설계된 도구를 활용합니다.
+              </h2>
+              <br>
+              <h3>
+               값비싼 헤드, 이젠 내손으로 <br>
+               직접 관리하세요.
+              </h3>
+            </div>
+            <div id="maintenance_tool_visual_image">
             <object data="\svgtest\Head_Cleaning_Kit_tch6.svg" type="image/svg+xml" width="auto" height="auto">
             </object>
             </div>
-            <div class="row-fluid">
-            <div class="span6">
-             <img src="\main\2\img\301_folded.png" width="auto">
+            <div id="desc_middle_1" class="row-fluid">
+              <div class="span6">
+                <img src="\main\2\img\301_folded.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  휴대와 보관이 간편한 디자인.
+                </h2>
+                <h3 class="body_text">
+                  헤드 거치대를 접은 상태로 보관할 수 있어 공간 활용성이 우수합니다.
+                </h3>
+              </div>
             </div>
-            <div class="span6">
-            <h2>
-             휴대와 보관이 간편한 디자인.
-            </h2>
-            <h3 class="body_text">
-              헤드 거치대를 접은 상태로 보관할 수 있어 공간 활용성이 우수합니다.
-            </h3>
+            <div id="divider_4br">
+              <br><br><br><br>
             </div>
+            <div id="desc_middle_2" class="row-fluid">
+              <div class="span6">
+                <img src="\main\2\img\301_conve2.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  한층 편리해진 유지보수.
+                </h2>
+                <h3 class="body_text">
+                  분실하기 쉬운 작은 부품들을 이제 안전하게 보관하세요.<br>
+                  설비에서 불편한 자세로 작업을 하지않아도 됩니다. 간편하게 헤드를 빼내어 거치대에 장착만 하세요.
+                </h3>
+              </div>
             </div>
-            <br><br><br><br>
-            <div class="row-fluid">
-            <div class="span6">
-             <img src="\main\2\img\301_conve2.png" width="auto">
+            <div id="divider_4br">
+              <br><br><br><br>
             </div>
-            <div class="span6">
-            <h2>
-             한층 편리해진 유지보수.
-            </h2>
-            <h3 class="body_text">
-              분실하기 쉬운 작은 부품들을 이제 안전하게 보관하세요.<br>
-              설비에서 불편한 자세로 작업을 하지않아도 됩니다. 간편하게 헤드를 빼내어 거치대에 장착만 하세요.
-            </h3>
+            <div id="desc_middle_spec" class="row-fluid">
+              <div class="span4">
+                <h2>
+                  크기 및 무게
+                </h2>
+                <h3 class="body_text_size_indicator">
+                  가로:<span class="body_text">&nbsp;330 mm</span><br>
+                  세로:<span class="body_text">&nbsp;280 mm</span><br>
+                  높이:<span class="body_text">&nbsp;433 mm</span><br>
+                  무게:<span class="body_text">&nbsp;4.5 Kg</span>
+                </h3>
+              </div>
+              <div class="span8">
+                <img src="\main\2\img\301_size.png" width="auto">
+              </div>
             </div>
+            <div id="divider_4br">
+              <br><br><br><br>
             </div>
-            <br><br><br><br>
-            <div class="row-fluid">
-            <div class="span4">
-            <h2>
-		    크기 및 무게<sup>1</sup>
-            </h2>
-            <h3 class="body_text_size_indicator">
-              가로:<span class="body_text">&nbsp;330 mm</span><br>
-              세로:<span class="body_text">&nbsp;280 mm</span><br>
-              높이:<span class="body_text">&nbsp;433 mm</span><br>
-              무게:<span class="body_text">&nbsp;4.5 Kg</span>
-            </h3>
+            <div id="components">
+              <h2>
+                구성품
+              </h2>
+              <h3 class="body_text">
+                유지보수 작업에 필요한 다양한 도구들이 포함되어 있습니다. <br>
+                아래의 표를 열어 구성 옵션을 확인해 주세요.
+              </h3>
+              <br>
+              <h3 class="body_text_size_indicator">
+                구성품목 자세히 보기
+                <label class="switch" style="padding-top:16.5px">
+                  <input type="checkbox">
+                  <tgl>
+                    <span class="icon-plus"></span>
+                  </tgl>
+                  <tgl style="display:none;">
+                    <span class="icon-minus"></span>
+                  </tgl>
+                </label>
+              </h3>
+              <br><br>
             </div>
-            <div class="span8">
-             <img src="\main\2\img\301_size.png" width="auto">
-            </div>
-            </div>
-            <br><br><br><br>
-            <h2>
-             구성품
-            </h2>
-            <h3 class="body_text">
-              유지보수 작업에 필요한 다양한 도구들이 포함되어 있습니다. <br>
-              아래의 표를 열어 구성 옵션을 확인해 주세요. 
-            </h3>
-            <br>
-            <h3 class="body_text_size_indicator">
-             구성품목 자세히 보기
-              <label class="switch" style="padding-top:6.5px">
-                <input type="checkbox">
-                  <tgl><span class="glyphicon glyphicon-plus"></span></tgl>
-                  <tgl style="display:none;"><span class="glyphicon glyphicon-minus"></span></tgl>  
-              </label>
-            </h3>
-            <br><br>
-              <tgl style="display:inline-block;"></tgl>
-              <tgl style="display:none;width:100%;">
+            <div id="desc_middle_toggle_table">
+              <tgl_table style="display:none;width:100%;">
                   <div class="row-fluid">
                   <div class="span12">
                   <table class="table table-striped">
-                  <thead id="table_th">  
+                  <thead id="table_th">
                     <tr>
                       <th>
                         #
@@ -599,10 +498,10 @@
                         Quantity
                       </th>
                       <th>
-                        Deluxe Pkg.<sup>2</sup>
+                        Deluxe Pkg.<sup>1</sup>
                       </th>
                       <th>
-                        Lite Pkg.<sup>3</sup>
+                        Lite Pkg.<sup>2</sup>
                       </th>
                       <th>
                         Remakrs
@@ -1143,189 +1042,199 @@
                         </div>
                       </td>
                     </tr>
-                  </tbody>     
+                  </tbody>
                   </table>
-                </div>    
-                </div>    
-              </tgl>      
-            <br><br><br><br>
-            <h2>
-             구매 문의
-            </h2>
-            <h3 class="body_text"></h3>
-            <div class="row-fluid">
-              <div class="span6">
-                <br><br><br>
-                <center>
-                <img src="/main/2/img/301_pkg_deluxe_resize.png"><br><br><br>
-                <span id="buy_desc">
-                Deluxe Package<br>
-                AM03-035894A<br>
-                </span>
-                <button type="button" class="buy_btn" id="modal_show_deluxe">
-                  구매하기
-                </button>
-                </center>
+                </div>
+                </div>
+              </tgl_table>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="outro_purchase_goods">
+              <h2>
+               구매 문의
+              </h2>
+              <div class="row-fluid">
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_pkg_deluxe_resize.png">
+                    <br><br><br>
+                    <span id="buy_desc">
+                      Deluxe Package<br>
+                      AM03-035894A<br>
+                    </span>
+                    <button data-toggle="modal" href="#modal_show_deluxe" class="buy_btn">구매하기</button>
+                  </center>
+                </div>
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_pkg_lite_resize.png"><br><br><br>
+                    <span id="buy_desc">
+                      Lite Package<br>
+                      AM03-035892A<br>
+                    </span>
+                    <button data-toggle="modal" href="#modal_show_lite" class="buy_btn">구매하기</button>
+                  </center>
+                </div>
               </div>
-              <div class="span6">
-                <br><br><br>
-                <center>
-                <img src="/main/2/img/301_pkg_lite_resize.png"><br><br><br>
-                <span id="buy_desc">
-                Lite Package<br>
-                AM03-035892A<br>
-                </span>
-                <button type="button" class="buy_btn" id="modal_show_lite">
-                  구매하기
-                </button>
-                </center>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="modal_show_deluxe" class="modal hide fade" style="display: block;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
               </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Head Maintenance Kit (Deluxe Pkg.)</li>
+                    <li>제품코드 : AM03-035894A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+                  <ul>
+                    <li>문의게시판&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+                    </li>
+                    <li>담당자에게 바로 연락
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
               </div>
-            <br><br><br><br><br><br>
-            <h2>
-             추천 액세서리
-            </h2>
-            <h3 class="body_text"></h3>
-            <div class="row-fluid">
-              <div class="span6">
-                <br><br><br>
-                <center>
-                <img src="/main/2/img/301_acc_cleaning_kit.png"><br><br><br>
-                <span id="buy_desc">
-                Cleaning Kit<br>
-                FC08-001021A<br>
-                </span>
-                <button type="button" class="ref_btn" id="modal_show">
-                  살펴보기
-                </button>
-                </center>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="close_modal" href="#" data-dismiss="modal">Close</button>
               </div>
-							<div class="span6">
-							<br><br><br>
-                <center>
-                <img src="/main/2/img/301_acc_hs_cleaning_kit.png"><br><br><br>
-                <span id="buy_desc">
-                HS Cleaning Kit<br>
-                AM03-036326A<br>
-                </span>
-                <button type="button" class="ref_btn" id="modal_show">
-                  살펴보기
-                </button>
-                </center>
-							</div>
-							</div>
-            
+            </div>
+            <div id="modal_show_lite" class="modal hide fade" style="display: block;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Head Maintenance Kit (Lite Pkg.)</li>
+                    <li>제품코드 : AM03-035892A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035892A" id="myInput_lite_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+                  <ul>
+                    <li>문의게시판&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+                    </li>
+                    <li>담당자에게 바로 연락
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="close_modal" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="outro_acc">
+              <h2>
+                추천 액세서리
+              </h2>
+              <div class="row-fluid">
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_acc_cleaning_kit.png"><br><br><br>
+                    <span id="buy_desc">
+                      Cleaning Kit<br>
+                      FC08-001021A<br>
+                    </span>
+                    <button type="button" class="ref_btn" id="modal_show">
+                      살펴보기
+                    </button>
+                  </center>
+                </div>
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_acc_hs_cleaning_kit.png"><br><br><br>
+                    <span id="buy_desc">
+                      HS Cleaning Kit<br>
+                      AM03-036326A<br>
+                    </span>
+                    <button type="button" class="ref_btn" id="modal_show">
+                      살펴보기
+                    </button>
+                  </center>
+                </div>
+              </div>
+            </div>
 
-    <!-- Modal(Deluxe) -->
-	
-<div class="modal fade" id="modalBuyDeluxe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
-<div class="modal-dialog" role="document" style="margin:0px;">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
-</button>
-</div>
-        
-<div class="modal-body">
-<div class="modal_desc">
-선택된 제품의 정보를 확인하세요.
-<ul>
-        <li>제품명 : Head Maintenance Kit (Deluxe Pkg.)</li>
-<li>제품코드 : AM03-035894A&nbsp;&nbsp;
-<span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy">copy</span></span>
-<input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;"></li>
-</ul>
-</div>
-        
-<div class="modal_desc">
-구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
-<ul>
-<li>문의게시판&nbsp;&nbsp;
-<span class="glyphicon glyphicon-new-window" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span></li>
-<li>담당자에게 바로 연락</li>
-	<ul>
-		<li><span class="glyphicon glyphicon-earphone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy">copy</span></span>
-<input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;"></li>
-		<li><span class="glyphicon glyphicon-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy">copy</span></span>
-<input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;"></li>
-	</ul>
-</ul>
-</div>
-</div>
-        
-            <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="close_modal_deluxe">Close</button>
+            <!-- 여기서부터는 수정금지 -->
+            <div id="footer_comment">
+              <font_cmnt style="font-size:11px;color:#999999;">
+                <div style="line-height:20px">
+                  <br><br><br>
+                  <ol>
+                    <li>헤드 거치대를 상단으로 펼쳤을 때의 길이입니다.</li>
+                    <li>Deluxe Package에는 헤드거치대를 포함하여 각종 유지보수에 필요한 도구들과 여분의 자재들이 포함되어 있습니다.</li>
+                    <li>Lite Package에는 Deluxe Package에서 헤드거치대와 여분의 자재들이 제외되어 있습니다.</li>
+                  </ol>
+                </div>
+              </font_cmnt>
             </div>
-            </div>
-            </div>
-            </div>
-		  
-    <!-- Modal(Lite) -->
-	
-<div class="modal fade" id="modalBuyLite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width:auto;display:table;">
-<div class="modal-dialog" role="document" style="margin:0px;">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
-</button>
-</div>
-        
-<div class="modal-body">
-<div class="modal_desc">
-선택된 제품의 정보를 확인하세요.
-<ul>
-        <li>제품명 : Head Maintenance Kit (Lite Pkg.)</li>
-<li>제품코드 : AM03-035892A&nbsp;&nbsp;
-<span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy">copy</span></span>
-<input type="text" value="AM03-035892A" id="myInput_lite_code" style="position:absolute;top:-9999em;"></li>
-</ul>
-</div>
-        
-<div class="modal_desc">
-구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
-<ul>
-<li>문의게시판&nbsp;&nbsp;
-<span class="glyphicon glyphicon-new-window" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span></li>
-<li>담당자에게 바로 연락</li>
-	<ul>
-		<li><span class="glyphicon glyphicon-earphone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy">copy</span></span>
-<input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;"></li>
-		<li><span class="glyphicon glyphicon-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="glyphicon glyphicon-duplicate" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy">copy</span></span>
-<input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;"></li>
-	</ul>
-</ul>
-</div>
-</div>
-        
-            <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="close_modal_lite">Close</button>
-            </div>
-            </div>
-            </div>
-            </div>
-  
-            
-        <!--<input type="text" id="copy_text" style="position:absolute;top:-9999em;"> 안보이는 위치로 설정 -->
-		
-		
-	
-    
-            <!-- 여기서부터는 수정금지(주석만 수정 허용) -->
-            <div class="row-fluid">
-            <font_cmnt style="font-size:11px;color:#999999;">
-							<div style="line-height:20px"><br><br><br>
-							<ol>
-							<li>헤드 거치대를 상단으로 펼쳤을 때의 길이입니다.</li>
-							<li>Deluxe Package에는 헤드거치대를 포함하여 각종 유지보수에 필요한 도구들과 여분의 자재들이 포함되어 있습니다.</li>
-							<li>Lite Package에는 Deluxe Package에서 헤드거치대와 여분의 자재들이 제외되어 있습니다.</li>
-							</ol>
-							<br><br>
-							<ul>
-								<li>이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br></li>
-            	  <li>앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br></li>
-            	  <li>한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br></li>
-            	  <li>COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br></li></ul></div>
-            </font_cmnt>
+            <div id="footer_company_info">
+              <font_cmnt style="font-size:11px;color:#999999;">
+                <div style="line-height:20px">
+                  <br>
+                  <ul>
+                    <li>
+                      이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>
+                      수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br>
+                    </li>
+                    <li>
+                      앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br>
+                    </li>
+                    <li>
+                      한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br>
+                    </li>
+                    <li>
+                      COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br>
+                    </li>
+                  </ul>
+                </div>
+              </font_cmnt>
           </div>
           </div>
         </div>
@@ -1334,243 +1243,226 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
     <script>
+      $(document).ready(function(){
+        $("#test1").click(function(){
+          $("#qqq").slideToggle(50);
+        });
+      });
+    </script>
+    <script>
       var check = $("input[type='checkbox']");
       check.click(function(){
         $("tgl").toggle();
+        $("tgl_table").slideToggle(200);
       });
     </script>
     <script>
       $(document).ready(function(){
-      $('[data-toggle1="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_01.png" width="500%">'
-    });
-      $('[data-toggle2="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_02.png" width="500%">'
-    });
-      $('[data-toggle3="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_03.png" width="500%">'
-    });
-      $('[data-toggle4="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_04.png" width="500%">'
-    });
-      $('[data-toggle5="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_05.png" width="500%">'
-    });
-      $('[data-toggle6="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_06.png" width="500%">'
-    });
-      $('[data-toggle7="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_07.png" width="500%">'
-    });
-      $('[data-toggle8="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_08.png" width="500%">'
-    });
-      $('[data-toggle9="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_09.png" width="500%">'
-    });
-      $('[data-toggle10="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_10.png" width="500%">'
-    });
-      $('[data-toggle11="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_11.png" width="500%">'
-    });
-      $('[data-toggle12="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_12.png" width="500%">'
-    });
-      $('[data-toggle13="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_13.png" width="500%">'
-    });
-      $('[data-toggle14="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_14.png" width="500%">'
-    });
-      $('[data-toggle15="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_15.png" width="500%">'
-    });
-      $('[data-toggle16="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_16.png" width="500%">'
-    });
-      $('[data-toggle17="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_17.png" width="500%">'
-    });
-      $('[data-toggle18="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_18.png" width="500%">'
-    });
-      $('[data-toggle19="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_19.png" width="500%">'
-    });
-      $('[data-toggle20="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_20.png" width="500%">'
-    });
-      $('[data-toggle21="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_21.png" width="500%">'
-    });
-      $('[data-toggle22="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_22.png" width="500%">'
-    });
-      $('[data-toggle23="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_23.png" width="500%">'
-    });
-      $('[data-toggle24="popover"]').popover({
-        placement : 'top',
-        trigger : 'hover',
-        html : true,
-        content : '<img src="/main/2/img/301_in_the_box/301_box_24.png" width="500%">'
-    });
-});
-</script>
-<script>
-  $(document).ready(function() {
-  $("#modal_show_deluxe").click(function() {
-  $("#modalBuyDeluxe").modal("show");
-  });
-  $("#close_modal_deluxe").click(function() {
-  $("#modalBuyDeluxe").modal("hide");
-  });
-  });
-    $(document).ready(function() {
-  $("#modal_show_lite").click(function() {
-  $("#modalBuyLite").modal("show");
-  });
-  $("#close_modal_lite").click(function() {
-  $("#modalBuyLite").modal("hide");
-  });
-  });
-</script>
-<script>
-function myFunctionClip_deluxe_code() {
-  var copyText = document.getElementById("myInput_deluxe_code");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
-}
-</script>
-<script>
-function myFunctionClip_deluxe_tel() {
-  var copyText = document.getElementById("myInput_deluxe_tel");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
-}
-</script>
-<script>
-function myFunctionClip_deluxe_mail() {
-  var copyText = document.getElementById("myInput_deluxe_mail");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
-}
-</script>
-
-<script>
-function myFunctionClip_lite_code() {
-  var copyText = document.getElementById("myInput_lite_code");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
-}
-</script>
-<script>
-function myFunctionClip_lite_tel() {
-  var copyText = document.getElementById("myInput_lite_tel");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
-}
-</script>
-<script>
-function myFunctionClip_lite_mail() {
-  var copyText = document.getElementById("myInput_lite_mail");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  //alert("Copied the text: " + copyText.value);
-  $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
-}
-</script>
-
-    <!--TESTBOOTSTRAP-->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-    <script src="/static/lib/bootstrap/js/index-test.js"></script>
-    <!--TESTBOOTSTRAP-->
+        $('[data-toggle1="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_01.png" width="500%">'
+        });
+        $('[data-toggle2="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_02.png" width="500%">'
+        });
+        $('[data-toggle3="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_03.png" width="500%">'
+        });
+        $('[data-toggle4="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_04.png" width="500%">'
+        });
+        $('[data-toggle5="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_05.png" width="500%">'
+        });
+        $('[data-toggle6="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_06.png" width="500%">'
+        });
+        $('[data-toggle7="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_07.png" width="500%">'
+        });
+        $('[data-toggle8="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_08.png" width="500%">'
+        });
+        $('[data-toggle9="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_09.png" width="500%">'
+        });
+        $('[data-toggle10="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_10.png" width="500%">'
+        });
+        $('[data-toggle11="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_11.png" width="500%">'
+        });
+        $('[data-toggle12="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_12.png" width="500%">'
+        });
+        $('[data-toggle13="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_13.png" width="500%">'
+        });
+        $('[data-toggle14="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_14.png" width="500%">'
+        });
+        $('[data-toggle15="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_15.png" width="500%">'
+        });
+        $('[data-toggle16="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_16.png" width="500%">'
+        });
+        $('[data-toggle17="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_17.png" width="500%">'
+        });
+        $('[data-toggle18="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_18.png" width="500%">'
+        });
+        $('[data-toggle19="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_19.png" width="500%">'
+        });
+        $('[data-toggle20="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_20.png" width="500%">'
+        });
+        $('[data-toggle21="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_21.png" width="500%">'
+        });
+        $('[data-toggle22="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_22.png" width="500%">'
+        });
+        $('[data-toggle23="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_23.png" width="500%">'
+        });
+        $('[data-toggle24="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_24.png" width="500%">'
+        });
+      });
+    </script>
+    <script>
+      function myFunctionClip_deluxe_code() {
+        var copyText = document.getElementById("myInput_deluxe_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_tel() {
+        var copyText = document.getElementById("myInput_deluxe_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_mail() {
+        var copyText = document.getElementById("myInput_deluxe_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_code() {
+        var copyText = document.getElementById("myInput_lite_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_tel() {
+        var copyText = document.getElementById("myInput_lite_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_mail() {
+        var copyText = document.getElementById("myInput_lite_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
   </body>
 </html>
