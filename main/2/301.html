@@ -1181,7 +1181,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
               </div>
             </div>
 						
@@ -1442,6 +1443,14 @@
           });
 				$("#close_modal_deluxe").click(function() {
 					$("#modal_show_deluxe").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_lite").click(function() {
+					$("#modal_show_lite").modal("show");
+          });
+				$("#close_modal_lite").click(function() {
+					$("#modal_show_lite").modal("hide");
         });
       });
 		</script>
