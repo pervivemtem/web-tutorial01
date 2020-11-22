@@ -1081,7 +1081,7 @@
                       Deluxe Package<br>
                       AM03-035894A<br>
                     </span>
-                    <button data-toggle="modal" href="#modal_show_deluxe" class="buy_btn">구매하기</button>
+                    <button id="buy_btn_deluxe" data-toggle="modal" href="#modal_show_deluxe" class="buy_btn">구매하기</button>
                   </center>
                 </div>
                 <div class="span6">
@@ -1092,7 +1092,7 @@
                       Lite Package<br>
                       AM03-035892A<br>
                     </span>
-                    <button data-toggle="modal" href="#modal_show_lite" class="buy_btn">구매하기</button>
+                    <button id="buy_btn_lite" data-toggle="modal" href="#modal_show_lite" class="buy_btn">구매하기</button>
                   </center>
                 </div>
               </div>
@@ -1138,7 +1138,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="close_modal" href="#" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="close_modal_deluxe" href="#" data-dismiss="modal">Close</button>
               </div>
             </div>
             <div id="modal_show_lite" class="modal hide fade" style="display: block;">
@@ -1178,7 +1178,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="close_modal" href="#" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
               </div>
             </div>
 						
@@ -1187,7 +1187,7 @@
             </div>
             <div id="outro_acc">
               <h2>
-                추천 액세서리
+                추천 액세서리1
               </h2>
               <div class="row-fluid">
                 <div class="span6">
@@ -1432,6 +1432,26 @@
         });
       });
     </script>
+		<script>
+	  $('#buy_btn_deluxe').click(function(e){
+			e.preventDefault();
+			$('#modal_show_deluxe').modal("show");
+		});
+		$('#close_modal_deluxe').click(function(e){
+			e.preventDefault();
+			$('#modal_show_deluxe').modal("hide");
+		});
+		$('#buy_btn_lite').click(function(e){
+			e.preventDefault();
+			$('#modal_show_lite').modal("show");
+		});
+		$('#close_modal_lite').click(function(e){
+			e.preventDefault();
+			$('#modal_show_lite').modal("hide");
+		});
+		</script>
+	  
+	  
     <script>
       function myFunctionClip_deluxe_code() {
         var copyText = document.getElementById("myInput_deluxe_code");
