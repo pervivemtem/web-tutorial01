@@ -1200,7 +1200,7 @@
                       Cleaning Kit<br>
                       FC08-001021A<br>
                     </span>
-                    <button type="button" class="ref_btn" id="modal_show">
+                    <button type="button" class="ref_btn" id="buy_btn_acc1">
                       살펴보기
                     </button>
                   </center>
@@ -1218,6 +1218,58 @@
                     </button>
                   </center>
                 </div>
+              </div>
+            </div>
+						
+						<div id="modal_show_acc1" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">액세서리 살펴보기</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Cleaning Kit</li>
+                    <li>제품코드 : FC08-001021A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc1_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="FC08-001021A" id="myInput_acc1_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  <table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>
+													#
+												</th>
+												<th>
+													Name
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													공기분사기
+												</td>
+												<td>
+													카메라 렌즈 표면의 먼지 제거
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_acc1" href="#" data-dismiss="modal">Close</button>
               </div>
             </div>
 
@@ -1451,6 +1503,14 @@
 					$("#modal_show_lite").modal("hide");
         });
       });
+			$(document).ready(function() {
+      	$("#buy_btn_acc1").click(function() {
+					$("#modal_show_acc1").modal("show");
+          });
+				$("#close_modal_acc1").click(function() {
+					$("#modal_show_acc1").modal("hide");
+        });
+      });
 		</script>
 		
 	  
@@ -1512,6 +1572,16 @@
         document.execCommand("copy");
         //alert("Copied the text: " + copyText.value);
         $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc1_code() {
+        var copyText = document.getElementById("myInput_acc1_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc1_code').delay(500).fadeOut(500);
       }
     </script>
   </body>
