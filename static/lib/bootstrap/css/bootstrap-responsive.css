@@ -807,14 +807,14 @@
 
 @media (max-width: 767px) {
   body {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 0px; /******************20px******************/
+    padding-left: 0px; /******************20px******************/
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
   .navbar-static-top {
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: 0px; /******************-20px******************/
+    margin-left: 0px; /******************-20px******************/
   }
   .container-fluid {
     padding: 0;
@@ -902,6 +902,16 @@
     top: 20px;
   }
 }
+/*************************added****************************/
+.span3{
+  padding-left:20px;
+  padding-right:20px;
+}
+.span9{
+  padding-left:20px;
+  padding-right:20px;
+}
+/*************************added****************************/
 
 @media (max-width: 480px) {
   .nav-collapse {
