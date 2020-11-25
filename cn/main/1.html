@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Hanwha SMT Newsletters</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body{
+        padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+      }
+      #no_badge{
+      background-color:#dddddd;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+    </style>
+    <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand" href="/main">Hanwha Online Service Platform</a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li class="active"><a href="/main/1">Newsletter</a></li>
+            <li><a href="/main/2">Products</a></li>
+            <li><a href="/main/3">Online Shop</a></li>
+		    		<li><a href="/main/4">Training Center</a></li>
+            </ul>
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="body" class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span3">
+            <div class="well" style="padding:8px 0;">
+              <ul class="nav nav-list">
+								<span id="hardwares" class="nav-header" style="cursor:pointer;">Hardwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="hardwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class="" style><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span type="button" id="softwares" class="nav-header" style="cursor:pointer;">Softwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="softwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class=""><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span id="acc" class="nav-header" style="cursor:pointer;">Accessories & Etc.&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="acc_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li><a href="/main/2/301">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;Head Maintenance Pkg.</a></li>
+                	<li><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+            </div>
+
+
+            <!--
+            <p>Hardware Solutions</p>
+            <ul value="Hardware Solutions" class="nav nav-tabs nav-stacked">
+              <li class="active"><a href="/main/2/101">Head Solenoid Valve</a></li>
+              <li><a href="/main/2/102">Docking Cart Type Feederbase</a></li>
+              <li><a href="/main/2/103">Long PCB Conveyor</a></li>
+              <li><a href="/main/2/104">Edge Fixer</a></li>
+              <li><a href="/main/2/105">전동피더용 설비</a></li>
+              <li><a href="/main/2/106">Area Sensor</a></li>
+              <li><a href="/main/2/107">외장형 진공펌프</a></li>
+              <li><a href="/main/2/108">IT System</a></li>
+              <li><a href="/main/2/109">시스템 보안성 강화</a></li>
+              <li><a href="/main/2/110">Camera 성능 향상</a></li>
+            </ul>
+            <p>Software Solutions</p>
+            <ul value="Software Solutions" class="nav nav-tabs nav-stacked">
+              <li><a href="/main/2/201">Bad/Fid Mark 검사결과 공유</a></li>
+              <li><a href="/main/2/202">Production Data 생성</a></li>
+              <li><a href="/main/2/203">장착점/Array 수량 확장</a></li>
+              <li><a href="/main/2/204">정전 복구 기능</a></li>
+              <li><a href="/main/2/205">T-Planner(OLP, ELITE)</a></li>
+              <li><a href="/main/2/206">T-PnP</a></li>
+            </ul>-->
+          </div>
+          <div class="span9">
+            <div id="divider_1br">
+              <br>
+            </div>
+            <!-- 본문은 여기서부터 -->
+            <div id="intro">
+              <h3>
+               현재 서비스를 준비중입니다. <br>
+               이곳에서는 당사의 신제품 출시소식 및 SMT 산업 전반의 기술동향을 접할 수 있습니다.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!-- 여기서부터는 수정금지 -->
+    <div id="footer">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span3">
+            </div>
+            <div class="span9">
+              <div id="footer_comment" class="footer_cmnt" style="margin-top:15px">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <ol>
+                      <li>헤드 거치대를 상단으로 펼쳤을 때의 길이입니다.</li>
+                      <li>Deluxe Package에는 헤드거치대를 포함하여 각종 유지보수에 필요한 도구들과 여분의 자재들이 포함되어 있습니다.</li>
+                      <li>Lite Package에는 Deluxe Package에서 헤드거치대와 여분의 자재들이 제외되어 있습니다.</li>
+                    </ol>
+										<div style="text-align:left;padding-left:13px;">Last Updated: 11/24/20</div>
+                  </div>
+                </font_cmnt>
+  							<footer></footer>
+              </div>
+              <div id="footer_company_info">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <br>
+                    <ul>
+                      <li>
+                        이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>
+                        수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br>
+                      </li>
+                      <li>
+                        앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br>
+                      </li>
+                      <li>
+                        한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br>
+                      </li>
+                      <li>
+                        COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br>
+                      </li>
+                    </ul>
+                  </div>
+                </font_cmnt>
+            	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+    </script>
+  </body>
+</html>

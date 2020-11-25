@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Head Maintenance Pkg. - Hanwha SMT(CN) Products</title>
+    <!-- image preload -------------------------------->
+    <script>
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_01.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_02.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_03.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_04.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_05.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_06.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_07.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_08.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_09.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_10.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_11.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_12.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_13.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_14.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_15.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_16.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_17.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_18.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_19.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_20.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_21.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_22.png";
+      (new Image()).src = "/cn/main/2/img/301_in_the_box/301_box_23.png";
+    </script>
+    <!-- Bootstrap -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body{
+        padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+      }
+      #no_badge{
+      background-color:#dddddd;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+    </style>
+    <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<!--hide temprary
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/main">Hanwha Online Service Platform</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a href="/main/1">Newsletter</a></li>
+            <li class="active"><a href="/main/2">Products</a></li>
+            <li><a href="/main/3">Online Shop</a></li>
+		    		<li><a href="/main/4">Training Center</a></li>
+						</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <div id="body" class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span3">
+<!-- hide temporary
+            <div class="well" style="padding:8px 0;">
+              <ul class="nav nav-list">
+								<span id="hardwares" class="nav-header" style="cursor:pointer;">Hardwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="hardwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class="" style><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span type="button" id="softwares" class="nav-header" style="cursor:pointer;">Softwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="softwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class=""><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span id="acc" class="nav-header" style="cursor:pointer;">Accessories & Etc.&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="acc_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class="active"><a href="/main/2/301">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;Head Maintenance Pkg.</a></li>
+                	<li><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+            </div>
+-->
+
+            <!--
+            <p>Hardware Solutions</p>
+            <ul value="Hardware Solutions" class="nav nav-tabs nav-stacked">
+              <li class="active"><a href="/main/2/101">Head Solenoid Valve</a></li>
+              <li><a href="/main/2/102">Docking Cart Type Feederbase</a></li>
+              <li><a href="/main/2/103">Long PCB Conveyor</a></li>
+              <li><a href="/main/2/104">Edge Fixer</a></li>
+              <li><a href="/main/2/105">전동피더용 설비</a></li>
+              <li><a href="/main/2/106">Area Sensor</a></li>
+              <li><a href="/main/2/107">외장형 진공펌프</a></li>
+              <li><a href="/main/2/108">IT System</a></li>
+              <li><a href="/main/2/109">시스템 보안성 강화</a></li>
+              <li><a href="/main/2/110">Camera 성능 향상</a></li>
+            </ul>
+            <p>Software Solutions</p>
+            <ul value="Software Solutions" class="nav nav-tabs nav-stacked">
+              <li><a href="/main/2/201">Bad/Fid Mark 검사결과 공유</a></li>
+              <li><a href="/main/2/202">Production Data 생성</a></li>
+              <li><a href="/main/2/203">장착점/Array 수량 확장</a></li>
+              <li><a href="/main/2/204">정전 복구 기능</a></li>
+              <li><a href="/main/2/205">T-Planner(OLP, ELITE)</a></li>
+              <li><a href="/main/2/206">T-PnP</a></li>
+            </ul>-->
+          </div>
+          <div class="span9">
+            <!-- 적용대상 설비 -->
+            <div id="target_machine">
+              <span id="ok_badge" class="badge">HM520</span>
+              <span id="no_badge" class="badge">EXCEN</span>
+              <span id="no_badge" class="badge">DECAN</span>
+              <span id="no_badge" class="badge">SM471</span>
+              <span id="no_badge" class="badge">SM481</span>
+              <span id="no_badge" class="badge">SM482</span>
+              <span id="no_badge" class="badge">SM451</span>
+              <span id="no_badge" class="badge">SM411</span>
+              <span id="no_badge" class="badge">SM411F</span>
+              <span id="no_badge" class="badge">SM421</span>
+              <span id="no_badge" class="badge">SLM100</span>
+              <span id="no_badge" class="badge">SCM</span>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <!-- 본문은 여기서부터 -->
+            <div id="intro">
+              <h2>
+                优秀的工程师<br>
+                会挑选使用精心设计的工具。
+              </h2>
+              <br>
+              <h3>
+               昂贵的贴装头，<br>
+               从现在开始亲手进行管理吧
+              </h3>
+            </div>
+            <div id="maintenance_tool_visual_image">
+		    			<center>
+		            <object data="\svgtest\Head_Cleaning_Kit_tch6.svg" type="image/svg+xml" width="75%" height="75%">
+    		        </object>
+							</center>
+            </div>
+            <div id="desc_middle_1" class="row-fluid">
+              <div class="span6">
+                <img src="\cn\main\2\img\301_folded.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  便于携带和保管的简便设计。
+                </h2>
+                <h3 class="body_text">
+                  可折叠保管贴装头支架，具有较高空间利用率。
+                </h3>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="desc_middle_2" class="row-fluid">
+              <div class="span6">
+                <img src="\cn\main\2\img\301_conve2.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  维护更方便。
+                </h2>
+                <h3 class="body_text">
+                  从现在起安全存放易丢失的小元件吧。<br>
+                  从今以后无需在设备中以不舒服的姿势进行操作。只需卸下贴装头并将其连接到支架即可。
+                </h3>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="desc_middle_spec" class="row-fluid">
+              <div class="span4">
+                <h2>
+                  尺寸及重量<sup>1</sup>
+                </h2>
+                <h3 class="body_text_size_indicator">
+                  长:<span class="body_text">&nbsp;330 mm</span><br>
+                  宽:<span class="body_text">&nbsp;280 mm</span><br>
+                  高:<span class="body_text">&nbsp;433 mm</span><br>
+                  重量:<span class="body_text">&nbsp;4.5 Kg</span>
+                </h3>
+              </div>
+              <div class="span8">
+                <img src="\cn\main\2\img\301_size.png" width="auto">
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="components">
+              <h2>
+                构成品
+              </h2>
+              <h3 class="body_text">
+                由维护作业所需的多种工具构成。  <br>
+                请打开下表以查看配置选项。의 표를 열어 구성 옵션을 확인해 주세요.
+              </h3>
+              <br>
+              <h3 class="body_text_size_indicator">
+                构成品详情
+                <label class="switch" style="padding-top:16.5px">
+                  <input type="checkbox">
+                  <tgl>
+                    <span class="fa fa-plus-square"></span>
+                  </tgl>
+                  <tgl style="display:none;">
+                    <span class="fa fa-minus-square"></span>
+                  </tgl>
+                </label>
+              </h3>
+              <br>
+            </div>
+            <div id="desc_middle_toggle_table">
+              <tgl_table style="display:none;width:100%;">
+                  <div class="row-fluid">
+                  <div class="span12">
+                  <table class="table table-striped">
+                  <thead id="table_th">
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Description
+                      </th>
+                      <th>
+                        Quantity
+                      </th>
+                      <th>
+                        Deluxe Pkg.<sup>2</sup>
+                      </th>
+                      <th>
+                        Lite Pkg.<sup>3</sup>
+                      </th>
+                      <th>
+                        Remakrs
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="table_td">
+                    <!-------------------1st row------------------->
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        HS Head支架
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle1="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------2nd row------------------->
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        主轴 Jig
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle2="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------3rd row------------------->
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td>
+                        主轴 Jig2
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle3="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------4th row------------------->
+                    <tr>
+                      <td>
+                        4
+                      </td>
+                      <td>
+                        Biral_T&D
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle4="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------5th row------------------->
+                    <tr>
+                      <td>
+                        5
+                      </td>
+                      <td>
+                        HP300润滑脂
+                      </td>
+                      <td>
+                        500 g
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle5="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------6th row------------------->
+                    <tr>
+                      <td>
+                        6
+                      </td>
+                      <td>
+                        超细纤维布
+                      </td>
+                      <td>
+                        1 Box
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle6="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------7th row------------------->
+                    <tr>
+                      <td>
+                        7
+                      </td>
+                      <td>
+                        Tray Pallet
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle7="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------8th row------------------->
+                    <tr>
+                      <td>
+                        8
+                      </td>
+                      <td>
+                        牙缝刷
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle8="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------9th row------------------->
+                    <tr>
+                      <td>
+                        9
+                      </td>
+                      <td>
+                        棉棒
+                      </td>
+                      <td>
+                        100 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle9="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------10th row------------------->
+                    <tr>
+                      <td>
+                        10
+                      </td>
+                      <td>
+                        Spool O-ring插入治具
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle10="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------11th row------------------->
+                    <tr>
+                      <td>
+                        11
+                      </td>
+                      <td>
+                        HS HEAD Spool分离夹具
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle11="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------12th row------------------->
+                    <tr>
+                      <td>
+                        12
+                      </td>
+                      <td>
+                        组装过滤器专用扳手限位器
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle12="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------13th row------------------->
+                    <tr>
+                      <td>
+                        13
+                      </td>
+                      <td>
+                        Spindle A'ssy
+                      </td>
+                      <td>
+                        5 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle13="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------14th row------------------->
+                    <tr>
+                      <td>
+                        13
+                      </td>
+                      <td>
+                        Spool A'ssy
+                      </td>
+                      <td>
+                        5 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle14="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------15th row------------------->
+                    <tr>
+                      <td>
+                        15
+                      </td>
+                      <td>
+                        O-ring
+                      </td>
+                      <td>
+                        50 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle15="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------16th row------------------->
+                    <tr>
+                      <td>
+                        16
+                      </td>
+                      <td>
+                        Spring
+                      </td>
+                      <td>
+                        10 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td rowspan=3>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle16="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------17th row------------------->
+                    <tr>
+                      <td>
+                        17
+                      </td>
+                      <td>
+                        Cap ring
+                      </td>
+                      <td>
+                        10 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <!--
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn" data-toggle17="popover">View Image</button>
+                        </div>
+                      </td>
+                      -->
+                    </tr>
+                    <!-------------------18th row------------------->
+                    <tr>
+                      <td>
+                        18
+                      </td>
+                      <td>
+                        CAP_SP2
+                      </td>
+                      <td>
+                        10 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <!--
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn" data-toggle18="popover">View Image</button>
+                        </div>
+                      </td>
+                      -->
+                    </tr>
+                    <!-------------------19th row------------------->
+                    <tr>
+                      <td>
+                        19
+                      </td>
+                      <td>
+                        Barrel Filter
+                      </td>
+                      <td>
+                        20 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle19="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------20th row------------------->
+                    <tr>
+                      <td>
+                        20
+                      </td>
+                      <td>
+                        Spindle Filter
+                      </td>
+                      <td>
+                        20 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle20="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------21st row------------------->
+                    <tr>
+                      <td>
+                        21
+                      </td>
+                      <td>
+                        Dial Gauge
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle21="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------22nd row------------------->
+                    <tr>
+                      <td>
+                        22
+                      </td>
+                      <td>
+                        Spindle Setting Tool
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle22="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------23nd row------------------->
+                    <tr>
+                      <td>
+                        23
+                      </td>
+                      <td>
+                        Box
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle23="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+                </div>
+              </tgl_table>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="outro_purchase_goods">
+              <h2>
+               购买咨询
+              </h2>
+              <div class="row-fluid">
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_pkg_deluxe_resize.png">
+                    <br><br><br>
+                    <span id="buy_desc">
+                      Deluxe Package<br>
+                      AM03-035894A<br>
+                    </span>
+                    <!--<button id="buy_btn_deluxe" data-toggle="modal" href="#modal_show_deluxe" class="buy_btn">구매하기</button>-->
+										<button id="buy_btn_deluxe" class="buy_btn">구매하기</button>
+                  </center>
+                </div>
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_pkg_lite_resize.png"><br><br><br>
+                    <span id="buy_desc">
+                      Lite Package<br>
+                      AM03-035892A<br>
+                    </span>
+                    <!--<button id="buy_btn_lite" data-toggle="modal" href="#modal_show_lite" class="buy_btn">구매하기</button>-->
+										<button id="buy_btn_lite" class="buy_btn">购买</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+
+            <div id="modal_show_deluxe" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">确认购买信息</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  请确认所选产品的信息。
+                  <ul>
+                    <li>产品名称 : Head Maintenance Kit (Deluxe Pkg.)</li>
+                    <li>产品代码 : AM03-035894A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  购买或其他咨询，请使用以下服务。.<br>
+                  <ul>
+                    <li>公告栏&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">立即前往</span></span>
+                    </li>
+                    <li>马上联系负责人
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_deluxe" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_deluxe">Close</button>
+              </div>
+            </div>
+            <div id="modal_show_lite" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">确认购买信息</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  请确认所选产品的信息。
+                  <ul>
+                    <li>产品名称 : Head Maintenance Kit (Lite Pkg.)</li>
+                    <li>产品代码 : AM03-035892A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035892A" id="myInput_lite_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  购买或其他咨询，请使用以下服务。<br>
+                  <ul>
+                    <li>公告栏&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">立即前往</span></span>
+                    </li>
+                    <li>马上联系负责人
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="outro_acc">
+              <h2>
+                推荐配件
+              </h2>
+              <div class="row-fluid">
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_acc_cleaning_kit.png"><br><br><br>
+                    <span id="buy_desc">
+                      Cleaning Kit<br>
+                      FC08-001021A<br>
+                    </span>
+                    <button type="button" class="ref_btn" id="buy_btn_acc1">
+                      查看
+                    </button>
+                  </center>
+                </div>
+                <div class="span6">
+                  <br><br><br>
+                  <center>
+                    <img src="/main/2/img/301_acc_hs_cleaning_kit.png"><br><br><br>
+                    <span id="buy_desc">
+                      HS Cleaning Kit<br>
+                      AM03-036326A<br>
+                    </span>
+                    <button type="button" class="ref_btn" id="buy_btn_acc2">
+                      查看
+                    </button>
+                  </center>
+                </div>
+              </div>
+            </div>
+
+						<div id="modal_show_acc1" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">确认推荐配件信息</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  请确认所选产品的信息。
+                  <ul>
+                    <li>产品名称 : Cleaning Kit</li>
+                    <li>产品代码 : FC08-001021A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc1_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="FC08-001021A" id="myInput_acc1_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+									构成品信息
+                  <table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>
+													#
+												</th>
+												<th>
+													名称
+												</th>
+												<th>
+													用途
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													空气喷射器
+												</td>
+												<td>
+													吹掉Camera 镜片表面上的灰尘。
+												</td>
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													刷子
+												</td>
+												<td>
+													清除喂料器基座表面的异物。
+												</td>
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													棉棒
+												</td>
+												<td>
+													清除Nozzle Holder内部的异物。
+												</td>
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													酒精
+												</td>
+												<td>
+													擦拭Cover Glass的表面，<br>清洁Spindle Shaft内径，<br><strong>* 禁止使用IPA</strong>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													布
+												</td>
+												<td>
+													清除镜子或镜片中的异物
+												</td>
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													防静电手套
+												</td>
+												<td>
+													清洁Camera或Mirror时使用
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_acc1" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+						<div id="divider_4br">
+              <br><br><br><br>
+            </div>
+						<div id="modal_show_acc2" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">确认推荐配件信息</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  请确认所选产品的信息。
+                  <ul>
+                    <li>产品名称 : High Speed Head Cleaning Kit</li>
+                    <li>产品代码 : AM03-036326A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc2_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-036326A" id="myInput_acc2_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+									构成品信息
+                  <table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>
+													#
+												</th>
+												<th>
+													名称
+												</th>
+												<th>
+													数量
+												</th>
+												<th>
+													用途
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													Biral T&D Oil
+												</td>
+												<td>
+													70 ml
+												</td>
+												<td>
+													清洁及涂抹Head Spindle，<br>涂抹Spindle上方及T轴Gear
+												</td>
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													HP-300润滑脂
+												</td>
+												<td>
+													10 g
+												</td>
+												<td>
+                          涂抹HS Head Spool(O-Ring, Spool Arm)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													无尘棉棒(HUBY-340)
+												</td>
+												<td>
+													50 ea
+												</td>
+												<td>
+													清洁HS Head Collar Shaft内径
+												</td>
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													超细纤维布
+												</td>
+												<td>
+													5 ea
+												</td>
+												<td>
+                          用于清洁和涂抹HS Head Spindle，<br>以及Head的所有部位
+												</td>
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													清洁内径刷子
+												</td>
+												<td>
+													1 ea
+												</td>
+												<td>
+													清洁HS Head Collar Shaft内径
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_acc2" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!-- 여기서부터는 수정금지 -->
+    <div id="footer">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span3">
+            </div>
+            <div class="span9">
+              <div id="footer_comment" class="footer_cmnt" style="margin-top:15px">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <ol>
+                      <li>所示尺寸是将贴装头支架从上端展开后测量的值。</li>
+                      <li>Deluxe Package包含贴装头支架，以及各种维护工具和备用材料。</li>
+                      <li>Lite Package不含贴装头支架和备用材料，构成简单。</li>
+                    </ol>
+										<div style="text-align:left;padding-left:13px;">Last Updated: 11/24/20</div>
+                  </div>
+                </font_cmnt>
+  							<footer></footer>
+              </div>
+              <div id="footer_company_info">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <br>
+                    <ul>
+                      <li>
+                        该邮件为(株)韩华精密机械向HM520所购买客户发送的邮件。<br>
+                        如要拒收，请点击。<a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[拒收]</b></a><br>
+                      </li>
+                      <li>
+                        如需继续接收该邮件，请在地址簿，联系人或允许接收目录中添加 smtcs@hanwha.com 邮箱。<br>
+                      </li>
+                      <li>上海总公司 公司地址：上海市徐汇区桂平路391号A座20层, 电话：+86-21-54271155-8100<br></li>
+                      <li>苏州分公司 公司地址：苏州工业园区唯新路58号启迪时尚科技城启迪控股38栋1楼, 电话：+86-512-67315213<br></li>
+                      <li>深圳分公司 公司地址：深圳市南山区科技园南区高新南五道金证科技大厦一楼东侧, 电话：+86-755-26748338-8011<br></li>
+                      <li>天津分公司 公司地址：天津市西青区友谊南路111号 印力中心写字楼15楼08室, 电话：+86-22-58110581<br></li>
+                      <li>COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br></li>
+                    </ul>
+                  </div>
+                </font_cmnt>
+            	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+    </script>
+    <script>
+      var check = $("input[type='checkbox']");
+      check.click(function(){
+        $("tgl").toggle();
+        $("tgl_table").slideToggle(200);
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle1="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_01.png" width="500%">'
+        });
+        $('[data-toggle2="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_02.png" width="500%">'
+        });
+        $('[data-toggle3="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_03.png" width="500%">'
+        });
+        $('[data-toggle4="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_04.png" width="500%">'
+        });
+        $('[data-toggle5="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_05.png" width="500%">'
+        });
+        $('[data-toggle6="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_06.png" width="500%">'
+        });
+        $('[data-toggle7="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_07.png" width="500%">'
+        });
+        $('[data-toggle8="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_08.png" width="500%">'
+        });
+        $('[data-toggle9="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_09.png" width="500%">'
+        });
+        $('[data-toggle10="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_10.png" width="500%">'
+        });
+        $('[data-toggle11="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_11.png" width="500%">'
+        });
+        $('[data-toggle12="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_12.png" width="500%">'
+        });
+        $('[data-toggle13="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_13.png" width="500%">'
+        });
+        $('[data-toggle14="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_14.png" width="500%">'
+        });
+        $('[data-toggle15="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_15.png" width="500%">'
+        });
+        $('[data-toggle16="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_16.png" width="500%">'
+        });
+        $('[data-toggle17="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_17.png" width="500%">'
+        });
+        $('[data-toggle18="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_18.png" width="500%">'
+        });
+        $('[data-toggle19="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_19.png" width="500%">'
+        });
+        $('[data-toggle20="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_20.png" width="500%">'
+        });
+        $('[data-toggle21="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_21.png" width="500%">'
+        });
+        $('[data-toggle22="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_22.png" width="500%">'
+        });
+        $('[data-toggle23="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_23.png" width="500%">'
+        });
+        $('[data-toggle24="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_24.png" width="500%">'
+        });
+      });
+    </script>
+		<script>
+			$(document).ready(function() {
+      	$("#buy_btn_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("show");
+          });
+				$("#close_modal_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_lite").click(function() {
+					$("#modal_show_lite").modal("show");
+          });
+				$("#close_modal_lite").click(function() {
+					$("#modal_show_lite").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc1").click(function() {
+					$("#modal_show_acc1").modal("show");
+          });
+				$("#close_modal_acc1").click(function() {
+					$("#modal_show_acc1").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc2").click(function() {
+					$("#modal_show_acc2").modal("show");
+          });
+				$("#close_modal_acc2").click(function() {
+					$("#modal_show_acc2").modal("hide");
+        });
+      });
+		</script>
+
+
+    <script>
+      function myFunctionClip_deluxe_code() {
+        var copyText = document.getElementById("myInput_deluxe_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_tel() {
+        var copyText = document.getElementById("myInput_deluxe_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_mail() {
+        var copyText = document.getElementById("myInput_deluxe_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_code() {
+        var copyText = document.getElementById("myInput_lite_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_tel() {
+        var copyText = document.getElementById("myInput_lite_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_mail() {
+        var copyText = document.getElementById("myInput_lite_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc1_code() {
+        var copyText = document.getElementById("myInput_acc1_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc1_code').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc2_code() {
+        var copyText = document.getElementById("myInput_acc2_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc2_code').delay(500).fadeOut(500);
+      }
+    </script>
+  </body>
+</html>

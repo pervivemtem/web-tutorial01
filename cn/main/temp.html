@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Service will be soon available</title>
+    
+    <!-- Bootstrap -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body{
+        padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+      }
+      font_cmnt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+      }
+      .body_text{
+        color:gray;
+      }
+      #body_text{
+        color:gray;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+      }
+      #no_badge{
+      background-color:#dddddd;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+    </style>
+    <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand" href="/main">Hanwha Online Service Platform</a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a href="/main/1">Newsletter</a></li>
+            <li class="active"><a href="/main/2">Products</a></li>
+            <li><a href="/main/3">Online Shop</a></li>
+		    		<li><a href="/main/4">Training Center</a></li>
+            </ul>
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span3">
+          </div>
+          <div class="span9">
+            <div id="Service is not available temporarily">
+              <h2>
+                서비스가 곧 오픈될 예정입니다. 
+              </h2>
+              <br>
+              <h3>
+               
+              </h3>
+            </div>
+            
+            <div id="footer_company_info">
+              <font_cmnt style="font-size:11px;color:#999999;">
+                <div style="line-height:20px">
+                  <br>
+                  <ul>
+                    <li>
+                      이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>
+                      수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br>
+                    </li>
+                    <li>
+                      앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br>
+                    </li>
+                    <li>
+                      한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br>
+                    </li>
+                    <li>
+                      COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br>
+                    </li>
+                  </ul>
+                </div>
+              </font_cmnt>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+    </script>
+    <script>
+      var check = $("input[type='checkbox']");
+      check.click(function(){
+        $("tgl").toggle();
+        $("tgl_table").slideToggle(200);
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle1="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_01.png" width="500%">'
+        });
+        $('[data-toggle2="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_02.png" width="500%">'
+        });
+        $('[data-toggle3="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_03.png" width="500%">'
+        });
+        $('[data-toggle4="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_04.png" width="500%">'
+        });
+        $('[data-toggle5="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_05.png" width="500%">'
+        });
+        $('[data-toggle6="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_06.png" width="500%">'
+        });
+        $('[data-toggle7="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_07.png" width="500%">'
+        });
+        $('[data-toggle8="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_08.png" width="500%">'
+        });
+        $('[data-toggle9="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_09.png" width="500%">'
+        });
+        $('[data-toggle10="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_10.png" width="500%">'
+        });
+        $('[data-toggle11="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_11.png" width="500%">'
+        });
+        $('[data-toggle12="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_12.png" width="500%">'
+        });
+        $('[data-toggle13="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_13.png" width="500%">'
+        });
+        $('[data-toggle14="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_14.png" width="500%">'
+        });
+        $('[data-toggle15="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_15.png" width="500%">'
+        });
+        $('[data-toggle16="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_16.png" width="500%">'
+        });
+        $('[data-toggle17="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_17.png" width="500%">'
+        });
+        $('[data-toggle18="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_18.png" width="500%">'
+        });
+        $('[data-toggle19="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_19.png" width="500%">'
+        });
+        $('[data-toggle20="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_20.png" width="500%">'
+        });
+        $('[data-toggle21="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_21.png" width="500%">'
+        });
+        $('[data-toggle22="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_22.png" width="500%">'
+        });
+        $('[data-toggle23="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_23.png" width="500%">'
+        });
+        $('[data-toggle24="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/main/2/img/301_in_the_box/301_box_24.png" width="500%">'
+        });
+      });
+    </script>
+		<script>
+			$(document).ready(function() {
+      	$("#buy_btn_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("show");
+          });
+				$("#close_modal_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_lite").click(function() {
+					$("#modal_show_lite").modal("show");
+          });
+				$("#close_modal_lite").click(function() {
+					$("#modal_show_lite").modal("hide");
+        });
+      });
+		</script>
+		
+	  
+    <script>
+      function myFunctionClip_deluxe_code() {
+        var copyText = document.getElementById("myInput_deluxe_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_tel() {
+        var copyText = document.getElementById("myInput_deluxe_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_mail() {
+        var copyText = document.getElementById("myInput_deluxe_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_code() {
+        var copyText = document.getElementById("myInput_lite_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_tel() {
+        var copyText = document.getElementById("myInput_lite_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_mail() {
+        var copyText = document.getElementById("myInput_lite_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
+  </body>
+</html>
