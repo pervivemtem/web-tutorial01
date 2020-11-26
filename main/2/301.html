@@ -10,6 +10,7 @@
     <!-- image preload -------------------------------->
 		<script>
       for(let i=1; i<=23;i++){
+				if(i == 17 && 18) continue;
         (new Image()).src = "/main/2/img/301_in_the_box/301_box_"+i+".png";
       }
     </script>
@@ -371,7 +372,7 @@
           </div>
           <div class="span9">
             <!-- 적용대상 설비 -->
-            <div id="target_machine">
+            <div id="target_machine" class="span9">
               <span id="ok_badge" class="badge">HM520</span>
               <span id="no_badge" class="badge">EXCEN</span>
               <span id="no_badge" class="badge">DECAN</span>
@@ -407,10 +408,10 @@
 							</center>
             </div>
             <div id="desc_middle_1" class="row-fluid">
-              <div class="span6">
+              <div class="span5">
                 <img src="\main\2\img\301_folded.png" width="auto">
               </div>
-              <div class="span6">
+              <div class="span4">
                 <h2>
                   휴대와 보관이 간편한 디자인.
                 </h2>
@@ -423,10 +424,10 @@
               <br><br><br><br>
             </div>
             <div id="desc_middle_2" class="row-fluid">
-              <div class="span6">
+              <div class="span5">
                 <img src="\main\2\img\301_conve2.png" width="auto">
               </div>
-              <div class="span6">
+              <div class="span4">
                 <h2>
                   한층 편리해진 유지보수.
                 </h2>
@@ -440,7 +441,7 @@
               <br><br><br><br>
             </div>
             <div id="desc_middle_spec" class="row-fluid">
-              <div class="span4">
+              <div class="span3">
                 <h2>
                   크기 및 무게<sup>1</sup>
                 </h2>
@@ -451,7 +452,7 @@
                   무게:<span class="body_text">&nbsp;4.5 Kg</span>
                 </h3>
               </div>
-              <div class="span8">
+              <div class="span6">
                 <img src="\main\2\img\301_size.png" width="auto">
               </div>
             </div>
@@ -481,7 +482,7 @@
               </h3>
               <br>
             </div>
-            <div id="desc_middle_toggle_table">
+            <div id="desc_middle_toggle_table" class="span9">
               <tgl_table style="display:none;width:100%;">
                   <div class="row-fluid">
                   <div class="span12">
@@ -1056,7 +1057,7 @@
                구매 문의
               </h2>
               <div class="row-fluid">
-                <div class="span6">
+                <div class="span4">
                   <br><br><br>
                   <center>
                     <img src="/main/2/img/301_pkg_deluxe_resize.png">
@@ -1069,7 +1070,8 @@
 										<button id="buy_btn_deluxe" class="buy_btn">구매하기</button>
                   </center>
                 </div>
-                <div class="span6">
+								<div class="span1"></div>
+                <div class="span4">
                   <br><br><br>
                   <center>
                     <img src="/main/2/img/301_pkg_lite_resize.png"><br><br><br>
@@ -1178,7 +1180,7 @@
                 추천 액세서리
               </h2>
               <div class="row-fluid">
-                <div class="span6">
+                <div class="span4">
                   <br><br><br>
                   <center>
                     <img src="/main/2/img/301_acc_cleaning_kit.png"><br><br><br>
@@ -1191,7 +1193,8 @@
                     </button>
                   </center>
                 </div>
-                <div class="span6">
+								<div class="span1"></div>
+                <div class="span4">
                   <br><br><br>
                   <center>
                     <img src="/main/2/img/301_acc_hs_cleaning_kit.png"><br><br><br>
@@ -1515,55 +1518,55 @@
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_01.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_1.png" width="500%">'
         });
         $('[data-toggle2="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_02.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_2.png" width="500%">'
         });
         $('[data-toggle3="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_03.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_3.png" width="500%">'
         });
         $('[data-toggle4="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_04.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_4.png" width="500%">'
         });
         $('[data-toggle5="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_05.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_5.png" width="500%">'
         });
         $('[data-toggle6="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_06.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_6.png" width="500%">'
         });
         $('[data-toggle7="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_07.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_7.png" width="500%">'
         });
         $('[data-toggle8="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_08.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_8.png" width="500%">'
         });
         $('[data-toggle9="popover"]').popover({
           placement : 'top',
           trigger : 'hover',
           html : true,
-          content : '<img src="/main/2/img/301_in_the_box/301_box_09.png" width="500%">'
+          content : '<img src="/main/2/img/301_in_the_box/301_box_9.png" width="500%">'
         });
         $('[data-toggle10="popover"]').popover({
           placement : 'top',
