@@ -261,7 +261,7 @@
 		series1.data = generateDailyData();
 		series1.xAxis = dateAxis1;
 		series1.yAxis = valueAxis1;
-		series1.tooltipText = "{dateX}: [bold]{valueY}[/]";
+		series1.tooltipText = "{dateX}손익: [bold]{valueY}[/]";
 
 		// Create hourly series and related axes
 		var dateAxis2 = chart.xAxes.push(new am4charts.DateAxis());
@@ -285,7 +285,7 @@
 		series2.yAxis = valueAxis2;
 		series2.tensionX = 0.8;
 		series2.strokeWidth = 2;
-		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}: [bold]{valueY}%[/]";
+		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}수익률: [bold]{valueY}%[/]";
 
 		// Add cursor
 		chart.cursor = new am4charts.XYCursor();
