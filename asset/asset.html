@@ -58,12 +58,14 @@
       <div class="row-fluid">
         <div class="row">
           <div class="span12">
+						<h2>또또맘 투자자산의 수익 그래프입니다.</h2>
+						<br>
 						<div id="chartdiv">
 						</div>
 						<br>
 					</div>
 					<div class="span12">
-						<span id="today"></span> 일자의 또또맘 자산현황입니다.
+						<h2><span id="today"></span> 일자의 또또맘 자산현황입니다.</h2>
 						<br>
 						<table class="table table-striped" style="width:100%;">
 							<thead id="table_head" style="text-align:center;">
@@ -210,7 +212,7 @@
 					</div>
 					<br><br>
 					<div class="span12">
-						<span id="today"></span> 일자의 또또맘 투자자산의 비중입니다.
+						<h2><span id="today2"></span> 일자의 또또맘 투자자산의 비중입니다.</h2>
 						<br>
 						<div id="chartdiv_semicircle">
 						</div>
@@ -370,6 +372,7 @@
 			var today = new Date();
 			var todayReset = getFormatDate(today);
 			document.getElementById("today").innerHTML=todayReset;
+			document.getElementById("today2").innerHTML=todayReset;
 			today.setHours(9,0,0,0);
 
 			var dayPeriod = (today-firstDate)/1000/60/60/24+1;
