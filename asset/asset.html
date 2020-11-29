@@ -18,6 +18,12 @@
       width: 100%;
       height: 500px;
     }
+		#table_head{
+			text-align:center;
+		}
+		#table_body{
+			text-align:right;
+		}
 
     </style>
 		<link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -49,8 +55,8 @@
 					<div class="span12">
 						<span id="today"></span> 일자의 또또맘 자산현황입니다.
 						<br>
-						<table class="table table-striped">
-							<thead style="text-align:center;">
+						<table class="table table-striped" style="width:100%;">
+							<thead id="table_head" style="text-align:center;">
 								<tr>
 									<th>
 										계좌
@@ -72,7 +78,7 @@
 									</th>
 								</tr>
 							</thead>
-							<tbody style="text-align:right;">
+							<tbody id="table_body" style="text-align:right;">
 								<tr>
 									<td>
 										국내계좌
