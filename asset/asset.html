@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>chart created with amCharts | amCharts</title>
-		<meta name="description" content="chart created using amCharts live editor" />
+		<title>Assets</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- use Google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="dataset.js"></script>
+		<!-- Bootstrap -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 
     <!-- Styles -->
@@ -14,6 +20,8 @@
     }
 
     </style>
+		<link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
     <!-- Resources -->
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
@@ -26,7 +34,23 @@
 	  <script src=https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js></script>
 	  <script src=https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js></script>
 
-    <!-- Chart code -->
+
+	</head>
+    <!-- HTML -->
+  <body>
+		<div id="body" class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span12">
+						<div id="chartdiv">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Chart code -->
     <script>
 		am4core.ready(function() {
 
@@ -51,7 +75,7 @@
 		// Create daily series and related axes
 		var dateAxis1 = chart.xAxes.push(new am4charts.DateAxis());
 		dateAxis1.renderer.grid.template.location = 0;
-		dateAxis1.renderer.minGridDistance = 40;
+		dateAxis1.renderer.minGridDistance = 60;
 
 		var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
 
@@ -83,8 +107,9 @@
 		series2.data = generateHourlyData();
 		series2.xAxis = dateAxis2;
 		series2.yAxis = valueAxis2;
-		series2.strokeWidth = 3;
-		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}: [bold]{valueY}%[/]";
+		series2.tensionX = 0.8;
+		series2.strokeWidth = 2;
+		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}: [bold]{valueY}v x%[/]";
 
 		// Add cursor
 		chart.cursor = new am4charts.XYCursor();
@@ -178,11 +203,5 @@
 
 		}); // end am4core.ready()
     </script>
-
-    <!-- HTML -->
-    <div id="chartdiv"></div>
-		<span id="test"></span>
-		<br>
-		<span id="test2"></span>
 	</body>
 </html>
