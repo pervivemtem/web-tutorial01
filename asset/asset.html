@@ -497,8 +497,8 @@
 				value: assetTotal[15].toLocaleString()
 			}
 		];
-		chart.radius = am4core.percent(70);
-		chart.innerRadius = am4core.percent(40);
+		chart.radius = am4core.percent(60);
+		chart.innerRadius = am4core.percent(35);
 		chart.startAngle = 180;
 		chart.endAngle = 360;
 
@@ -506,8 +506,8 @@
 		series.dataFields.value = "value";
 		series.dataFields.category = "asset";
 
-		series.slices.template.cornerRadius = 10;
-		series.slices.template.innerCornerRadius = 7;
+		series.slices.template.cornerRadius = 7;
+		series.slices.template.innerCornerRadius = 5;
 		series.slices.template.draggable = true;
 		series.slices.template.inert = true;
 		series.alignLabels = false;
