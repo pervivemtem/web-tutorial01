@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chart created with amCharts | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		<script type="text/javascript" src="dataset.js"></script>
+
+
+    <!-- Styles -->
+    <style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+
+    </style>
+
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="colors.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js"></script>
+	  <script src=https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js></script>
+	  <script src=https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js></script>
+
+    <!-- Chart code -->
+    <script>
+		am4core.ready(function() {
+
+		// Themes begin
+		am4core.useTheme(am4themes_kelly);
+		am4core.useTheme(am4themes_animated);
+		// Themes end
+
+		// Create chart instance
+		var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+		// Date format setting
+		function getFormatDate(dateFormat){
+			var year = dateFormat.getFullYear();
+			var month = (1+dateFormat.getMonth());
+				month = month >= 10 ? month : '0'+month;
+			var day = dateFormat.getDate();
+				day = day >= 10 ? day : '0'+day;
+			return year+'-'+month+'-'+day;
+		}
+
+		// Create daily series and related axes
+		var dateAxis1 = chart.xAxes.push(new am4charts.DateAxis());
+		dateAxis1.renderer.grid.template.location = 0;
+		dateAxis1.renderer.minGridDistance = 40;
+
+		var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
+
+		var series1 = chart.series.push(new am4charts.ColumnSeries());
+		series1.dataFields.valueY = "value";
+		series1.dataFields.dateX = "date";
+		series1.data = generateDailyData();
+		series1.xAxis = dateAxis1;
+		series1.yAxis = valueAxis1;
+		series1.tooltipText = "{dateX}: [bold]{valueY}[/]";
+
+		// Create hourly series and related axes
+		var dateAxis2 = chart.xAxes.push(new am4charts.DateAxis());
+		dateAxis2.renderer.grid.template.location = 0;
+		dateAxis2.renderer.minGridDistance = 40;
+		dateAxis2.renderer.labels.template.disabled = true;
+		dateAxis2.renderer.grid.template.disabled = true;
+		dateAxis2.renderer.tooltip.disabled = true;
+
+		var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
+		valueAxis2.renderer.opposite = true;
+		valueAxis2.renderer.grid.template.disabled = true;
+		valueAxis2.renderer.labels.template.disabled = false;
+		valueAxis2.renderer.tooltip.disabled = true;
+
+		var series2 = chart.series.push(new am4charts.LineSeries());
+		series2.dataFields.valueY = "value";
+		series2.dataFields.dateX = "date";
+		series2.data = generateHourlyData();
+		series2.xAxis = dateAxis2;
+		series2.yAxis = valueAxis2;
+		series2.strokeWidth = 3;
+		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}: [bold]{valueY}%[/]";
+
+		// Add cursor
+		chart.cursor = new am4charts.XYCursor();
+
+
+		function generateDailyData() {
+		    var firstDate = new Date('2020-07-30');
+				var today = new Date();
+				today.setHours(9,0,0,0);
+				console.log(firstDate);
+				console.log(today);
+				var dayPeriod = (today-firstDate)/1000/60/60/24+1;
+				console.log(dayPeriod);
+        firstDate.setDate(firstDate.getDate());
+		    var data = [];
+				var resultArray = new Array;
+					resultArray = [1];//dummydata
+				console.log(resultArray);
+
+		    for(var i = 0; i < dayPeriod; i++) {
+		      var newDate = new Date(firstDate);
+		      newDate.setDate(newDate.getDate() + i);
+					var dateFormat = getFormatDate(newDate);
+					var result = dataset.find(dateIndex => dateIndex.date === dateFormat);
+					console.log(dateFormat);
+					//
+					if(result && true){
+						pmnt=Number(result.p1+result.p2+result.p3+result.p4+result.p5+result.p6+result.p7+result.p8+result.p9);
+						fv=Number(result.f1+result.f2+result.f3+result.f4+result.f5+result.f6+result.f7+result.f8+result.f9);
+						profit=fv-pmnt;
+						resultArray.push(profit);
+						resultArray.splice(0, 1);
+						result = profit;
+					}else{
+						result = resultArray[0];
+					};
+					console.log(result);
+		      data.push({
+		        date: newDate,
+		        value: result
+		      });
+					console.log(data);
+		    }
+		  return data;
+		}
+
+		function generateHourlyData() {
+			var firstDate = new Date('2020-07-30');
+			var today = new Date();
+			today.setHours(9,0,0,0);
+			console.log(firstDate);
+			console.log(today);
+			var dayPeriod = (today-firstDate)/1000/60/60/24+1;
+			console.log(dayPeriod);
+			firstDate.setDate(firstDate.getDate());
+			var data = [];
+			var resultArray = new Array;
+				resultArray = [1];//dummydata
+			console.log(resultArray);
+
+			for(var i = 0; i < dayPeriod; i++) {
+				var newDate = new Date(firstDate);
+				newDate.setDate(newDate.getDate() + i);
+				var dateFormat = getFormatDate(newDate);
+				var result = dataset.find(dateIndex => dateIndex.date === dateFormat);
+				console.log(dateFormat);
+				//
+				if(result && true){
+					pmnt=Number(result.p1+result.p2+result.p3+result.p4+result.p5+result.p6+result.p7+result.p8+result.p9);
+					fv=Number(result.f1+result.f2+result.f3+result.f4+result.f5+result.f6+result.f7+result.f8+result.f9);
+					rate=(fv-pmnt)/pmnt*100;
+					resultArray.push(rate.toFixed(1));
+					resultArray.splice(0, 1);
+					result = rate.toFixed(1);
+				}else{
+					result = resultArray[0];
+				};
+				console.log(result);
+				data.push({
+					date: newDate,
+					value: result
+				});
+				console.log(data);
+			}
+		return data;
+		}
+
+		var scrollbarX = new am4core.Scrollbar();
+		scrollbarX.marginBottom = 20;
+		chart.scrollbarX = scrollbarX;
+
+		}); // end am4core.ready()
+    </script>
+
+    <!-- HTML -->
+    <div id="chartdiv"></div>
+		<span id="test"></span>
+		<br>
+		<span id="test2"></span>
+	</body>
+</html>
