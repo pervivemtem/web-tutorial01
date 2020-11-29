@@ -261,7 +261,7 @@
 		series1.data = generateDailyData();
 		series1.xAxis = dateAxis1;
 		series1.yAxis = valueAxis1;
-		series1.tooltipText = "{dateX} 손익: [bold]{valueY}원[/]";
+		series1.tooltipText = "{dateX}손익: [bold]{valueY}[/]";
 
 		// Create hourly series and related axes
 		var dateAxis2 = chart.xAxes.push(new am4charts.DateAxis());
@@ -284,8 +284,8 @@
 		series2.xAxis = dateAxis2;
 		series2.yAxis = valueAxis2;
 		series2.tensionX = 0.8;
-		series2.strokeWidth = 3;
-		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')} 수익률: [bold]{valueY}%[/]";
+		series2.strokeWidth = 2;
+		series2.tooltipText = "{dateX.formatDate('yyyy-MM-dd')}수익률: [bold]{valueY}%[/]";
 
 		// Add cursor
 		chart.cursor = new am4charts.XYCursor();
@@ -295,22 +295,21 @@
 		    var firstDate = new Date('2020-07-30');
 				var today = new Date();
 				today.setHours(9,0,0,0);
-				console.log(firstDate);
-				console.log(today);
+
 				var dayPeriod = (today-firstDate)/1000/60/60/24+1;
-				console.log(dayPeriod);
+
         firstDate.setDate(firstDate.getDate());
 		    var data = [];
 				var resultArray = new Array;
 					resultArray = [1];//dummydata
-				console.log(resultArray);
+
 
 		    for(var i = 0; i < dayPeriod; i++) {
 		      var newDate = new Date(firstDate);
 		      newDate.setDate(newDate.getDate() + i);
 					var dateFormat = getFormatDate(newDate);
 					var result = dataset.find(dateIndex => dateIndex.date === dateFormat);
-					console.log(dateFormat);
+
 					//
 					if(result && true){
 						pmnt=Number(result.p1+result.p2+result.p3+result.p4+result.p5+result.p6+result.p7+result.p8+result.p9);
@@ -322,12 +321,12 @@
 					}else{
 						result = resultArray[0];
 					};
-					console.log(result);
+
 		      data.push({
 		        date: newDate,
 		        value: result
 		      });
-					console.log(data);
+
 		    }
 		  return data;
 		}
@@ -336,22 +335,21 @@
 			var firstDate = new Date('2020-07-30');
 			var today = new Date();
 			today.setHours(9,0,0,0);
-			console.log(firstDate);
-			console.log(today);
+
 			var dayPeriod = (today-firstDate)/1000/60/60/24+1;
-			console.log(dayPeriod);
+
 			firstDate.setDate(firstDate.getDate());
 			var data = [];
 			var resultArray = new Array;
 				resultArray = [1];//dummydata
-			console.log(resultArray);
+
 
 			for(var i = 0; i < dayPeriod; i++) {
 				var newDate = new Date(firstDate);
 				newDate.setDate(newDate.getDate() + i);
 				var dateFormat = getFormatDate(newDate);
 				var result = dataset.find(dateIndex => dateIndex.date === dateFormat);
-				console.log(dateFormat);
+
 				//
 				if(result && true){
 					pmnt=Number(result.p1+result.p2+result.p3+result.p4+result.p5+result.p6+result.p7+result.p8+result.p9);
@@ -363,12 +361,12 @@
 				}else{
 					result = resultArray[0];
 				};
-				console.log(result);
+
 				data.push({
 					date: newDate,
 					value: result
 				});
-				console.log(data);
+
 			}
 		return data;
 		}
@@ -379,11 +377,9 @@
 			var todayReset = getFormatDate(today);
 			document.getElementById("today").innerHTML=todayReset;
 			today.setHours(9,0,0,0);
-			console.log(firstDate);
-			console.log(today);
-			console.log(todayReset);
+
 			var dayPeriod = (today-firstDate)/1000/60/60/24+1;
-			console.log(dayPeriod);
+
 			firstDate.setDate(firstDate.getDate());
 
 			var indiAsset = new Array;
@@ -431,14 +427,13 @@
 				}else{
 					result = indiAsset;
 				};
-				console.log(indiAsset);
+
 			}
 		return indiAsset;
 		}
 
 		var assetTotal = assetData();
-		console.log(assetTotal);
-		console.log(assetTotal[0]);
+
 		document.getElementById("p1").innerHTML=assetTotal[1].toLocaleString();
 		document.getElementById("p2").innerHTML=assetTotal[2].toLocaleString();
 		document.getElementById("p3").innerHTML=assetTotal[3].toLocaleString();
