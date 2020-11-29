@@ -45,11 +45,10 @@
 						<div id="chartdiv">
 						</div>
 						<br>
-						<span id="today"></span>
-						<br>
-						<span id="2day"></span>
 					</div>
 					<div class="span12">
+						<span id="today"></span> 일자의 또또맘 자산현황입니다.
+						<br>
 						<table class="table table-striped">
 							<thead style="text-align:center;">
 								<tr>
@@ -372,7 +371,7 @@
 			var firstDate = new Date('2020-07-30');
 			var today = new Date();
 			var todayReset = getFormatDate(today);
-			document.getElementById("2day").innerHTML=todayReset;
+			document.getElementById("today").innerHTML=todayReset;
 			today.setHours(9,0,0,0);
 			console.log(firstDate);
 			console.log(today);
