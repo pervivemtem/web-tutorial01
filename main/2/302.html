@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFZF6QTQ7F"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-JFZF6QTQ7F');
+		</script>
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Feeder Calibration Jig. - Hanwha SMT Products</title>
+    <!-- image preload -------------------------------->
+		<script>
+      for(let i=1; i<=7;i++){
+        (new Image()).src = "/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_"+i+".png";
+      }
+    </script>
+    <!-- Bootstrap -->
+    <link href="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\css\bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> for web-->
+    <style type="text/css">
+      body{
+        padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+      }
+      #no_badge{
+      background-color:#dddddd;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+    </style>
+    <link href="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\css\bootstrap-responsive.css" rel="stylesheet">
+    <!--<link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> for web-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body>
+<!--hide temprary
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/main">Hanwha Online Service Platform</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a href="/main/1">Newsletter</a></li>
+            <li class="active"><a href="/main/2">Products</a></li>
+            <li><a href="/main/3">Online Shop</a></li>
+		    		<li><a href="/main/4">Training Center</a></li>
+						</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <div id="body" class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span2">
+<!-- hide temporary
+            <div class="well" style="padding:8px 0;">
+              <ul class="nav nav-list">
+								<span id="hardwares" class="nav-header" style="cursor:pointer;">Hardwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="hardwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class="" style><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span type="button" id="softwares" class="nav-header" style="cursor:pointer;">Softwares&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="softwares_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class=""><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+							<ul class="nav nav-list">
+								<span id="acc" class="nav-header" style="cursor:pointer;">Accessories & Etc.&nbsp;<i class="fa fa-caret-down"></i></span>
+                <ul id="acc_hide" class="nav nav-list" style="padding:0px;margin:0px;display:none;">
+                	<li class="active"><a href="/main/2/301">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;Head Maintenance Pkg.</a></li>
+                	<li><a href="#">&nbsp;&nbsp;<i class="fa fa-cube"></i>&nbsp;준비중입니다.</a></li>
+              	</ul>
+              </ul>
+            </div>
+-->
+
+            <!--
+            <p>Hardware Solutions</p>
+            <ul value="Hardware Solutions" class="nav nav-tabs nav-stacked">
+              <li class="active"><a href="/main/2/101">Head Solenoid Valve</a></li>
+              <li><a href="/main/2/102">Docking Cart Type Feederbase</a></li>
+              <li><a href="/main/2/103">Long PCB Conveyor</a></li>
+              <li><a href="/main/2/104">Edge Fixer</a></li>
+              <li><a href="/main/2/105">전동피더용 설비</a></li>
+              <li><a href="/main/2/106">Area Sensor</a></li>
+              <li><a href="/main/2/107">외장형 진공펌프</a></li>
+              <li><a href="/main/2/108">IT System</a></li>
+              <li><a href="/main/2/109">시스템 보안성 강화</a></li>
+              <li><a href="/main/2/110">Camera 성능 향상</a></li>
+            </ul>
+            <p>Software Solutions</p>
+            <ul value="Software Solutions" class="nav nav-tabs nav-stacked">
+              <li><a href="/main/2/201">Bad/Fid Mark 검사결과 공유</a></li>
+              <li><a href="/main/2/202">Production Data 생성</a></li>
+              <li><a href="/main/2/203">장착점/Array 수량 확장</a></li>
+              <li><a href="/main/2/204">정전 복구 기능</a></li>
+              <li><a href="/main/2/205">T-Planner(OLP, ELITE)</a></li>
+              <li><a href="/main/2/206">T-PnP</a></li>
+            </ul>-->
+          </div>
+          <div class="span8">
+            <!-- 적용대상 설비 -->
+            <div id="target_machine">
+              <h5 style="margin-bottom:0px;color:#999999">
+               <i>대상 설비를 꼭 확인하세요!</i>
+              </h5>
+              <span id="ok_badge" class="badge">HM520</span>
+              <span id="ok_badge" class="badge">EXCEN</span>
+              <span id="no_badge" class="badge">DECAN</span>
+              <span id="no_badge" class="badge">SM471</span>
+              <span id="no_badge" class="badge">SM481</span>
+              <span id="no_badge" class="badge">SM482</span>
+              <span id="no_badge" class="badge">SM451</span>
+              <span id="no_badge" class="badge">SM411</span>
+              <span id="no_badge" class="badge">SM411F</span>
+              <span id="no_badge" class="badge">SM421</span>
+              <span id="no_badge" class="badge">SLM100</span>
+              <span id="no_badge" class="badge">SCM</span>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <!-- 본문은 여기서부터 -->
+            <div id="intro">
+              <h2>
+                <div style="color:gray;margin-bottom:10px">
+                어느덧<br>
+                예전같지 않은 피더.<br>
+                </div>
+                <div>
+                어느새<br>
+                새 것과 같이.
+                </div>
+              </h2>
+              <br>
+              <h3 style="line-height:35px">
+               <p>분당 667회<sup>1</sup>나 반복적인 동작을 수행하는 피더는<br>
+               피로도가 가장 많이 누적되는 부분들 중 하나입니다.</p>
+              <p>이제 정기적인 피더의 유지보수는 선택이 아닌 필수입니다.</p>
+              </h3>
+            </div>
+            <div id="divider_8br">
+              <br><br><br><br><br><br><br><br>
+            </div>
+            <div id="maintenance_tool_visual_image" class="span12">
+
+		    			<center>
+		            <object data="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\302_svg\hm_feeder_cali_jig_laptop_v9.svg" type="image/svg+xml" width="75%" height="75%" style="margin-bottom:100px">
+    		        </object>
+							</center>
+            </div>
+            <div id="desc_middle_1" class="row-fluid">
+              <div class="span6">
+                <img src="Z:\03. 홍보 자료\★ 2021 웹서비스\컨텐츠\피더 교정지그\Feeder Calibration JIG\HM Feeder Calibration JIG\int_1.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  고정밀 검사 기능.
+                </h2>
+                <h3 class="body_text">
+                  <p>피더 공급단의 위치를 검사하여 제대로 된 위치에서 부품 공급이 이루어지고 있는지 교정 Software를 통해 검사합니다.</p>
+                  <p>각각의 검사결과를 피더의 내장메모리에 저장하여 관리할 수 있습니다. 마찬가지로 피더에 저장된 데이터를 다시 불러와 검사하고 보정하는데 사용할 수도 있습니다.</p>
+                </h3>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="desc_middle_2" class="row-fluid">
+              <div class="span6">
+                <img src="Z:\03. 홍보 자료\★ 2021 웹서비스\컨텐츠\피더 교정지그\Feeder Calibration JIG\HM Feeder Calibration JIG\int_2.png" width="auto">
+              </div>
+              <div class="span6">
+                <h2>
+                  믿을 수 있는 신뢰도.
+                </h2>
+                <h3 class="body_text">
+                  교정 지그의 신뢰도는 걱정하지 마세요.<br>
+                  마스터 피더를 이용하면 교정 지그의 신뢰도는 언제나 최고의 수준으로 유지됩니다.
+                </h3>
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="desc_middle_spec" class="row-fluid">
+              <div class="span4">
+                <h2>
+                  크기 및 무게
+                </h2>
+                <h3 class="body_text_size_indicator">
+                  가로:<span class="body_text">&nbsp;575 mm</span><br>
+                  세로:<span class="body_text">&nbsp;190 mm</span><br>
+                  높이:<span class="body_text">&nbsp;265 mm</span><br>
+                  무게<sup>2</sup>:<span class="body_text">&nbsp;18 Kg</span>
+                </h3>
+              </div>
+              <div class="span8">
+                <img src="Z:\03. 홍보 자료\★ 2021 웹서비스\컨텐츠\피더 교정지그\Feeder Calibration JIG\HM Feeder Calibration JIG\size.png" width="auto">
+              </div>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="components">
+              <h2>
+                구성품
+              </h2>
+              <h3 class="body_text">
+                옵션에 따라 제품의 구성에 차이가 있습니다. <br>
+                구성 옵션을 확인해 주세요.
+              </h3>
+              <br>
+              <!--<h3 class="body_text_size_indicator">
+                구성품목 자세히 보기
+                <label class="switch" style="padding-top:16.5px">
+                  <input type="checkbox">
+                  <tgl>
+                    <span class="fa fa-plus-square"></span>
+                  </tgl>
+                  <tgl style="display:none;">
+                    <span class="fa fa-minus-square"></span>
+                  </tgl>
+                </label>
+              </h3>
+              <br>-->
+            </div>
+            <div id="desc_middle_toggle_table">
+              <tgl_table style="width:100%;">
+                  <div class="row-fluid">
+                  <div class="span12">
+                  <table class="table table-striped">
+                    <thead id="table_th">
+                      <tr>
+                        <th>
+                          #
+                        </th>
+                        <th>
+                          품목
+                        </th>
+                        <th>
+                          수량
+                        </th>
+                        <th>
+                          옵션A<br>(기본)
+                        </th>
+                        <th>
+                          옵션B
+                        </th>
+                        <th>
+                          옵션C
+                        </th>
+                        <th>
+                          옵션D
+                        </th>
+                        <th>
+                          비고
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="table_td">
+                    <!-------------------1st row------------------->
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Calibration Jig
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle1="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------2nd row------------------->
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        Master Feeder
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle2="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------3rd row------------------->
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td>
+                        Master Tape(8mm)
+                      </td>
+                      <td>
+                        3 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle3="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------4th row------------------->
+                    <tr>
+                      <td>
+                        4
+                      </td>
+                      <td>
+                        Master Tape(12mm)
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle4="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------5th row------------------->
+                    <tr>
+                      <td>
+                        5
+                      </td>
+                      <td>
+                        Master Tape Case
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle5="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------6th row------------------->
+                    <tr>
+                      <td>
+                        6
+                      </td>
+                      <td>
+                        Laptop PC<sup>3</sup>
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle6="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-------------------7th row------------------->
+                    <tr>
+                      <td>
+                        7
+                      </td>
+                      <td>
+                        Pelican Case
+                      </td>
+                      <td>
+                        1 ea
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        -
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        ○
+                      </td>
+                      <td>
+                        <div class="bs-example">
+                          <button type="button" class="btn-small" id="table_btn" data-toggle7="popover">View</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+                </div>
+              </tgl_table>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="specification">
+              <h2>
+                제품 사양
+              </h2>
+              <h3 class="body_text">
+                제품의 세부사양을 확인해 주세요.
+              </h3>
+              <br>
+              <table class="table table-striped">
+                <tr>
+                  <th>항목</th>
+                  <th>내용</th>
+                </tr>
+                <tr>
+                  <td>교정 대상</td>
+                  <td>
+                    HM 8mm/0402/W4P1 Feeder, HM HS 8mm Feeder<br>
+                    V 8mm/0402/W4P1 Feeder, V 12~88mm Feeder
+                  </td>
+                </tr>
+                <tr>
+                  <td>사용 전압</td>
+                  <td>
+                    100~240VAC (Universal AC input/Full range) 50/60Hz
+                  </td>
+                </tr>
+                <tr>
+                  <td>SMPS<sup>4</sup></td>
+                  <td>24V DC, 100W</td>
+                </tr>
+                <tr>
+                  <td>Camera</td>
+                  <td>
+                    USB 2.0, CCD, 1/2 inch, 640 x 480
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lens</td>
+                  <td>
+                    1.75배 줌, WD 65
+                  </td>
+                </tr>
+                <tr>
+                  <td>Barcode Scanner</td>
+                  <td>
+                    1D code type, 일반 상용품
+                  </td>
+                </tr>
+              </table>
+              <br><br><br><br>
+              <h3 class="body_text">
+                별도로 PC를 준비하시는 경우에는 아래의 PC사양을 꼭 확인해 주세요.
+              </h3>
+              <br>
+              <table class="table table-striped">
+                <tr>
+                  <th>항목</th>
+                  <th>내용</th>
+                </tr>
+                <tr>
+                  <td>운영체제</td>
+                  <td>Windows 10 이상, 64 bit, 영문판</td>
+                </tr>
+                <tr>
+                  <td>CPU</td>
+                  <td>Intel 3세대 코어 프로세서 이상</td>
+                </tr>
+                <tr>
+                  <td>Memory</td>
+                  <td>4GB RAM 이상</td>
+                </tr>
+                <tr>
+                  <td>HDD(SSD)</td>
+                  <td>500GB 이상(128GB 이상)</td>
+                </tr>
+                <tr>
+                  <td>그래픽카드</td>
+                  <td>일체형 이상</td>
+                </tr>
+                <tr>
+                  <td>모니터 해상도</td>
+                  <td>1920 * 1080 이상</td>
+                </tr>
+              </table>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="outro_purchase_goods">
+              <h2>
+               제품 구매
+              </h2>
+              <h3>
+                구매 또는 추가 문의는 아래 서비스를 이용해 주세요.
+              </h3>
+              <h4>
+                <ul >
+                  <li style="margin-bottom:20px">문의게시판&nbsp;&nbsp;
+                    <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+                  </li>
+                  <li style="margin-bottom:20px">담당자에게 바로 연락
+                  </li>
+                    <ul style="list-style-type:none;">
+                      <li style="margin-bottom:20px">
+                        <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                        <input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+                      </li>
+                      <li style="margin-bottom:20px">
+                        <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                        <input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+                      </li>
+                    </ul>
+                </ul>
+                </h4>
+
+
+            <div id="modal_show_deluxe" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Head Maintenance Kit (Deluxe Pkg.)</li>
+                    <li>제품코드 : AM03-035894A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+                  <ul>
+                    <li>문의게시판&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+                    </li>
+                    <li>담당자에게 바로 연락
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_deluxe" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_deluxe">Close</button>
+              </div>
+            </div>
+            <div id="modal_show_lite" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Head Maintenance Kit (Lite Pkg.)</li>
+                    <li>제품코드 : AM03-035892A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-035892A" id="myInput_lite_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+                  구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+                  <ul>
+                    <li>문의게시판&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+                    </li>
+                    <li>담당자에게 바로 연락
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li>
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+
+
+						<div id="modal_show_acc1" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">액세서리 살펴보기</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : Cleaning Kit</li>
+                    <li>제품코드 : FC08-001021A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc1_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="FC08-001021A" id="myInput_acc1_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+									구성품 정보
+                  <table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>
+													#
+												</th>
+												<th>
+													Name
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													공기분사기
+												</td>
+												<td>
+													카메라 렌즈 표면의 먼지 제거
+												</td>
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													붓
+												</td>
+												<td>
+													피더베이스 표면의 이물질 제거
+												</td>
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													면봉
+												</td>
+												<td>
+													노즐 홀더 이물질 청소
+												</td>
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													에틸알코올
+												</td>
+												<td>
+													커버 글래스 표면 청소,<br>스핀들 샤프트 내경 청소,<br><strong>* IPA 사용금지</strong>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													천
+												</td>
+												<td>
+													반사거울 또는 렌즈의 이물질 제거
+												</td>
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													제전 장갑
+												</td>
+												<td>
+													카메라 또는 반사거울 청소
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_acc1" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+						<div id="divider_4br">
+              <br><br><br><br>
+            </div>
+						<div id="modal_show_acc2" class="modal hide fade" tabindex="-1" style="display: none;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">액세서리 살펴보기</h5>
+              </div>
+              <div class="modal-body">
+                <div class="modal_desc">
+                  선택된 제품의 정보를 확인하세요.
+                  <ul>
+                    <li>제품명 : High Speed Head Cleaning Kit</li>
+                    <li>제품코드 : AM03-036326A&nbsp;&nbsp;
+                      <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc2_code()"><span id="modal_copy"></span></span>
+                      <input type="text" value="AM03-036326A" id="myInput_acc2_code" style="position:absolute;top:-9999em;">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal_desc">
+									구성품 정보
+                  <table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>
+													#
+												</th>
+												<th>
+													Name
+												</th>
+												<th>
+													Unit
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													Biral T&D Oil
+												</td>
+												<td>
+													70 ml
+												</td>
+												<td>
+													헤드 스핀들 청소 및 도포,<br>스핀들 상부 및 T축 기어 도포
+												</td>
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													HP-300 Grease
+												</td>
+												<td>
+													10 g
+												</td>
+												<td>
+													헤드 Spool(O-ring, Spool arm) 도포
+												</td>
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													무진 면봉(HUBY-340)
+												</td>
+												<td>
+													50 ea
+												</td>
+												<td>
+													헤드 Collar 샤프트 내경 청소
+												</td>
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													극세사 천
+												</td>
+												<td>
+													5 ea
+												</td>
+												<td>
+													커버헤드 스핀들 청소 및 도포,<br>헤드 전체부위 청소 시 사용
+												</td>
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													내경 청소 브러시
+												</td>
+												<td>
+													1 ea
+												</td>
+												<td>
+													헤드 Collar 샤프트 청소
+												</td>
+											</tr>
+										</tbody>
+									</table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+								<button type="button" class="btn btn-primary" id="close_modal_acc2" href="#" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span2">
+        </div>
+      </div>
+    </div>
+
+            <!-- 여기서부터는 수정금지 -->
+    <div id="footer">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span2">
+            </div>
+            <div class="span8">
+              <div id="footer_comment" class="footer_cmnt" style="margin-top:15px">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <ol>
+                      <li>당사의 측정기준으로 HM 8mm Feeder의 공급시간을 계산한 결과입니다.</li>
+                      <li>Calibration Jig의 단품 무게를 측정한 수치입니다.</li>
+                      <li>Laptop PC는 별도로 준비가 가능하며, 본문에 표기된 최소사양을 확인해 주십시오.</li>
+                      <li>Switching Mode Power Supply, 전원공급장치를 의미합니다.</li>
+                    </ol>
+										<div style="text-align:left;padding-left:13px;">Last Updated: 12/23/20</div>
+                  </div>
+                </font_cmnt>
+  							<footer></footer>
+              </div>
+              <div id="footer_company_info">
+                <font_cmnt>
+                  <div style="line-height:20px">
+                    <br>
+                    <ul>
+                      <li>
+                        이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>
+                        수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br>
+                      </li>
+                      <li>
+                        앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br>
+                      </li>
+                      <li>
+                        한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br>
+                      </li>
+                      <li>
+                        COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br>
+                      </li>
+                    </ul>
+                  </div>
+                </font_cmnt>
+            	</div>
+            </div>
+            <div class="span2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\js\bootstrap.min.js"></script>
+    <!--<script src="/static/lib/bootstrap/js/bootstrap.min.js"></script> for web-->
+    <script>
+      $(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+			$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+    </script>
+    <script>
+      var check = $("input[type='checkbox']");
+      check.click(function(){
+        $("tgl").toggle();
+        $("tgl_table").slideToggle(200);
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle1="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_1.png" width="500%">'
+        });
+        $('[data-toggle2="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_2.png" width="500%">'
+        });
+        $('[data-toggle3="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_3.png" width="500%">'
+        });
+        $('[data-toggle4="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_3.png" width="500%">'
+        });
+        $('[data-toggle5="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_5.png" width="500%">'
+        });
+        $('[data-toggle6="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_6.png" width="500%">'
+        });
+        $('[data-toggle7="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover',
+          html : true,
+          content : '<img src="/Users/hg.bak/Documents/박홍균/am_hpm-master (1)/am_hpm-master_retouch/main/2/img/302_in_the_box/302_box_7.png" width="500%">'
+        });
+      });
+    </script>
+		<script>
+			$(document).ready(function() {
+      	$("#buy_btn_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("show");
+          });
+				$("#close_modal_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_lite").click(function() {
+					$("#modal_show_lite").modal("show");
+          });
+				$("#close_modal_lite").click(function() {
+					$("#modal_show_lite").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc1").click(function() {
+					$("#modal_show_acc1").modal("show");
+          });
+				$("#close_modal_acc1").click(function() {
+					$("#modal_show_acc1").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc2").click(function() {
+					$("#modal_show_acc2").modal("show");
+          });
+				$("#close_modal_acc2").click(function() {
+					$("#modal_show_acc2").modal("hide");
+        });
+      });
+		</script>
+
+
+    <script>
+      function myFunctionClip_deluxe_code() {
+        var copyText = document.getElementById("myInput_deluxe_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_tel() {
+        var copyText = document.getElementById("myInput_deluxe_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_mail() {
+        var copyText = document.getElementById("myInput_deluxe_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_code() {
+        var copyText = document.getElementById("myInput_lite_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_tel() {
+        var copyText = document.getElementById("myInput_lite_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_mail() {
+        var copyText = document.getElementById("myInput_lite_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc1_code() {
+        var copyText = document.getElementById("myInput_acc1_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc1_code').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc2_code() {
+        var copyText = document.getElementById("myInput_acc2_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc2_code').delay(500).fadeOut(500);
+      }
+    </script>
+  </body>
+</html>
