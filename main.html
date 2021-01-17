@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -29,10 +32,23 @@
 
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
-            <ul class="nav">
+            <ul class="nav" id="nav_main">
             <li><a href="/main/1">Newsletter</a></li>
-            <li><a href="/main/2">Products</a></li>
-            <li><a href="/main/3">Maintenace</a></li>
+            <li><a href="/main/2">Hardware</a></li>
+            <!--<li><a href="/main/3">Maintenace</a></li>-->
+            </ul>
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown">
+                      Account
+                      <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  ...
+                </ul>
+              </li>
             </ul>
             <!-- .nav, .navbar-search, .navbar-form, etc -->
           </div>
@@ -59,5 +75,35 @@
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!--below is ajax-->
+    <script>
+    function fetchPage(name){
+      fetch(name).then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML=text;
+        })
+      })
+    }
+    if(location.hash){
+      fetchPage(location.hash.substr(2));
+    }else{
+      fetchPage('welcome');
+    }
+    fetch('list').then(function(response){
+      response.text().then(function(text){
+        //<li><a href="#!javascript" onclick="fetchPage('javascript')">Javascipt</a></li>
+        var items = text.split(',');
+        var tags = '';
+        for(i=0;i<items.length;i++){
+          var item = items[i];
+          item = item.trim();
+          var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
+          tags = tags + tag;
+        }
+        document.querySelector('#nav').innerHTML=tags;
+      })
+    })
+  </script>
   </body>
 </html>
