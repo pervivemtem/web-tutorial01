@@ -36,14 +36,7 @@
             <li><a href="#">Newsletter</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardwares <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="nav-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+              <ul class="dropdown-menu" id="hardwares">
               </ul>
             </li>
             <li class="dropdown">
@@ -124,6 +117,21 @@
         document.querySelector('#nav').innerHTML=tags;
       })
     })
+  </script>
+  <script>
+    fetch('list_hardwares').then(function(response){
+    response.text().then(function(text){
+      var items = text.split(',');
+      var tags = '';
+      for(i=0;i<items.length;i++){
+        var item = items[i];
+        item = item.trim();
+        var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
+        tags = tags + tag;
+      }
+      document.querySelector('#hardwares').innerHTML=tags;
+    })
+  })    
   </script>
   </body>
 </html>
