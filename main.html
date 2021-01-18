@@ -523,68 +523,6 @@
     </section>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
-    
-    <!--below is ajax-->
-    
-    <script>
-      function fetchPage(name){
-        fetch(name).then(function(response){
-          response.text().then(function(text){
-            document.querySelector('desc').innerHTML=text;
-          })
-        })
-      }
-      if(location.hash){
-        fetchPage(location.hash.substr(2));
-      }else{
-        fetchPage('home');
-      }
-    </script>   
-  <script>
-    fetch('list_hardwares').then(function(response){
-    response.text().then(function(text){
-      var items = text.split(',');
-      var tags = '';
-      for(i=0;i<items.length;i++){
-        var item = items[i];
-        item = item.trim();
-        var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
-        tags = tags + tag;
-      }
-      document.querySelector('#hardwares').innerHTML=tags;
-    })
-  })    
-  </script>
-  <script>
-    fetch('list_softwares').then(function(response){
-    response.text().then(function(text){
-      var items = text.split(',');
-      var tags = '';
-      for(i=0;i<items.length;i++){
-        var item = items[i];
-        item = item.trim();
-        var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
-        tags = tags + tag;
-      }
-      document.querySelector('#softwares').innerHTML=tags;
-    })
-  })    
-  </script>
-  <script>
-    fetch('list_acc').then(function(response){
-    response.text().then(function(text){
-      var items = text.split(',');
-      var tags = '';
-      for(i=0;i<items.length;i++){
-        var item = items[i];
-        item = item.trim();
-        var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
-        tags = tags + tag;
-      }
-      document.querySelector('#acc').innerHTML=tags;
-    })
-  })    
-  </script>
 <script>
       $(document).ready(function(){
         $("#hardwares").click(function(){
