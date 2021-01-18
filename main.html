@@ -46,7 +46,7 @@
             </li>
               <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories & etc. <b class="caret"></b></a>
-              <ul class="dropdown-menu" id="list_acc">
+              <ul class="dropdown-menu" id="acc">
               </ul>
             </li>
             <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -103,7 +103,7 @@
         var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
         tags = tags + tag;
       }
-      document.querySelector('#hardwares').innerHTML=tags;
+      document.querySelector('#softwares').innerHTML=tags;
     })
   })    
   </script>
@@ -118,7 +118,7 @@
         var tag='<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>'
         tags = tags + tag;
       }
-      document.querySelector('#hardwares').innerHTML=tags;
+      document.querySelector('#acc').innerHTML=tags;
     })
   })    
   </script>
