@@ -8,9 +8,419 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <style>
+    <style type="text/css">
       body{
         padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+        background-color:gray;
+        color:#0d1049 !important;
+      }
+      #no_badge{
+      background-color:gray;
+      color:#cacaca;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+
+      @media (min-width: 980px) {
+        body{
+          padding-top:0 !important;
+        }
+        .section.main_copy_img{
+          height:85vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:75vh !important;
+
+        }
+      }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .section.main_copy_img{
+          height:80vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:55vh !important;
+
+        }
+      }
+      @media (max-width: 767px) {
+        .section.main_copy_img{
+          height:50vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:45vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(img/201/goods_spec_orange.jpg) no-repeat center top !important;
+          background-size:cover !important;
+        }
+      }
+      @media (max-width: 480px) {
+        .section.main_copy_img{
+          height:35vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:40vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(img/201/goods_spec_orange.jpg) no-repeat center top;
+          background-size:cover !important;
+        }
+      }
+      #main_copy_img{
+        background-image: url(img/201/main_copy_detailed.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #olp_img{
+        background-image: url(img/201/pcb_olp.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #it_img{
+        background-image: url(img/201/t-it.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #goods_img{
+        background: url(img/201/goods_spec_orange.jpg) no-repeat center top;
+        width:auto;
+        overflow:hidden;
+        background-size:contain;
+      }
+      .section{
+        margin-left:-20px;
+        margin-right:-20px;
+      }
+      .section.top_text{
+        background-image: url(img/201/main_back.jpg);
+        background-size:100% 100%;
+      }
+
+      .section header{
+        max-width:80%;
+        position:relative;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        font-size:1rem;
+        text-align:center;
+      }
+      a {
+        text-decoration:none !important;
+      }
+      .highlight{
+        color:#0e90db;
+      }
+      #goods_desc{
+        line-height:140%;
+        margin-bottom:10px;
       }
     </style>
     <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
