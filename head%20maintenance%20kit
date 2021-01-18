@@ -1,0 +1,1068 @@
+<div class="span9">
+  <!-- 적용대상 설비 -->
+  <div id="target_machine" class="span9">
+    <span id="ok_badge" class="badge">HM520</span>
+    <span id="no_badge" class="badge">EXCEN</span>
+    <span id="no_badge" class="badge">DECAN</span>
+    <span id="no_badge" class="badge">SM471</span>
+    <span id="no_badge" class="badge">SM481</span>
+    <span id="no_badge" class="badge">SM482</span>
+    <span id="no_badge" class="badge">SM451</span>
+    <span id="no_badge" class="badge">SM411</span>
+    <span id="no_badge" class="badge">SM411F</span>
+    <span id="no_badge" class="badge">SM421</span>
+    <span id="no_badge" class="badge">SLM100</span>
+    <span id="no_badge" class="badge">SCM</span>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <!-- 본문은 여기서부터 -->
+  <div id="intro">
+    <h2>
+      최고의 엔지니어는<br>
+      잘 설계된 도구를 활용합니다.
+    </h2>
+    <br>
+    <h3>
+     값비싼 헤드, 이젠 내손으로 <br>
+     직접 관리하세요.
+    </h3>
+  </div>
+  <div id="maintenance_tool_visual_image" class="span9">
+    <center>
+      <object data="\svgtest\Head_Cleaning_Kit_tch7.svg" type="image/svg+xml" width="75%" height="75%">
+      </object>
+    </center>
+  </div>
+  <div id="desc_middle_1" class="row-fluid">
+    <div class="span5">
+      <img src="\main\2\img\301_folded.png" width="auto">
+    </div>
+    <div class="span4">
+      <h2>
+        휴대와 보관이 간편한 디자인.
+      </h2>
+      <h3 class="body_text">
+        헤드 거치대를 접은 상태로 보관할 수 있어 공간 활용성이 우수합니다.
+      </h3>
+    </div>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="desc_middle_2" class="row-fluid">
+    <div class="span5">
+      <img src="\main\2\img\301_conve2.png" width="auto">
+    </div>
+    <div class="span4">
+      <h2>
+        한층 편리해진 유지보수.
+      </h2>
+      <h3 class="body_text">
+        분실하기 쉬운 작은 부품들을 이제 안전하게 보관하세요.<br>
+        설비에서 불편한 자세로 작업을 하지않아도 됩니다. 간편하게 헤드를 빼내어 거치대에 장착만 하세요.
+      </h3>
+    </div>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="desc_middle_spec" class="row-fluid">
+    <div class="span3">
+      <h2>
+        크기 및 무게<sup>1</sup>
+      </h2>
+      <h3 class="body_text_size_indicator">
+        가로:<span class="body_text">&nbsp;330 mm</span><br>
+        세로:<span class="body_text">&nbsp;280 mm</span><br>
+        높이:<span class="body_text">&nbsp;433 mm</span><br>
+        무게:<span class="body_text">&nbsp;4.5 Kg</span>
+      </h3>
+    </div>
+    <div class="span6">
+      <img src="\main\2\img\301_size.png" width="auto">
+    </div>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="components">
+    <h2>
+      구성품
+    </h2>
+    <h3 class="body_text">
+      유지보수 작업에 필요한 다양한 도구들이 포함되어 있습니다. <br>
+      아래의 표를 열어 구성 옵션을 확인해 주세요.
+    </h3>
+    <br>
+    <h3 class="body_text_size_indicator">
+      구성품목 자세히 보기
+      <label class="switch" style="padding-top:16.5px">
+        <input type="checkbox">
+        <tgl>
+          <span class="fa fa-plus-square"></span>
+        </tgl>
+        <tgl style="display:none;">
+          <span class="fa fa-minus-square"></span>
+        </tgl>
+      </label>
+    </h3>
+    <br>
+  </div>
+  <div id="desc_middle_toggle_table">
+    <tgl_table style="display:none;width:100%;">
+        <div class="row-fluid">
+        <div class="span9">
+        <table class="table table-striped">
+        <thead id="table_th">
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Description
+            </th>
+            <th>
+              Quantity
+            </th>
+            <th>
+              Deluxe Pkg.<sup>2</sup>
+            </th>
+            <th>
+              Lite Pkg.<sup>3</sup>
+            </th>
+            <th>
+              Remakrs
+            </th>
+          </tr>
+        </thead>
+        <tbody id="table_td">
+          <!-------------------1st row------------------->
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              HS Head 거치대
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle1="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------2nd row------------------->
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              스핀들 Jig
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle2="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------3rd row------------------->
+          <tr>
+            <td>
+              3
+            </td>
+            <td>
+              스핀들 Jig2
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle3="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------4th row------------------->
+          <tr>
+            <td>
+              4
+            </td>
+            <td>
+              Biral_T&D
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle4="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------5th row------------------->
+          <tr>
+            <td>
+              5
+            </td>
+            <td>
+              HP300 Grease
+            </td>
+            <td>
+              500 g
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle5="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------6th row------------------->
+          <tr>
+            <td>
+              6
+            </td>
+            <td>
+              극세사 천
+            </td>
+            <td>
+              1 Box
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle6="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------7th row------------------->
+          <tr>
+            <td>
+              7
+            </td>
+            <td>
+              Tray Pallet
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle7="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------8th row------------------->
+          <tr>
+            <td>
+              8
+            </td>
+            <td>
+              치간 칫솔
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle8="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------9th row------------------->
+          <tr>
+            <td>
+              9
+            </td>
+            <td>
+              면봉
+            </td>
+            <td>
+              100 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle9="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------10th row------------------->
+          <tr>
+            <td>
+              10
+            </td>
+            <td>
+              Spool O-ring 삽입 치구
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle10="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------11th row------------------->
+          <tr>
+            <td>
+              11
+            </td>
+            <td>
+              HS HEAD Spool 분해 Jig
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle11="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------12th row------------------->
+          <tr>
+            <td>
+              12
+            </td>
+            <td>
+              필터 렌치 스토퍼
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle12="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------13th row------------------->
+          <tr>
+            <td>
+              13
+            </td>
+            <td>
+              Spindle A'ssy
+            </td>
+            <td>
+              5 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle13="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------14th row------------------->
+          <tr>
+            <td>
+              14
+            </td>
+            <td>
+              Spool A'ssy
+            </td>
+            <td>
+              5 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle14="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------15th row------------------->
+          <tr>
+            <td>
+              15
+            </td>
+            <td>
+              O-ring
+            </td>
+            <td>
+              50 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle15="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------16th row------------------->
+          <tr>
+            <td>
+              16
+            </td>
+            <td>
+              Spring
+            </td>
+            <td>
+              10 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td rowspan=3>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle16="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------17th row------------------->
+          <tr>
+            <td>
+              17
+            </td>
+            <td>
+              Cap ring
+            </td>
+            <td>
+              10 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <!--
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn" data-toggle17="popover">View Image</button>
+              </div>
+            </td>
+            -->
+          </tr>
+          <!-------------------18th row------------------->
+          <tr>
+            <td>
+              18
+            </td>
+            <td>
+              CAP_SP2
+            </td>
+            <td>
+              10 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <!--
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn" data-toggle18="popover">View Image</button>
+              </div>
+            </td>
+            -->
+          </tr>
+          <!-------------------19th row------------------->
+          <tr>
+            <td>
+              19
+            </td>
+            <td>
+              Barrel Filter
+            </td>
+            <td>
+              20 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle19="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------20th row------------------->
+          <tr>
+            <td>
+              20
+            </td>
+            <td>
+              Spindle Filter
+            </td>
+            <td>
+              20 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle20="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------21st row------------------->
+          <tr>
+            <td>
+              21
+            </td>
+            <td>
+              Dial Gauge
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle21="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------22nd row------------------->
+          <tr>
+            <td>
+              22
+            </td>
+            <td>
+              Spindle Setting Tool
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle22="popover">View</button>
+              </div>
+            </td>
+          </tr>
+          <!-------------------23nd row------------------->
+          <tr>
+            <td>
+              23
+            </td>
+            <td>
+              Box
+            </td>
+            <td>
+              1 ea
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              ○
+            </td>
+            <td>
+              <div class="bs-example">
+                <button type="button" class="btn-small" id="table_btn" data-toggle23="popover">View</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      </div>
+    </tgl_table>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="outro_purchase_goods">
+    <h2>
+     구매 문의
+    </h2>
+    <div class="row-fluid">
+      <div class="span4">
+        <br><br><br>
+        <center>
+          <img src="/main/2/img/301_pkg_deluxe_resize.png">
+          <br><br><br>
+          <span id="buy_desc">
+            Deluxe Package<br>
+            AM03-035894A<br>
+          </span>
+          <!--<button id="buy_btn_deluxe" data-toggle="modal" href="#modal_show_deluxe" class="buy_btn">구매하기</button>-->
+          <button id="buy_btn_deluxe" class="buy_btn">구매하기</button>
+        </center>
+      </div>
+      <div class="span1"></div>
+      <div class="span4">
+        <br><br><br>
+        <center>
+          <img src="/main/2/img/301_pkg_lite_resize.png"><br><br><br>
+          <span id="buy_desc">
+            Lite Package<br>
+            AM03-035892A<br>
+          </span>
+          <!--<button id="buy_btn_lite" data-toggle="modal" href="#modal_show_lite" class="buy_btn">구매하기</button>-->
+          <button id="buy_btn_lite" class="buy_btn">구매하기</button>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+
+  <div id="modal_show_deluxe" class="modal hide fade" tabindex="-1" style="display: none;">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+    </div>
+    <div class="modal-body">
+      <div class="modal_desc">
+        선택된 제품의 정보를 확인하세요.
+        <ul>
+          <li>제품명 : Head Maintenance Kit (Deluxe Pkg.)</li>
+          <li>제품코드 : AM03-035894A&nbsp;&nbsp;
+            <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_code()"><span id="modal_copy"></span></span>
+            <input type="text" value="AM03-035894A" id="myInput_deluxe_code" style="position:absolute;top:-9999em;">
+          </li>
+        </ul>
+      </div>
+      <div class="modal_desc">
+        구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+        <ul>
+          <li>문의게시판&nbsp;&nbsp;
+            <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+          </li>
+          <li>담당자에게 바로 연락
+          </li>
+            <ul style="list-style-type:none;">
+              <li>
+                <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                <input type="text" value="07071476140" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+              </li>
+              <li>
+                <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                <input type="text" value="smtcs@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+              </li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <!--<button type="button" class="btn btn-primary" id="close_modal_deluxe" href="#" data-dismiss="modal">Close</button>-->
+      <button type="button" class="btn btn-primary" id="close_modal_deluxe">Close</button>
+    </div>
+  </div>
+  <div id="modal_show_lite" class="modal hide fade" tabindex="-1" style="display: none;">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">구매정보 확인</h5>
+    </div>
+    <div class="modal-body">
+      <div class="modal_desc">
+        선택된 제품의 정보를 확인하세요.
+        <ul>
+          <li>제품명 : Head Maintenance Kit (Lite Pkg.)</li>
+          <li>제품코드 : AM03-035892A&nbsp;&nbsp;
+            <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_code()"><span id="modal_copy"></span></span>
+            <input type="text" value="AM03-035892A" id="myInput_lite_code" style="position:absolute;top:-9999em;">
+          </li>
+        </ul>
+      </div>
+      <div class="modal_desc">
+        구매 또는 추가 문의는 아래 서비스를 이용해 주세요.<br>
+        <ul>
+          <li>문의게시판&nbsp;&nbsp;
+            <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">이동하기</span></span>
+          </li>
+          <li>담당자에게 바로 연락
+          </li>
+            <ul style="list-style-type:none;">
+              <li>
+                <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;070-7147-6140&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_tel()"><span id="modal_copy"></span></span>
+                <input type="text" value="07071476140" id="myInput_lite_tel" style="position:absolute;top:-9999em;">
+              </li>
+              <li>
+                <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;smtcs@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_lite_mail()"><span id="modal_copy"></span></span>
+                <input type="text" value="smtcs@hanwha.com" id="myInput_lite_mail" style="position:absolute;top:-9999em;">
+              </li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+      <button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="outro_acc">
+    <h2>
+      추천 액세서리
+    </h2>
+    <div class="row-fluid">
+      <div class="span4">
+        <br><br><br>
+        <center>
+          <img src="/main/2/img/301_acc_cleaning_kit.png"><br><br><br>
+          <span id="buy_desc">
+            Cleaning Kit<br>
+            FC08-001021A<br>
+          </span>
+          <button type="button" class="ref_btn" id="buy_btn_acc1">
+            살펴보기
+          </button>
+        </center>
+      </div>
+      <div class="span1"></div>
+      <div class="span4">
+        <br><br><br>
+        <center>
+          <img src="/main/2/img/301_acc_hs_cleaning_kit.png"><br><br><br>
+          <span id="buy_desc">
+            HS Cleaning Kit<br>
+            AM03-036326A<br>
+          </span>
+          <button type="button" class="ref_btn" id="buy_btn_acc2">
+            살펴보기
+          </button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_show_acc1" class="modal hide fade" tabindex="-1" style="display: none;">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">액세서리 살펴보기</h5>
+    </div>
+    <div class="modal-body">
+      <div class="modal_desc">
+        선택된 제품의 정보를 확인하세요.
+        <ul>
+          <li>제품명 : Cleaning Kit</li>
+          <li>제품코드 : FC08-001021A&nbsp;&nbsp;
+            <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc1_code()"><span id="modal_copy"></span></span>
+            <input type="text" value="FC08-001021A" id="myInput_acc1_code" style="position:absolute;top:-9999em;">
+          </li>
+        </ul>
+      </div>
+      <div class="modal_desc">
+        구성품 정보
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>
+                #
+              </th>
+              <th>
+                Name
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1
+              </td>
+              <td>
+                공기분사기
+              </td>
+              <td>
+                카메라 렌즈 표면의 먼지 제거
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2
+              </td>
+              <td>
+                붓
+              </td>
+              <td>
+                피더베이스 표면의 이물질 제거
+              </td>
+            </tr>
+            <tr>
+              <td>
+                3
+              </td>
+              <td>
+                면봉
+              </td>
+              <td>
+                노즐 홀더 이물질 청소
+              </td>
+            </tr>
+            <tr>
+              <td>
+                4
+              </td>
+              <td>
+                에틸알코올
+              </td>
+              <td>
+                커버 글래스 표면 청소,<br>스핀들 샤프트 내경 청소,<br><strong>* IPA 사용금지</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                5
+              </td>
+              <td>
+                천
+              </td>
+              <td>
+                반사거울 또는 렌즈의 이물질 제거
+              </td>
+            </tr>
+            <tr>
+              <td>
+                6
+              </td>
+              <td>
+                제전 장갑
+              </td>
+              <td>
+                카메라 또는 반사거울 청소
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+      <button type="button" class="btn btn-primary" id="close_modal_acc1" href="#" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  <div id="divider_4br">
+    <br><br><br><br>
+  </div>
+  <div id="modal_show_acc2" class="modal hide fade" tabindex="-1" style="display: none;">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">액세서리 살펴보기</h5>
+    </div>
+    <div class="modal-body">
+      <div class="modal_desc">
+        선택된 제품의 정보를 확인하세요.
+        <ul>
+          <li>제품명 : High Speed Head Cleaning Kit</li>
+          <li>제품코드 : AM03-036326A&nbsp;&nbsp;
+            <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_acc2_code()"><span id="modal_copy"></span></span>
+            <input type="text" value="AM03-036326A" id="myInput_acc2_code" style="position:absolute;top:-9999em;">
+          </li>
+        </ul>
+      </div>
+      <div class="modal_desc">
+        구성품 정보
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>
+                #
+              </th>
+              <th>
+                Name
+              </th>
+              <th>
+                Unit
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1
+              </td>
+              <td>
+                Biral T&D Oil
+              </td>
+              <td>
+                70 ml
+              </td>
+              <td>
+                헤드 스핀들 청소 및 도포,<br>스핀들 상부 및 T축 기어 도포
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2
+              </td>
+              <td>
+                HP-300 Grease
+              </td>
+              <td>
+                10 g
+              </td>
+              <td>
+                헤드 Spool(O-ring, Spool arm) 도포
+              </td>
+            </tr>
+            <tr>
+              <td>
+                3
+              </td>
+              <td>
+                무진 면봉(HUBY-340)
+              </td>
+              <td>
+                50 ea
+              </td>
+              <td>
+                헤드 Collar 샤프트 내경 청소
+              </td>
+            </tr>
+            <tr>
+              <td>
+                4
+              </td>
+              <td>
+                극세사 천
+              </td>
+              <td>
+                5 ea
+              </td>
+              <td>
+                커버헤드 스핀들 청소 및 도포,<br>헤드 전체부위 청소 시 사용
+              </td>
+            </tr>
+            <tr>
+              <td>
+                5
+              </td>
+              <td>
+                내경 청소 브러시
+              </td>
+              <td>
+                1 ea
+              </td>
+              <td>
+                헤드 Collar 샤프트 청소
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <!--<button type="button" class="btn btn-primary" id="close_modal_lite" href="#" data-dismiss="modal">Close</button>-->
+      <button type="button" class="btn btn-primary" id="close_modal_acc2" href="#" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
