@@ -665,11 +665,9 @@
               $("#softwares_hide").slideUp("fast");
           }
       });
-      $(document).on("click", function(event){
-          var $trigger = $("#acc");
-          if($trigger !== event.target && !$trigger.has(event.target).length){
-              $("#acc_hide").slideUp("fast");
-          }
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
       });
       $(document).on("click", function(event){
           var $trigger = $("#maintenance");
