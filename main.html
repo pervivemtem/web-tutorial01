@@ -653,23 +653,21 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
 		    <script>
-			      $(document).on("click", function(event){
+	$(document).ready(function(){
+        $("#newsletter").click(function(){
+          $("#newsletter_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
           var $trigger = $("#newsletter");
           if($trigger !== event.target && !$trigger.has(event.target).length){
               $("#newsletter_hide").slideUp("fast");
           }
       });
-						  $(document).on("click", function(event){
-          var $trigger = $("#hardwares");
-          if($trigger !== event.target && !$trigger.has(event.target).length){
-              $("#hardwares_hide").slideUp("fast");
-          }
-      });
-      $(document).on("click", function(event){
-          var $trigger = $("#hardwares");
-          if($trigger !== event.target && !$trigger.has(event.target).length){
-              $("#hardwares_hide").slideUp("fast");
-          }
+	$(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
       });
 						  $(document).on("click", function(event){
           var $trigger = $("#hardwares");
@@ -677,11 +675,10 @@
               $("#hardwares_hide").slideUp("fast");
           }
       });
-      $(document).on("click", function(event){
-          var $trigger = $("#softwares");
-          if($trigger !== event.target && !$trigger.has(event.target).length){
-              $("#softwares_hide").slideUp("fast");
-          }
+	$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
       });
 						  $(document).on("click", function(event){
           var $trigger = $("#softwares");
@@ -700,11 +697,10 @@
               $("#acc_hide").slideUp("fast");
           }
       });
-      $(document).on("click", function(event){
-          var $trigger = $("#maintenance");
-          if($trigger !== event.target && !$trigger.has(event.target).length){
-              $("#maintenance_hide").slideUp("fast");
-          }
+	$(document).ready(function(){
+        $("#maintenance").click(function(){
+          $("#maintenance_hide").slideToggle(50);
+        });
       });
 						  $(document).on("click", function(event){
           var $trigger = $("#maintenance");
