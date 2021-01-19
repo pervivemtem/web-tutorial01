@@ -456,14 +456,14 @@
             <ul class="nav" id="nav_main">
             <li><a href="#">Newsletter(준비중)</a></li>	    
             <li class="dropdown"  id="hardwares">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardwares <b class="caret"></b></a>
-              <ul class="dropdown-menu"  id="hardwares_hide">
+              <a href="#" class="dropdown-toggle">Hardwares <b class="caret"></b></a>
+              <ul class="dropdown-menu"  id="hardwares_hide" style="display:none">
 		      			<li><a href="#">HM520 vs HM520h(준비중)</a></li>
               </ul>
             </li>
             <li class="dropdown" id="softwares">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Softwares <b class="caret"></b></a>
-              <ul class="dropdown-menu" id="softwares_hide">
+              <a href="#" class="dropdown-toggle">Softwares <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="softwares_hide" style="display:none">
 								<li><a href="http://daddit.ga/main/2/201">T-Solution</a></li>
 								<li><a href="#">T-PnP(준비중)</a></li>
 								<li><a href="#">T-Smart(준비중)</a></li>
@@ -481,8 +481,8 @@
               </ul>
             </li>
 						<li class="dropdown" id="maintenance">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maintenance<b class="caret"></b></a>
-              <ul class="dropdown-menu" id="maintenance_hide">
+              <a href="#" class="dropdown-toggle">Maintenance<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="maintenance_hide" style="display:none">
 								<li><a href="#">HM520 헤드 유지보수 주기(준비중)</a></li>
 								<li><a href="#">HME Feeder 부품 수명 & 유지보수 주기(준비중)</a></li>
               </ul>
@@ -653,13 +653,37 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
 		    <script>
-      $(document).on("click", function(event){
+			      $(document).on("click", function(event){
+          var $trigger = $("#newsletter");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#newsletter_hide").slideUp("fast");
+          }
+      });
+						  $(document).on("click", function(event){
           var $trigger = $("#hardwares");
           if($trigger !== event.target && !$trigger.has(event.target).length){
               $("#hardwares_hide").slideUp("fast");
           }
       });
       $(document).on("click", function(event){
+          var $trigger = $("#hardwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#hardwares_hide").slideUp("fast");
+          }
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#hardwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#hardwares_hide").slideUp("fast");
+          }
+      });
+      $(document).on("click", function(event){
+          var $trigger = $("#softwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#softwares_hide").slideUp("fast");
+          }
+      });
+						  $(document).on("click", function(event){
           var $trigger = $("#softwares");
           if($trigger !== event.target && !$trigger.has(event.target).length){
               $("#softwares_hide").slideUp("fast");
@@ -677,6 +701,12 @@
           }
       });
       $(document).on("click", function(event){
+          var $trigger = $("#maintenance");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#maintenance_hide").slideUp("fast");
+          }
+      });
+						  $(document).on("click", function(event){
           var $trigger = $("#maintenance");
           if($trigger !== event.target && !$trigger.has(event.target).length){
               $("#maintenance_hide").slideUp("fast");
