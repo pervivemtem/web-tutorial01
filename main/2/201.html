@@ -496,7 +496,7 @@
               </ul>
             </li>
 						<li class="dropdown">
-              <a href="#" id="maintenance">Accessories & etc. <b class="caret"></b></a>
+              <a href="#" id="maintenance">Maintenance<b class="caret"></b></a>
               <ul class="dropdown-menu" id="maintenance_hide">
 								<li><a href="#">HM520 헤드 유지보수 주기(준비중)</a></li>
 								<li><a href="#">HME Feeder 부품 수명 & 유지보수 주기(준비중)</a></li>
@@ -1309,6 +1309,11 @@
 			$(document).ready(function(){
         $("#acc").click(function(){
           $("#acc_hide").slideToggle(50);
+        });
+      });
+	    		$(document).ready(function(){
+        $("#maintenance").click(function(){
+          $("#maintenance_hide").slideToggle(50);
         });
       });
     </script>
