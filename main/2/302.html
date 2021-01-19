@@ -305,7 +305,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top" id="navbar">
       <div class="navbar-inner">
         <div class="container">
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -316,7 +316,7 @@
           </a>
 
           <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="/main">Hanwha Web-termarket</a>
+          <a class="brand" href="/main">Hanwha Aftermarket 4.0</a>
 
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
@@ -325,7 +325,7 @@
             <li class="dropdown">
               <a href="#" id="hardwares">Hardwares <b class="caret"></b></a>
               <ul class="dropdown-menu"  id="hardwares_hide">
-		      			<li><a href="#">(상품 준비중)</a></li>
+		      			<li><a href="#">HM520 vs HM520h(준비중)</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -342,6 +342,17 @@
               <ul class="dropdown-menu" id="acc_hide">
 								<li><a href="http://daddit.ga/main/2/301">Head Maintenance Pkg.</a></li>
 								<li><a href="http://daddit.ga/main/2/302">Feeder Calibration Jig</a></li>
+								<li><a href="#">Feeder (IT) Setup Unit(준비중)</a></li>
+								<li><a href="#">HME Feeder vs SME Feeder (준비중)</a></li>
+								
+              </ul>
+            </li>
+						<li class="dropdown">
+              <a href="#" id="maintenance">Maintenance<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="maintenance_hide">
+								<li><a href="#">HM520 헤드 유지보수 주기(준비중)</a></li>
+								<li><a href="#">HME Feeder 부품 수명 & 유지보수 주기(준비중)</a></li>
+								
               </ul>
             </li>
             <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -1278,6 +1289,11 @@
 			$(document).ready(function(){
         $("#acc").click(function(){
           $("#acc_hide").slideToggle(50);
+        });
+      });
+	    		$(document).ready(function(){
+        $("#maintenance").click(function(){
+          $("#maintenance_hide").slideToggle(50);
         });
       });
     </script>
