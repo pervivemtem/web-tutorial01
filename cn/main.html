@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFZF6QTQ7F"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-JFZF6QTQ7F');
+		</script>
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body{
+        padding-top:60px;
+      }
+      h2{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans SC', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans SC', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+        background-color:gray;
+        color:#0d1049 !important;
+      }
+      #no_badge{
+      background-color:gray;
+      color:#cacaca;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+
+      @media (min-width: 980px) {
+        body{
+          padding-top:0 !important;
+        }
+        .section.main_copy_img{
+          height:85vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:75vh !important;
+
+        }
+      }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .section.main_copy_img{
+          height:80vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:55vh !important;
+
+        }
+      }
+      @media (max-width: 767px) {
+        .section.main_copy_img{
+          height:50vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:45vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(main/2/img/201/goods_spec_orange.jpg) no-repeat center top !important;
+          background-size:cover !important;
+        }
+      }
+      @media (max-width: 480px) {
+        .section.main_copy_img{
+          height:35vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:40vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(main/2/img/201/goods_spec_orange.jpg) no-repeat center top;
+          background-size:cover !important;
+        }
+      }
+      #main_copy_img{
+        background-image: url(main/2/img/201/main_copy_detailed.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #olp_img{
+        background-image: url(main/2/img/201/pcb_olp.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #it_img{
+        background-image: url(main/2/img/201/t-it.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #goods_img{
+        background: url(main/2/img/201/goods_spec_orange.jpg) no-repeat center top;
+        width:auto;
+        overflow:hidden;
+        background-size:contain;
+      }
+      .section{
+        margin-left:-20px;
+        margin-right:-20px;
+      }
+      .section.top_text{
+        background-image: url(main/2/img/201/main_back.jpg);
+        background-size:100% 100%;
+      }
+
+      .section header{
+        max-width:80%;
+        position:relative;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        font-size:1rem;
+        text-align:center;
+      }
+      a {
+        text-decoration:none !important;
+      }
+      .highlight{
+        color:#0e90db;
+      }
+      #goods_desc{
+        line-height:140%;
+        margin-bottom:10px;
+      }
+    </style>
+    <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <title>Hanwha SMT Aftermarket Webpage(China)</title>
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="navbar navbar-fixed-top" id="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand" href="cn/main">Hanwha Aftermarket 4.0 (CN)</a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav" id="nav_main">
+            <li><a href="#">Newsletter(준비중)</a></li>	    
+            <li class="dropdown"  id="hardwares">
+              <a href="#" class="dropdown-toggle">Hardwares <b class="caret"></b></a>
+              <ul class="dropdown-menu"  id="hardwares_hide" style="display:none">
+		      			<li><a href="#">HM520 vs HM520h(준비중)</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" id="softwares">
+              <a href="#" class="dropdown-toggle">Softwares <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="softwares_hide" style="display:none">
+								<li><a href="http://daddit.ga/cn/main/2/201">T-Solution</a></li>
+								<li><a href="#">T-PnP(준비중)</a></li>
+								<li><a href="#">T-Smart(준비중)</a></li>
+								<li><a href="#">T-Mobile Barcode(준비중)</a></li>
+              </ul>
+            </li>
+              <li class="dropdown" id="acc">
+              <a href="#" class="dropdown-toggle">Accessories & etc. <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="acc_hide" style="display:none">
+								<li><a href="http://daddit.ga/cn/main/2/301">Head Maintenance Pkg.</a></li>
+								<li><a href="http://daddit.ga/cn/main/2/302">Feeder Calibration Jig</a></li>
+								<li><a href="#">Feeder (IT) Setup Unit(준비중)</a></li>
+								<li><a href="#">HME Feeder vs SME Feeder (준비중)</a></li>
+								
+              </ul>
+            </li>
+						<li class="dropdown" id="maintenance">
+              <a href="#" class="dropdown-toggle">Maintenance<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="maintenance_hide" style="display:none">
+								<li><a href="#">HM520 헤드 유지보수 주기(준비중)</a></li>
+								<li><a href="#">HME Feeder 부품 수명 & 유지보수 주기(준비중)</a></li>
+              </ul>
+            </li>
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!--navbar end-->	
+	<section id="blank" style="height:60px"></section>
+			<section>
+			<div class="container">
+				<div class="row-fluid">
+					<div class="row">
+						<div class="hero-unit span12">
+							<h1>안녕하세요.</h1>
+							<h3>한화정밀기계 애프터마켓 뉴스레터 페이지에 오신 것을 환영합니다.</h3>
+							<!--<p><a class="btn btn-primary btn-large">Learn more</a></p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<section id="blank" style="height:100px"></section>
+	<section id="main_carousel">	
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row-fluid">
+				<div id="myCarousel" class="carousel slide span12">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://daddit.ga/img/carousel/carousel_01.jpg" alt="" style="background-size:contain">
+                    <div class="carousel-caption">
+                        <h4>T-Solution</h4>
+                        <p>
+                            T-Solution是多种软件的总称，从而提高工作效率。
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://daddit.ga/img/carousel/carousel_02.jpg" alt="" style="background-size:contain">
+                    <div class="carousel-caption">
+                        <h4>验证所提供零件的兼容性</h4>
+                        <p>
+                            생산 전에 부품의 오장착 여부를 검사하여 품질 불량을 예방합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://daddit.ga/img/carousel/carousel_03.jpg" alt="" style="background-size:contain">
+                    <div class="carousel-caption">
+                        <h4>간편한 부품 등록과 편집</h4>
+                        <p>
+                            사용자 친화적인 UI를 제공하여 부품 등록과 편집의 부담을 최소화합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+			</div>
+		</div>
+	</section>
+	<section id="blank" style="height:100px"></section>
+	<section>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="row">
+					<ul class="thumbnails">
+							<li class="span4">
+								<div class="thumbnail">
+									<img src="/img/thmbnail/thumb_01.jpg" alt="">
+									<div class="caption">
+										<center>
+										<h5>T-Solution</h5>
+										<p><span class="label">#생산성</span>&nbsp;<span class="label label-warning">#품질</span>&nbsp;<span class="label label-inverse">#프로그래밍</span>&nbsp;<span class="label label-inverse">#소프트웨어</span></p>
+										<p><a href="/main/2/201" class="btn btn-primary">바로가기</a></p>
+										</center>
+									</div>
+								</div>
+							</li>
+							<li class="span4">
+								<div class="thumbnail">
+									<img src="/img/thmbnail/thumb_02.jpg" alt="">
+									<div class="caption">
+										<center>
+										<h5>Head Maintenance Pkg.</h5>
+										<p><span class="label label-success">#헤드</span>&nbsp;<span class="label label-warning">#품질</span>&nbsp;<span class="label label-important">#유지보수</span>&nbsp;<span class="label label-inverse">#하드웨어</span></p>
+										<p><a href="/main/2/301" class="btn btn-primary">바로가기</a></p>
+										</center>
+									</div>
+								</div>
+							</li>
+							<li class="span4">
+								<div class="thumbnail">
+									<img src="/img/thmbnail/thumb_03.jpg" alt="">
+									<div class="caption">
+										<center>
+										<h5>Feeder Calibration Jig</h5>
+										<p><span class="label label-success">#피더</span>&nbsp;<span class="label label-warning">#품질</span>&nbsp;<span class="label label-important">#유지보수</span>&nbsp;<span class="label label-inverse">#하드웨어</span></p>
+										<p><a href="/main/2/302" class="btn btn-primary">바로가기</a></p>
+										</center>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+			<section id="blank" style="height:100px"></section>
+		<section>
+			<div class="container">
+				<div class="row-fluid">
+					<div class="row">
+						<div class="hero-unit span12">
+							<h3>한화정밀기계의 제품 라인업과 더 많은 정보는 공식 홈페이지를 통해 확인해보세요.</h3>
+							<p><a class="btn btn-primary btn-large" href="https://www.hanwhaprecisionmachinery.co.kr/" target="_blank">한화정밀기계 홈페이지 바로가기</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<section id="blank" style="height:100px"></section>
+    <section>
+      <div id="footer">
+        <div class="container">
+          <div class="row-fluid">
+            <div class="row">
+              <div class="span12">
+                <div id="footer_company_info">
+                  <font_cmnt>
+                    <div style="line-height:20px">
+                      <br>
+                      <ul>
+                        <li>
+                          이 이메일은 주식회사 한화정밀기계에서 HM520 설비를 구매한 고객을 대상으로 발송한 마케팅 이메일입니다.<br>
+                          수신거부를 원하시면 수신거부 버튼을 클릭해주십시오. <a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[수신거부]</b></a><br>
+                        </li>
+                        <li>
+                          앞으로 한화정밀기계에서 발송하는 이메일을 계속 받아보시려면 주소록, 연락처 또는 수신 허용 목록에 smtcs@hanwha.com을 추가해 주십시오.<br>
+                        </li>
+                        <li>
+                          한화정밀기계(주) 경기도 성남시 분당구 판교로 319번길 6, 13488    대표이사 : 옥경석 <br>
+                        </li>
+                        <li>
+                          COPYRIGHT 2020 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br>
+                        </li>
+                      </ul>
+                    </div>
+                  </font_cmnt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+		    <script>
+	$(document).ready(function(){
+        $("#newsletter").click(function(){
+          $("#newsletter_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#newsletter");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#newsletter_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#hardwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#hardwares_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#softwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#softwares_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+			  $(document).on("click", function(event){
+          var $trigger = $("#acc");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#acc_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#maintenance").click(function(){
+          $("#maintenance_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#maintenance");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#maintenance_hide").slideUp("fast");
+          }
+      });
+    </script>
+  </body>
+</html>
