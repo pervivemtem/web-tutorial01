@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFZF6QTQ7F"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-JFZF6QTQ7F');
+		</script>
+    <!-- use Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>T-Solution - Hanwha SMT(CN) Products</title>
+
+    <!-- Bootstrap -->
+    <!--<link href="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\css\bootstrap.min.css" rel="stylesheet" media="screen"> for web-->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      h2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+	      color:#111111;
+      }
+      h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size: 16pt;
+				color:#111111;
+      }
+      .body_text{
+        color:#888888;
+      }
+      #body_text{
+        color:#888888;
+      }
+      #body_text_size_indicator{
+        color:#2c2d2d;
+      }
+      #sub_li_txt .selected {
+          color:#333333;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 900;
+      }
+      sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:15pt;
+      }
+      sub2{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:35pt;
+      }
+      .sub1{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        list-style:none;
+        text-decoration:none;
+        color:black;
+      }
+      #ul_menu{
+        padding-left:0px;
+      }
+      .sub_li{
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        text-decoration:none;
+        color:black;
+      }
+      .sub_div{
+        margin: 40px 0px;
+        padding: 0px 20px 0px 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      .sub_div_txt{
+        margin: 15px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:17px;
+      }
+      #sub_ul_txt{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        font-size:21px;
+        color:gray;
+      }
+      #a_custom{
+        text-decoration:none;
+        color:white;
+      }
+
+      /* table */
+      #table_th th{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:500;
+        font-size:13px;
+        color:#2a2a2a;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_td td{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+        color:#808080;
+        padding:4px;
+        vertical-align:middle;
+      }
+      #table_btn{
+        border:1px;
+        padding:1.5px 8px;
+        margin:0px;
+        background-color:#9c9c9c;
+        color:#ebebeb;
+      }
+
+      /* Buy menu */
+        .buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      .buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+      .ref_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#62e873;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+      }
+      #buy_btn{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        background-color:#2196f3;
+        padding:4px 16px;
+        color:white;
+        height:30px;
+        border-radius:15px;
+        border:0px;
+        margin-top:18px;
+        text-decoration:none;
+      }
+      #buy_desc{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:15px;
+        padding-bottom:5px;
+        color:#2a2a2a;
+        line-height:25px;
+      }
+
+      /* Modal */
+      .modal_desc{
+        margin-bottom:20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:400;
+        font-size:13px;
+      }
+      #modal_copy{
+		    font-family: 'Noto Sans KR', sans-serif;
+      	font-weight:400;
+     		font-size:13px;
+		    color:#00608e;
+	    }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      /* Badge Option */
+      #ok_badge{
+        background-color:gray;
+        color:#0d1049 !important;
+      }
+      #no_badge{
+      background-color:gray;
+      color:#cacaca;
+      }
+
+      tgl {
+      	margin:0px;
+      	display:inline-block;
+      	font-size:15px;
+      	font-weight:bold;
+      }
+      /* bar graph */
+      #myProgress {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      #myBarNew {
+        width: 1%;
+        height: 10px;
+        background-color: #333333;
+        border-radius: 5px;
+      }
+      #myBarOld {
+        width: 1%;
+        height: 10px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+
+			/* comment */
+			.footer_cmnt{
+      border-bottom:1px solid #ccc5d1;
+    	}
+      #footer{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        background-color:#f1f1f0;
+        font-size:11px;
+        color:#86868b;
+      }
+
+      @media (min-width: 980px) {
+        body{
+          padding-top:0 !important;
+        }
+        .section.main_copy_img{
+          height:85vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:75vh !important;
+
+        }
+      }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .section.main_copy_img{
+          height:80vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.olp_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.it_img{
+          height:40vh !important;
+          background-attachment: fixed !important;
+        }
+        .section.goods_img{
+          height:55vh !important;
+
+        }
+				#navbar{
+					margin-bottom:0px !important;
+				}
+				#temp0{
+					height:0px !important;
+				}
+      }
+      @media (max-width: 767px) {
+        .section.main_copy_img{
+          height:50vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:45vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(img/201/goods_spec_orange.jpg) no-repeat center top !important;
+          background-size:cover !important;
+        }
+				#navbar{
+					margin-bottom:0px !important;
+				}
+				#temp0{
+					height:0px !important;
+				}
+      }
+      @media (max-width: 480px) {
+        .section.main_copy_img{
+          height:35vh !important;
+        }
+        .section.olp_img{
+          height:45vh !important;
+        }
+        .section.it_img{
+          height:45vh !important;
+        }
+        .section.goods_img{
+          height:40vh !important;
+        }
+        .m-20{
+          margin-bottom:20px !important;
+        }
+        #goods_img{
+          width:100% !important;
+          background: url(img/201/goods_spec_orange.jpg) no-repeat center top;
+          background-size:cover !important;
+        }
+				#navbar{
+					margin-bottom:0px !important;
+				}
+				#temp0{
+					height:0px !important;
+				}
+				
+      }
+      #main_copy_img{
+        background-image: url(img/201/main_copy_detailed.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #olp_img{
+        background-image: url(img/201/pcb_olp.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #it_img{
+        background-image: url(img/201/t-it.jpg);
+        width:auto;
+        overflow:hidden;
+        background-size:cover;
+      }
+      #goods_img{
+        background: url(img/201/goods_spec_orange.jpg) no-repeat center top;
+        width:auto;
+        overflow:hidden;
+        background-size:contain;
+      }
+      .section{
+        margin-left:-20px;
+        margin-right:-20px;
+      }
+      .section.top_text{
+        background-image: url(img/201/main_back.jpg);
+        background-size:100% 100%;
+      }
+
+      .section header{
+        max-width:80%;
+        position:relative;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        font-size:1rem;
+        text-align:center;
+      }
+      .highlight{
+        color:#0e90db;
+      }
+      #goods_desc{
+        line-height:140%;
+        margin-bottom:10px;
+      }
+    </style>
+    <!--<link href="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\css\bootstrap-responsive.css" rel="stylesheet"> for web-->
+    <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body>
+	<section id="navbar">
+    <div class="navbar navbar-fixed-top" id="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand" href="/main">Hanwha Aftermarket 4.0</a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav" id="nav_main">
+            <li><a href="#">Newsletter(准备中)</a></li>	    
+            <li class="dropdown"  id="hardwares">
+              <a href="#" class="dropdown-toggle">Hardwares <b class="caret"></b></a>
+              <ul class="dropdown-menu"  id="hardwares_hide" style="display:none">
+		      			<li><a href="#">HM520 vs HM520h(准备中)</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" id="softwares">
+              <a href="#" class="dropdown-toggle">Softwares <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="softwares_hide" style="display:none">
+								<li><a href="http://daddit.ga/main/2/201">T-Solution</a></li>
+								<li><a href="#">T-PnP(准备中)</a></li>
+								<li><a href="#">T-Smart(准备中)</a></li>
+								<li><a href="#">T-Mobile Barcode(准备中)</a></li>
+              </ul>
+            </li>
+              <li class="dropdown" id="acc">
+              <a href="#" class="dropdown-toggle">Accessories & etc. <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="acc_hide" style="display:none">
+								<li><a href="http://daddit.ga/main/2/301">Head Maintenance Pkg.</a></li>
+								<li><a href="http://daddit.ga/main/2/302">Feeder Calibration Jig</a></li>
+								<li><a href="#">Feeder (IT) Setup Unit(准备中)</a></li>
+								<li><a href="#">HME Feeder vs SME Feeder (准备中)</a></li>
+								
+              </ul>
+            </li>
+						<li class="dropdown" id="maintenance">
+              <a href="#" class="dropdown-toggle">Maintenance<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="maintenance_hide" style="display:none">
+								<li><a href="#">HM520贴张头保养周期(准备中)</a></li>
+								<li><a href="#">HME供料器配件寿命&保养周期(准备中)</a></li>
+              </ul>
+            </li>
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+	</section>
+
+<section><div style="height:40px" id="temp0"></div></section>
+<section class="section top_text">
+  <div id="body" class="container">
+    <div class="row-fluid">
+      <div class="row">
+        <div class="span2" style="height:0px">
+        </div>
+        <div class="span8">
+          <div id="target_machine" style="margin-left:20px;margin-right:20px">
+            <h5 style="margin-bottom:0px;color:#999999">
+             <i>请确认对象设备!</i>
+            </h5>
+            <span id="ok_badge" class="badge">HM520</span>
+            <span id="ok_badge" class="badge">EXCEN</span>
+            <span id="ok_badge" class="badge">DECAN</span>
+            <span id="ok_badge" class="badge">SM471</span>
+            <span id="ok_badge" class="badge">SM481</span>
+            <span id="ok_badge" class="badge">SM482</span>
+            <span id="ok_badge" class="badge">SM451</span>
+            <span id="ok_badge" class="badge">SM411</span>
+            <span id="ok_badge" class="badge">SM411F</span>
+            <span id="ok_badge" class="badge">SM421</span>
+            <span id="no_badge" class="badge">SLM100</span>
+            <span id="no_badge" class="badge">SCM</span>
+          </div>
+          <div id="divider_16br">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <div id="intro" style="margin-left:20px;margin-right:20px">
+            <center>
+            <h2  style="color:white;font-size:35pt;font-weight:500">
+              <div>
+              T-Solution
+              </div>
+            </h2>
+            <br>
+            <h2 style="color:white;font-size:45pt;font-weight:500;line-height:55pt">
+             生产所需的一切，这里应有尽有。
+           </h2>
+           <br>
+           <h3 style="color:white;font-size:16pt;font-weight:500;line-height:28pt">
+            <p>通过简单登记零件，编程算法和直观的生产率模拟UI，创建智能生产计划。T-Solution不仅通过检查程序是否与实际放置的零件相匹配，而且还可以将生产过程中编辑的程序或零件库存储在数据库中并综合进行管理，从而提高工作效率。</p><br><br>
+            <p>T-Solution是多种软件的总称，包括T-Studio、T-OLP、T-Elite、T-IT、T-Feeder 等多种解决方案。</p>
+          </h3>
+          </center>
+          </div>
+          <div id="divider_4br">
+            <br><br><br><br>
+          </div>
+        </div>
+        <div class="span2">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="main_copy_img" class="section main_copy_img">
+
+</section>
+<section><span style="float:right;color:#dddddd;font-size:10px"><a style="text-decoration:none !important" href="https://all-free-download.com/free-photos/download/business-man-point_513599.html" >kev-shine</a>, CC By</span></section>
+
+    <div id="body" class="container">
+      <div class="row-fluid">
+        <div class="row">
+          <div class="span2">
+          </div>
+          <div class="span8">
+            <!-- 본문은 여기서부터 -->
+            <div id="divider_8br">
+              <br><br><br><br><br><br><br><br>
+            </div>
+            <div id="intro" style="margin-left:20px;margin-right:20px">
+              <center>
+              <h2  style="color:#2c292c;font-size:35pt;font-weight:500">
+                <div>
+                T-Elite
+                </div>
+              </h2>
+             <br>
+             <h3 style="color:#2c292c;font-size:16pt;font-weight:500;line-height:28pt">
+              通过正确登记零件数据，编制正确的工作程序。从现在起，提前登记多样化的零件吧。以后的工作将变得更加简洁。
+            </h2>
+            </center>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+            <div id="desc_middle_1" class="row-fluid">
+              <div class="span7">
+                <img src="\main\2\img\201\t-elite.jpg" width="auto">
+              </div>
+              <div class="span5">
+                <h2 style="color:#171e8e;margin-bottom:30px">
+                  简单的零件登记工作
+                </h2>
+                <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt">
+                  <p>自动登记零件。不管零件多么复杂，只需拖动几下鼠标即可完成零件数据登记。</p>
+                  <p>登记的零件存储在数据库中，管理单元<sup>1</ sup>可以根据生产环境进行调整。</p>
+                </h3>
+              </div>
+            </div>
+            <div id="divider_2br">
+              <br><br>
+            </div>
+            <div id="desc_middle_2" class="row-fluid">
+              <div class="span7">
+                <img src="\main\2\img\201\t-elite_hw.jpg" width="auto">
+              </div>
+              <div class="span5">
+                <h2 style="color:#171e8e;margin-bottom:30px">
+                  便利性最大化
+                </h2>
+                <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt">
+                  <p>不再需要停止繁忙的设备来登记和编辑零件数据。Elite Pro具有与设备相同的零件识别环境，可提供最佳的外部工作环境。</p>
+                  <p></p>
+                </h3>
+              </div>
+            </div>
+            <div id="divider_8br">
+              <br><br><br><br><br><br><br><br>
+            </div>
+
+
+            </div>
+            <div class="span2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="olp_img" class="section olp_img">
+      <header>
+        <h2  style="color:white;font-size:35pt;font-weight:500">
+          <div>
+          T-OLP
+          </div>
+        </h2>
+       <br>
+       <h3 style="color:white;font-size:16pt;font-weight:500;line-height:28pt">
+        为创建优化的生产程序而需要考虑的条件越来越多。T-OLP考虑所有这些条件，并创建具有最有效结果的生产程序。
+      </h2>
+      </header>
+    </section>
+    <section class="section" style="background-color:#f1f1f3">
+      <div id="body" class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span10">
+              <!-- 본문은 여기서부터 -->
+              <div id="divider_4br">
+                <br><br><br><br>
+              </div>
+              <div id="desc_middle_2" class="row-fluid">
+                <div class="span6 m-20" style="background-color:white;border-radius:30px">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    生产线平衡
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>无论设备的配置和数量如何，我们都能以最优化的周期时间实现<span class =“ highlight”>生产线平衡</ span>。T-OLP创建一个生产程序，使每个设备可以在短时间内实现<span class =“ highlight”>最大效率和最大生产率</span>。</p>
+
+                  </h3>
+                  <br><br><br><br><br><br>
+                  <center>
+                  <img src="\main\2\img\201\line_bal.png" width="85%"></center>
+                </div>
+                <div class="span6 m-20" style="background-color:white;border-radius:30px">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    多作业编程
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>收集所有相似的生产机型，编制一个生产程序。<span class =“ highlight”>多作业编程内的所有程序都具有相同的喷嘴和进料器配置</span>，这大大减少了更改机型所需的时间。</p>
+
+                  </h3>
+                  <br><br>
+                  <center>
+                  <img src="\main\2\img\201\multi_job.jpg" width="60%"></center>
+                  <br><br>
+                </div>
+              </div>
+              <div id="divider_1br">
+                <br>
+              </div>
+              <div id="desc_middle_2" class="row-fluid">
+                <div class="span6 m-20" style="background-color:white;border-radius:30px;">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    生产计划(Production Planning)<sup>2</sup>
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>如果由于生产多种产品而频繁进行机型更改，则<span class =“ highlight”>优化生产顺序</span>，以实现生产线的最高生产率。为下一次机型更改做准备，<span class =“ highlight”>预测生产时间</ span>并提供进度管理表。</p>
+
+                  </h3>
+                  <br>
+                  <center>
+                  <img src="\main\2\img\201\production_planning.jpg">
+                  </center>
+                  <br>
+                </div>
+                <div class="span6 m-20 led" style="background-color:white;border-radius:30px;">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    LED面板优化算法
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>为了提高LED面板的质量，LED的等级管理是必不可少。T-OLP提供了适合需要LED等级管理的用户的各种要求的管理解决方案。</p>
+
+                  </h3>
+                  <br><br><br><br>
+                  <img src="\main\2\img\201\pcb_led.jpg" width="auto">
+                  <br><br>
+                </div>
+              </div>
+              <div id="divider_4br">
+                <br><br><br><br>
+              </div>
+            </div>
+            <div class="span1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="it_img" class="section it_img">
+      <header>
+        <h2  style="color:white;font-size:35pt;font-weight:500">
+          <div>
+          T-IT
+          </div>
+        </h2>
+       <br>
+       <h3 style="color:white;font-size:16pt;font-weight:500;line-height:28pt">
+        投入生产的工作程序不得以任何理由引起质量缺陷。T-IT 在生产前验证所提供的零件和程序的兼容性，强烈防止质量缺陷。
+      </h2>
+      </header>
+    </section>
+    <section class="section" style="background-color:#f1f1f3">
+      <div id="body" class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span10">
+              <!-- 본문은 여기서부터 -->
+              <div id="divider_4br">
+                <br><br><br><br>
+              </div>
+              <div id="desc_middle_2" class="row-fluid">
+                <div class="span6 m-20" style="background-color:white;border-radius:30px">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    验证所提供零件的兼容性
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p><span class =“ highlight”> 使用扫描仪读取附在零件卷轴上的条码<sup> 3 </ sup>并检查其是否与下载到设备的生产程序的零件数据相匹配，从而防止质量缺陷</ span>。</p>
+
+                  </h3>
+                  <br><br><br><br>
+                  <center>
+                  <img src="\main\2\img\201\it_verify.jpg"></center>
+                  <br><br>
+                </div>
+                <div class="span6 m-20" style="background-color:white;border-radius:30px">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    物料耗尽通知和发货要求
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>物料数量数据存储在进料器的内部存储器<sup> 4 </ sup>中，并进行实时管理。用户可以在物料耗尽前收到通知，<span class =“ highlight”>远程要求物料发货</ span>。</p>
+
+                  </h3>
+                  <br><br>
+                  <center>
+                  <img src="\main\2\img\201\it_count.jpg"></center>
+                  <br><br>
+                </div>
+              </div>
+              <div id="divider_1br">
+                <br>
+              </div>
+              <div id="desc_middle_2" class="row-fluid">
+                <div class="span6 m-20" style="background-color:white;border-radius:30px;">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    进料器维修历史记录管理
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>可以单独选择和管理缺陷进料器。<span class =“ highlight”>维修历史记录可以保存/管理在数据库中</ span>，从而系统地进行维护活动。</p>
+
+                  </h3>
+                  <br><br><br>
+                  <center>
+                  <img src="\main\2\img\201\it_maint.jpg">
+                  </center>
+                  <br><br><br>
+                </div>
+                <div class="span6 m-20 led" style="background-color:white;border-radius:30px;">
+                  <br>
+                  <h2 style="color:#171e8e;margin-bottom:30px;padding-left:20px;padding-right:20px">
+                    生产历史记录管理
+                  </h2>
+                  <h3 class="body_text" style="color:#2c292c;font-size:16pt;font-weight:500;line-height:24pt;padding-left:20px;padding-right:20px">
+                    <p>可将每个PCB的生产信息映射到PCB的条码ID中，通过将<span class =“ highlight”>所有生产历史记录保存在数据库中来进行管理</ span>。可以通过与工厂MES的<span class =“ highlight”>关联</ span>共享数据。</p>
+
+                  </h3>
+                  <br><br>
+                  <img src="\main\2\img\201\it_lts.jpg" width="auto">
+                  <br><br><br><br>
+                </div>
+              </div>
+              <div id="divider_4br">
+                <br><br><br><br>
+              </div>
+            </div>
+            <div class="span1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="goods_img" class="section goods_img">
+
+    </section>
+    <section>
+      <div id="body" class="container">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="span2">
+            </div>
+            <div class="span8">
+              <!-- 본문은 여기서부터 -->
+              <div id="divider_4br">
+                <br><br><br><br>
+              </div>
+              <div id="intro" style="margin-left:20px;margin-right:20px">
+                <center>
+                <h2  style="color:#2c292c;font-size:35pt;font-weight:500">
+                  <div>
+                  产品组成
+                  </div>
+                </h2><br><br><br><br>
+
+                <img src="\main\2\img\201\t-solution_flow2.jpg" width="auto">
+
+               <br>
+               </center>
+               <h3><ul style="list-style-type:none;">
+                 <li style="font-size:16px;font-weight:300;height:28px;color:#f37421">※关乎每个产品能否顺利使用的依赖性如上所述。</li>
+                 <li style="font-size:16px;font-weight:300;height:28px;color:#f37421">示例:要使用T-OLP，必须安装DBMS <sup> 6 </ sup>和T-Studio <sup> 7 </ sup>。</li>
+               </ul></h3>
+
+
+              </div>
+              <div id="divider_6br">
+                <br><br><br><br><br><br>
+              </div>
+              <div id="desc_middle_1" class="row-fluid">
+                <div class="span12">
+                  <h2 style="color:#171e8e">T-Elite</h2><br>
+                  <h3>
+                    <li id="goods_desc">购买T-OLP时提供T-Elite Software。</li>
+                    <li id="goods_desc">有关T-Elite Hardware规格参数，请参阅下表。</li>
+                  </h3><br>
+
+                  <table class="table table-striped"  width=100%>
+                    <thead id="table_th">
+                    <tr>
+                      <th>目标设备</th>
+                      <th>选项1<br>(Software only)</th>
+                      <th>选项2<br>(Elite Pro)</th>
+                      <th>选项3<br>(Elite II)</th>
+                      <th>备注</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table_td">
+                    <tr>
+                      <td>EXCEN/HM系列</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>×</td>
+                      <td>
+                    </td></tr>
+                    <tr>
+                      <td>DECAN系列</td>
+                      <td>○</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>
+                    </td></tr>
+                    <tr>
+                      <td>New SM系列</td>
+                      <td>○</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>SM471, SM481, SM482
+                    </td></tr>
+                    <tr>
+                      <td>SM系列</td>
+                      <td>○</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>SM411(F), SM421
+                    </td></tr>
+                    <tr>
+                      <td>其他系列</td>
+                      <td>○</td>
+                      <td>×</td>
+                      <td>×</td>
+                      <td>SM431, SM451, SCM, SLM
+                    </td></tr></tbody>
+                  </table>
+                  <br><br><br>
+                  <table class="table table-striped" width=100%>
+                    <thead id="table_th">
+                    <tr>
+                      <th>Hardware规格</th>
+                      <th>Elite Pro</th>
+                      <th>Elite II</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table_td">
+                    <tr>
+                      <td>CPU</td>
+                      <td>Intel(R) Pentium (R) i7 Quad-Core、Kontron模块</td>
+                      <td>Intel(R) Pentium (R) Dual-Core, 1.80GHz以上</td>
+                    </tr>
+                    <tr>
+                      <td>RAM</td>
+                      <td>2G, DDR2 667MHz SDRAM以上</td>
+                      <td>1G, DDR2 667MHz SDRAM以上</td>
+                    </tr>
+                    <tr>
+                      <td>Display</td>
+                      <td>20" LCD</td>
+                      <td>19" 以上LCD</td>
+                    </tr>
+                    <tr>
+                      <td>HDD</td>
+                      <td>500 GByte以上</td>
+                      <td>230 GByte以上</td>
+                    </tr>
+                    <tr>
+                      <td>电源规格</td>
+                      <td>100/240V ± 10 %、单相 50/60 Hz</td>
+                      <td>100/230V ± 10 %、单相 50/60 Hz</td>
+                    </tr>
+                    <tr>
+                      <td>耗电量</td>
+                      <td>最大0.15 kVA</td>
+                      <td>最大0.3 kVA</td>
+                    </tr>
+                    <tr>
+                      <td>语言</td>
+                      <td>韩文，英文，中文</td>
+                      <td>韩文，英文，中文</td>
+                    </tr>
+                    <tr>
+                      <td>操作系统</td>
+                      <td>WINDOWS 7 EMBEDDED STANDARD(32 Bit)</td>
+                      <td>WINDOWS 7 EMBEDDED STANDARD(32 Bit)</td>
+                    </tr>
+                    <tr>
+                      <td>尺寸(W*D*H, mm)</td>
+                      <td>503 * 438 * 534</td>
+                      <td>180 * 250 * 472</td>
+                    </tr>
+                    <tr>
+                      <td>重量(kg)</td>
+                      <td>58</td>
+                      <td>12</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="divider_8br">
+                <br><br><br><br><br><br><br><br>
+              </div>
+              <div id="desc_middle_1" class="row-fluid">
+                <div class="span12">
+                  <h2 style="color:#171e8e">T-OLP</h2><br>
+                  <h3>
+                    <li id="goods_desc">购买T-OLP时提供的Software包括T-Studio和T-Elite。</li>
+                  </h3><br>
+                  <table class="table table-striped"  width=100%>
+                    <thead id="table_th">
+                    <tr>
+                      <th>T-OLP</th>
+                      <th>选项션1<br>(Standard)</th>
+                      <th>选项2<br>(Pro)</th>
+                      <th>备注</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table_td">
+                    <tr>
+                      <td>Office OLP (Server)</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>程序创建和工厂单元综合管理<br>1Copy /工厂</td>
+                    </tr>
+                    <tr>
+                      <td>Line OLP (Client)</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>程序下载和编辑等生产线单元管理<br>1Copy /生产线</td>
+                    </tr>
+                    <tr>
+                      <td>Production Planning</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>台式机(或笔记本电脑)</td>
+                      <td>×</td>
+                      <td>×</td>
+                      <td>选购选项</td>
+                    </tr>
+                    <tr>
+                      <td>DBMS</td>
+                      <td>×</td>
+                      <td>×</td>
+                      <td>选购选项션<br>(MS-SQL Server 2008/2012/2014  Standard 或更高版本)</td>
+                    </tr></tbody>
+                  </table>
+                  <br><br><br>
+                  <table class="table table-striped" width=100%>
+                    <thead id="table_th">
+                    <tr>
+                      <th>电脑参数</th>
+                      <th>Office OLP (Server)</th>
+                      <th>Line OLP (Client)</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table_td">
+                    <tr>
+                      <td>操作系统</td>
+                      <td>Windows Server 2008以上</td>
+                      <td>Windows 10 (32/64 bit)</td>
+                    </tr>
+                    <tr>
+                      <td>CPU</td>
+                      <td>Intel i7-8770 CPU</td>
+                      <td>Intel i7-8770 CPU</td>
+                    </tr>
+                    <tr>
+                      <td>RAM</td>
+                      <td>16GB</td>
+                      <td>16GB</td>
+                    </tr>
+                    <tr>
+                      <td>SSD</td>
+                      <td>1TB</td>
+                      <td>512GB</td>
+                    </tr>
+                    <tr>
+                      <td>显示器</td>
+                      <td>1920 * 1080 32-bit color display</td>
+                      <td>1920 * 1080 32-bit color display</td>
+                    </tr>
+                    <tr>
+                      <td>语言</td>
+                      <td>韩文，英文，中文</td>
+                      <td>韩文，英文，中文</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="divider_8br">
+                <br><br><br><br><br><br><br><br>
+              </div>
+              <div id="desc_middle_1" class="row-fluid">
+                <div class="span12">
+                  <h2 style="color:#171e8e">T-IT</h2><br>
+                  <h3>
+                    <li id="goods_desc">如果设备不是IT选项规格，则需要对设备进行硬件升级。</li>
+                    <li id="goods_desc">为了使用T-IT(Full)选项，所使用的进料器也必须符合IT选项规格。</li>
+                    <li id="goods_desc">T-IT(Basic)和T-IT(Full)的零件条码操作系统不同。详细信息请务必咨询服务工程师。</li>
+                  </h3><br>
+
+                  <table class="table table-striped"  width=100%>
+                    <thead id="table_th">
+                    <tr>
+                      <th>T-IT 功能规格</th>
+                      <th>选项1<br>(Basic)</th>
+                      <th>选项2<br>(Full)</th>
+                      <th>备注</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table_td">
+                    <tr>
+                      <td>进料器维护和历史记录管理</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>登记条码</td>
+                      <td>登记零件编号单元</td>
+                      <td>登记零件卷轴单元</td>
+                      <td>T-IT(Full)需要安装T-SmartID<sup>7</sup> </td>
+                    </tr>
+                    <tr>
+                      <td>打印条码</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>需要安装T-SmartID</td>
+                    </tr>
+                    <tr>
+                      <td>条码管理和搜索</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>准备进料器外部工作</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>零件兼容性验证</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>零件剩余量管理</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>LTS (Lot Tracking System)</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>PCB上面需要贴1D/2D 条码<br>若为2D条码，需单独购买2D条码识别认证</td>
+                    </tr>
+                    <tr>
+                      <td>材料发货要求</td>
+                      <td>×</td>
+                      <td>○</td>
+                      <td>需要安装T-SmartID</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <br><br><br>
+                  <table class="table table-striped" width=100%>
+                    <tr>
+                      <th>T-IT的设备升级套件</th>
+                      <th>1D 零件条码扫描仪选项</th>
+                      <th>1D 零件条码扫描仪选项</th>
+                    </tr>
+                    <tr>
+                      <td>DECAN F2/S2/L2</td>
+                      <td>AM03-029039A</td>
+                      <td>AM03-029038A</td>
+                    </tr>
+                    <tr>
+                      <td>SM471/SM481/SM482</td>
+                      <td>AM03-029041A</td>
+                      <td>AM03-029040A</td>
+                    </tr>
+                    <tr>
+                      <td>SM411(F)/SM421</td>
+                      <td>AM03-029036A</td>
+                      <td>AM03-029016A</td>
+                    </tr>
+                  </table>
+                  <h3 style="font-size:14px;font-weight:300;height:20px;color:gray">※选择套件编号后，必须分别选择Basic/Full选项。</h3>
+                </div>
+              </div>
+              <div id="divider_8br">
+                <br><br><br><br><br><br><br><br>
+              </div>
+              <div id="intro" style="margin-left:20px;margin-right:20px">
+                <center>
+                <h2  style="color:#2c292c;font-size:35pt;font-weight:500">
+                  <div>
+                  产品购买/咨询
+                  </div>
+                </h2>
+              </center>
+            </div>
+            <div id="divider_4br">
+              <br><br><br><br>
+            </div>
+              <div id="outro_purchase_goods">
+                <h3>
+                  购买或其他咨询请使用以下服务。
+                </h3>
+                <h4>
+                  <ul >
+                    <li style="margin-bottom:20px">公告栏&nbsp;&nbsp;
+                      <span class="fa fa-external-link" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="window.open('https://www.hanwhaprecisionmachinery.co.kr/customer/qna_write.asp')"><span id="modal_copy">立即前往</span></span>
+                    </li>
+                    <li style="margin-bottom:20px">立即联系负责人
+                    </li>
+                      <ul style="list-style-type:none;">
+                        <li style="margin-bottom:20px">
+                          <span class="fa fa-phone" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;0755-26748338(分机8203)&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_tel()"><span id="modal_copy"></span></span>
+                          <input type="text" value="075526748338" id="myInput_deluxe_tel" style="position:absolute;top:-9999em;">
+                        </li>
+                        <li style="margin-bottom:20px">
+                          <span class="fa fa-envelope" style="display: inline-block;cursor:pointer;color:#00608e;"></span>&nbsp;lbin.zhang@hanwha.com&nbsp;&nbsp; <span class="fa fa-clone" style="display: inline-block;cursor:pointer;color:#00608e;" onclick="myFunctionClip_deluxe_mail()"><span id="modal_copy"></span></span>
+                          <input type="text" value="lbin.zhang@hanwha.com" id="myInput_deluxe_mail" style="position:absolute;top:-9999em;">
+                        </li>
+                      </ul>
+                  </ul>
+                  </h4>
+                </div>
+                <div id="divider_8br">
+                  <br><br><br><br><br><br><br><br>
+                </div>
+
+              </div>
+              <div class="span2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section>
+      <div id="footer">
+        <div class="container">
+          <div class="row-fluid">
+            <div class="row">
+              <div class="span12">
+                <div id="footer_comment" class="footer_cmnt">
+                  <font_cmnt>
+                    <div style="line-height:20px">
+                      <br><br><br>
+                      <ol>
+                        <li>根据用户的情况，可以选择生产线单元或工厂综合单元来操作零件数据库。</li>
+                        <li>T-OLP(Pro)选项中提供了生产计划(Production Planning) 选项。</li>
+                        <li>当T-IT选项为Basic时，条码规格按零件编号单元操作；当选项为Full时，则按零件卷轴单元操作。</li>
+                        <li>如果进料器为Non-IT规格，则未安装内置内存。</li>
+                        <li>DBMS(Database Management System)使用 Microsoft SQL Server商品。.</li>
+                        <li>T-Studio是购买T-OLP时提供的软件，用作负责数据库服务器和每个客户端之间通信的中间件。另外，使用T-Basic(Full)选项时，负责卷轴条形码登记和打印，以及卷轴代码搜索等功能。</li>
+                        <li>T-SmartID是单独规格的条码打印解决方案。</li>
+                      </ol>
+                    </div>
+                  </font_cmnt>
+                  <footer></footer>
+                </div>
+                <div id="footer_company_info">
+                  <font_cmnt>
+                    <div style="line-height:20px">
+                      <br>
+                      <ul>
+                      <li>
+                        该邮件为(株)韩华精密机械向HM520所购买客户发送的邮件。<br>
+                        如要拒收，请点击。<a href="https://www.hanwhaprecisionmachinery.co.kr/customer/newsletter_write.asp" target="_blank" style="text-decoration:none; color:#999999;"><b>[拒收]</b></a><br>
+                      </li>
+                      <li>
+                        如需继续接收该邮件，请在地址簿，联系人或允许接收目录中添加 smtcs@hanwha.com 邮箱。<br>
+                      </li>
+                      <li>上海总公司 公司地址：上海市徐汇区桂平路391号A座20层, 电话：+86-21-54271155-8100<br></li>
+                      <li>苏州分公司 公司地址：苏州工业园区唯新路58号启迪时尚科技城启迪控股38栋1楼, 电话：+86-512-67315213<br></li>
+                      <li>深圳分公司 公司地址：深圳市南山区科技园南区高新南五道金证科技大厦一楼东侧, 电话：+86-755-26748338-8203<br></li>
+                      <li>天津分公司 公司地址：天津市西青区友谊南路111号 印力中心写字楼15楼08室, 电话：+86-22-58110581<br></li>
+                      <li>COPYRIGHT 2021 Hanwha Precision Machinery Co., Ltd. ALL RIGHTS RESERVED<br></li>
+                    </ul>
+                    </div>
+                  </font_cmnt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!--<script src="C:\Users\hg.bak\Documents\박홍균\am_hpm-master (1)\am_hpm-master_retouch\static\lib\bootstrap\js\bootstrap.min.js"></script> for web-->
+    <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+	$(document).ready(function(){
+        $("#newsletter").click(function(){
+          $("#newsletter_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#newsletter");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#newsletter_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#hardwares").click(function(){
+          $("#hardwares_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#hardwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#hardwares_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#softwares").click(function(){
+          $("#softwares_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#softwares");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#softwares_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#acc").click(function(){
+          $("#acc_hide").slideToggle(50);
+        });
+      });
+			  $(document).on("click", function(event){
+          var $trigger = $("#acc");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#acc_hide").slideUp("fast");
+          }
+      });
+	$(document).ready(function(){
+        $("#maintenance").click(function(){
+          $("#maintenance_hide").slideToggle(50);
+        });
+      });
+						  $(document).on("click", function(event){
+          var $trigger = $("#maintenance");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $("#maintenance_hide").slideUp("fast");
+          }
+      });
+    </script>
+    <script>
+      var check = $("input[type='checkbox']");
+      check.click(function(){
+        $("tgl").toggle();
+        $("tgl_table").slideToggle(200);
+      });
+    </script>
+
+		<script>
+			$(document).ready(function() {
+      	$("#buy_btn_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("show");
+          });
+				$("#close_modal_deluxe").click(function() {
+					$("#modal_show_deluxe").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_lite").click(function() {
+					$("#modal_show_lite").modal("show");
+          });
+				$("#close_modal_lite").click(function() {
+					$("#modal_show_lite").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc1").click(function() {
+					$("#modal_show_acc1").modal("show");
+          });
+				$("#close_modal_acc1").click(function() {
+					$("#modal_show_acc1").modal("hide");
+        });
+      });
+			$(document).ready(function() {
+      	$("#buy_btn_acc2").click(function() {
+					$("#modal_show_acc2").modal("show");
+          });
+				$("#close_modal_acc2").click(function() {
+					$("#modal_show_acc2").modal("hide");
+        });
+      });
+		</script>
+
+
+    <script>
+      function myFunctionClip_deluxe_code() {
+        var copyText = document.getElementById("myInput_deluxe_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_tel() {
+        var copyText = document.getElementById("myInput_deluxe_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_deluxe_mail() {
+        var copyText = document.getElementById("myInput_deluxe_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_deluxe_mail').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_code() {
+        var copyText = document.getElementById("myInput_lite_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_code').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_tel() {
+        var copyText = document.getElementById("myInput_lite_tel");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_tel').delay(500).fadeOut(500);
+      }
+    </script>
+    <script>
+      function myFunctionClip_lite_mail() {
+        var copyText = document.getElementById("myInput_lite_mail");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_lite_mail').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc1_code() {
+        var copyText = document.getElementById("myInput_acc1_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc1_code').delay(500).fadeOut(500);
+      }
+    </script>
+		<script>
+      function myFunctionClip_acc2_code() {
+        var copyText = document.getElementById("myInput_acc2_code");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert("Copied the text: " + copyText.value);
+        $('<span style="color:#2196f3">&nbsp;&nbsp;복사되었습니다.</span>').insertBefore('#myInput_acc2_code').delay(500).fadeOut(500);
+      }
+    </script>
+  </body>
+</html>
