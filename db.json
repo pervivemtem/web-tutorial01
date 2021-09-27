@@ -1,12 +1,14 @@
-[
-  {
-    "id":"1",
-    "title":"haha",
-    "desc":"haha2",
-  },
-  {
-    "id":"2",
-    "title":"haha",
-    "desc":"haha2",
-  },
-]
+{
+  "posts"=[
+    {
+      "id":"1",
+      "title":"haha",
+      "desc":"haha2",
+    },
+    {
+      "id":"2",
+      "title":"haha",
+      "desc":"haha2",
+    },
+  ]
+}
